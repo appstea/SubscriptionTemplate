@@ -100,6 +100,15 @@
       }
     },
     {
+      "identity" : "pinlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/layoutBox/PinLayout",
+      "state" : {
+        "revision" : "75c88c5c374c7bc78a154ffdf963cd362f38258a",
+        "version" : "1.10.3"
+      }
+    },
+    {
       "identity" : "promises",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/promises.git",
@@ -118,6 +127,15 @@
       }
     },
     {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
+      }
+    },
+    {
       "identity" : "stackcraft",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dDomovoj/StackCraft",
@@ -133,6 +151,15 @@
       "state" : {
         "revision" : "e1499bc69b9040b29184f7f2996f7bab467c1639",
         "version" : "1.19.0"
+      }
+    },
+    {
+      "identity" : "swiftyattributes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eddiekaiger/SwiftyAttributes",
+      "state" : {
+        "branch" : "master",
+        "revision" : "295b17ef68811f423ed4b281d902df12d4d33963"
       }
     }
   ],

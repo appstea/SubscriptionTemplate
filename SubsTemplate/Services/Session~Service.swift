@@ -8,27 +8,29 @@
 import Foundation
 import UIKit
 
-fileprivate extension UserStore {
+extension Stored {
 
-  @Stored("stored.session.index", defaultValue: 0)
-  static var sessionIdx: Int
+  @StorageKey("stored.session.index", defaultValue: 0)
+  fileprivate(set) static var sessionIdx: Int
 
-  @Stored("stored.launch.index", defaultValue: 1)
-  static var launchIdx: Int
 }
 
-//extension Notification {
-//
-//  enum Session {
-//    // swiftlint:disable:next nesting
-//    enum Change: INotification { typealias Data = Int }
-//  }
-//
-//}
+extension Notification {
 
-final class SessionService: NSObject, UIApplicationDelegate {
+  enum Session {
+    enum Change: INotification { typealias Data = Int }
+  }
 
-  var currentSessionIdx: Int { UserStore.sessionIdx }
+}
+
+final class SessionService: AppService {
+
+  var currentSessionIdx: Int { Stored.sessionIdx }
+
+  static let current: SessionService? = SessionService()
+  private override init() {
+    super.init()
+  }
 
   func applicationDidBecomeActive(_ application: UIApplication) {
     incrementSession()
@@ -36,15 +38,16 @@ final class SessionService: NSObject, UIApplicationDelegate {
 
 }
 
+// MARK: - Private
+
 private extension SessionService {
 
   func incrementSession() {
-    if UserStore.didPassPrepermission {
-      if UserStore.sessionIdx == 0 {
-        UserStore.sessionIdx += 1
+    if Stored.didPassPrepermission {
+      if Stored.sessionIdx == 0 {
+        Stored.sessionIdx += 1
         NSLog("SESSION idx: " + currentSessionIdx.description)
-         // TODO: Later
-//        Notification.Session.Change.post(currentSessionIdx)
+        Notification.Session.Change.post(currentSessionIdx)
       }
     }
   }

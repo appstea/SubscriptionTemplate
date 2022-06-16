@@ -93,33 +93,26 @@ extension Dictionary: IStored {
 
 }
 
-// MARK: - UserStore
-
-final class UserStore {
-
-  private let defaults = UserDefaults.standard
-
-  fileprivate func getValue<T: IStored>(for key: String) -> T? { T.getValue(for: key, using: defaults) }
-  fileprivate func setValue<T: IStored>(_ value: T, for key: String) { T.setValue(value, for: key, using: defaults) }
-
-}
-
 // MARK: - Stored
 
+final class Stored { }
+
 @propertyWrapper
-struct Stored<Value: IStored> {
+struct StorageKey<Value: IStored> {
 
   private let key: String
-  private let defaultValue: Value
+  private let defaultValue: () -> Value
+  private let storage: UserDefaults
 
   var wrappedValue: Value {
-    get { UserStore().getValue(for: key) ?? defaultValue }
-    set { UserStore().setValue(newValue, for: key) }
+    get { Value.getValue(for: key, using: storage) ?? defaultValue() }
+    set { Value.setValue(newValue, for: key, using: storage) }
   }
 
-  init(_ key: String, defaultValue: Value) {
+  init(_ key: String, defaultValue: @autoclosure @escaping () -> Value, storage: UserDefaults? = nil) {
     self.key = key
     self.defaultValue = defaultValue
+    self.storage = storage ?? .standard
   }
 
 }

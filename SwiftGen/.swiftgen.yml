@@ -1,0 +1,19 @@
+strings:
+  inputs: "../Localizations/en.lproj"
+  outputs:
+    - templatePath: strings.stencil
+      output: ../Generated/L10n.generated.swift
+      params:
+        enumName: Localization
+# fonts:
+#   inputs: "../Fonts"
+#   outputs:
+#     - templatePath: fonts.stencil
+#       output: ../Generated/Fonts.swift
+#       params:
+#         enumName: Font
+xcassets:
+  inputs: "../SubsTemplate/Resources/Assets.xcassets"
+  outputs:
+    - templatePath: assets.stencil
+      output: ../Generated/Assets.generated.swift

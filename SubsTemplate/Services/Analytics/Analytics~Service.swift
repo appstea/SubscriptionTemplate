@@ -11,7 +11,7 @@ enum Analytics { }
 
 extension Analytics {
 
-  final class Service: NSObject, UIApplicationDelegate {
+  final class Service: AppService {
 
 //    private let startAnalyticsOptions = Analytics.Event.Start.SourceOption.all
 //      .subtracting(.default)
@@ -27,6 +27,11 @@ extension Analytics {
       return loggers.compactMap { $0 }
     }()
 
+    static let shared: Analytics.Service? = Analytics.Service()
+    private override init() {
+      super.init()
+    }
+
     // MARK: - UIApplicationDelegate
 
     func application(_ application: UIApplication,
@@ -37,7 +42,7 @@ extension Analytics {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-      if UserStore.didPassPrepermission {
+      if Stored.didPassPrepermission {
 //        component.services.notifications?.fetchStatus { [weak self] in
 //          guard let self = self else { return }
 //
@@ -64,10 +69,11 @@ extension Analytics {
       return false
     }
 
-//    func handle(url: URL, with options: OpenURLOptions) -> Bool {
+    func application(_ app: UIApplication, open url: URL,
+                     options: OpenURLOptions = [:]) -> Bool {
 //      sendStartAnalyticsIfNeeded(Analytics.Event.Start(.init(url: url, options: options)))
-//      return false
-//    }
+      return false
+    }
 
 //    func appDidReceive(_ notification: Astrarium.Notification) {
 //      // TODO: include only on start notifications

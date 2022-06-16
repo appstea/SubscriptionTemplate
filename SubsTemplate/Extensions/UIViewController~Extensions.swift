@@ -9,6 +9,13 @@ import UIKit
 
 extension UIViewController {
 
+  var topMostController: UIViewController {
+    if let presented = presentedViewController?.topMostController, !presented.isBeingDismissed {
+      return presented
+    }
+    return self
+  }
+
   func addChildViewController(_ childViewController: UIViewController, containerView: UIView, animated: Bool) {
     addChild(childViewController)
     childViewController.beginAppearanceTransition(true, animated: animated)
@@ -18,7 +25,6 @@ extension UIViewController {
     if !animated {
       childViewController.endAppearanceTransition()
     }
-
   }
 
 }

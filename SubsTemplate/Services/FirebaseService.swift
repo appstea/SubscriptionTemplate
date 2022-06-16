@@ -8,16 +8,23 @@
 import Firebase
 import FirebaseMessaging
 
-final class FirebaseService: NSObject, UIApplicationDelegate {
+final class FirebaseService: AppService {
 
   private lazy var messagingListener = MessagingListener()
 
-  // MARK: - UIApplicationDelegate
+  // MARK: - Init
+
+  static let shared: FirebaseService? = FirebaseService()
+  private override init() {
+    super.init()
+  }
+
+  // MARK: - Lifecycle
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: LaunchOptions? = nil) -> Bool {
-    Messaging.messaging().delegate = messagingListener
     FirebaseApp.configure()
+    Messaging.messaging().delegate = messagingListener
     return true
   }
 
@@ -32,10 +39,11 @@ final class FirebaseService: NSObject, UIApplicationDelegate {
 
 private class MessagingListener: NSObject, MessagingDelegate {
 
+  private var subs: Subs.Service? { .shared }
+
   func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
     if let fcmToken = fcmToken {
-      // TODO: Later
-//      subs.updateAttribute(.fcm($0)) }
+      subs?.updateAttribute(.fcm(fcmToken))
     }
     NotificationCenter.default.post(name: Foundation.Notification.Name("FCMToken"),
                                     object: nil,

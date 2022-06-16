@@ -1,0 +1,248 @@
+"accessibility.label.humidity"                        = "Humedad";
+"accessibility.label.temp.max"                        = "Máx";
+"accessibility.label.temp.min"                        = "Mín";
+"apple.login.signout"                                 = "Cerrar sesión";
+"check.internet.title"                                = "Asegúrate de que el dispositivo tiene conexión";
+"current_weather.feels_like"                          = "%@ sensación";
+"current_weather.pressure"                            = "%@ de presión";
+"current_weather.wind"                                = "%@ de viento";
+"default_banner.title"                                = "Premium\n¡Sin publicidad y con más características!";
+"default_banner.upgrade.title"                        = "COMPRAR";
+"empty_view.subtitle"                                 = "Seleccione su ubicación para empezar";
+"empty_view.title"                                    = "Mi ubicación";
+"general.button.back"                                 = "Atras";
+"general.button.close"                                = "Cerrar";
+"general.button.done"                                 = "Hecho";
+"general.button.ok"                                   = "Ok";
+"general.button.retry"                                = "Otra vez";
+"hour.cell.now"                                       = "Ahora";
+"hour.cell.sunrise"                                   = "Amanecer";
+"hour.cell.sunset"                                    = "Puesta de sol";
+"imperial.value"                                      = "imperial";
+"metric.value"                                        = "métrico";
+"next_day.cell.today"                                 = "Hoy";
+"no_internet.subtitle"                                = "No hay conexión a Internet. Inténtelo más tarde.";
+"no_internet.title"                                   = "Ooops";
+"no_mail_app.subtitle"                                = "No tienes la aplicación Mail";
+"no_mail_app.title"                                   = "Ooops";
+
+/* Forecast is: {T for the specified time}, {description}. {emoji}
+Open the app to compare the forecast with the actual weather observation data. */
+"notification.3_days_ago.description"                 = "El pronóstico es: % @, % @. % @ Abra la aplicación para comparar el pronóstico con los datos reales de observación del tiempo.";
+
+/* Minsk, Minsk, Belarus. */
+"notification.3_days_ago.title"                       = "%@";
+
+/* Forecast is: {T for the specified time}, {description}. {emoji}
+Open the app to compare the forecast with the actual weather observation data. */
+"notification.5_days_ago.description"                 = "El pronóstico es:% @,% @. % @ Abra la aplicación para comparar el pronóstico con los datos reales de observación del tiempo.";
+
+/* Minsk, Minsk, Belarus. */
+"notification.5_days_ago.title"                       = "%@";
+"notification.comparing.colder"                       = "más frío";
+"notification.comparing.warmer"                       = "más cálido";
+
+/* {emoji} {description}, min: {min T for the day}, max: {max T for the day} */
+"notification.evening_forecast.description"           = "%@ %@, min: %@, max: %@";
+
+/* Minsk. Tomorrow:
+ */
+"notification.evening_forecast.title"                 = "%@. Mañana:";
+
+/* This is the reminder */
+"notification.internet_comes_back.description"        = "";
+
+/* That you asked for */
+"notification.internet_comes_back.title"              = "";
+
+/* Exactly a month ago the weather was: {T now}, {description}. {emoji}
+Open the app to check how the weather changed in one month. */
+"notification.month_ago.description"                  = "Hace exactamente un mes el tiempo era:% @,% @. % @ Abra la aplicación para verificar cómo cambió el tiempo en un mes.";
+
+/* Minsk, Minsk, Belarus. */
+"notification.month_ago.title"                        = "%@";
+
+/* {emoji} {T for the specified time}, {description}. {compare T for the specified time for 2 upcoming days} {colder / warmer} than yesterday. */
+"notification.morning_comparing_forecast.description" = "%@ %@, %@. %@ %@ que ayer.";
+
+/* Minsk. Morning outlook: */
+"notification.morning_comparing_forecast.title"       = "%@. Pronóstico de la mañana:";
+
+/* {emoji} {T for the specified time}, {description} */
+"notification.morning_forecast.description"           = "%@ %@, %@";
+
+/* Minsk. Morning outlook: */
+"notification.morning_forecast.title"                 = "%@. Pronóstico de la mañana:";
+"notification.no_location.description"                = "Hay que activar los servicios de localización en su dispositivo o añadir una ciudad en el app";
+"notification.no_location.title"                      = "%@";
+
+/* Exactly a week ago the weather was: {T now}, {description}. {emoji}
+Open the app to check how the weather changed in one week. */
+"notification.week_ago.description"                   = "Hace exactamente una semana el tiempo era:% @,% @. % @ Abra la aplicación para verificar cómo cambió el tiempo en una semana.";
+
+/* Minsk, Minsk, Belarus. */
+"notification.week_ago.title"                         = "%@";
+
+/* Exactly a year ago the weather was: {T now}, {description}. {emoji} 
+Open the app to check how the weather changed in one year. */
+"notification.year_ago.description"                   = "Hace exactamente un año el tiempo era:% @,% @. % @ Abra la aplicación para verificar cómo cambió el tiempo en un año.";
+
+/* Minsk, Minsk, Belarus. */
+"notification.year_ago.title"                         = "%@";
+"pressure.hpa.expanded.value"                         = "hectopascales";
+"pressure.hpa.value"                                  = "hPa";
+"pressure.inches.expanded.value"                      = "pulgadas";
+"pressure.inches.value"                               = "pulgadas";
+"pressure.kpa.expanded.value"                         = "kilopascales";
+"pressure.kpa.value"                                  = "kPa";
+"pressure.mm.expanded.value"                          = "milímetros";
+"pressure.mm.value"                                   = "mm";
+"rain.expanded.value"                                 = "milímetros";
+"rain.value"                                          = "mm";
+"search.bar.placeholder"                              = "Añadir el nombre de la ubicación";
+"search.my_cities"                                    = "Mis ubicaciones";
+"search.title"                                        = "Buscar";
+"settings.connect.section.title"                      = "Conexión";
+"settings.contact_us.subtitle"                        = "Enviar un comentario";
+"settings.contact_us.title"                           = "Contáctenos";
+"settings.evening_report.title"                       = "Notificación de informe nocturno";
+"settings.help_support.section.title"                 = "Ayuda y soporte";
+"settings.morning_report.title"                       = "Informe matinal";
+"settings.notification_center.section.title"          = "Centro de notificaciones";
+"settings.notifications.title"                        = "Notificaciones diarias";
+"settings.pressure.title"                             = "Presión";
+"settings.privacy.subtitle"                           = "Y otros textos legales";
+"settings.privacy.title"                              = "Política de privacidad";
+"settings.rate.subtitle"                              = "Ayuda a mas jente disfturar del tiempo";
+"settings.rateapp.title"                              = "Puntuar app";
+"settings.restore_fail.subtitle"                      = "Parece que no tienes ninguna compra";
+"settings.restore.subtitle"                           = "Encontraremos todo lo que has comprado";
+"settings.restore.title"                              = "Recuperar las compras";
+"settings.share_app.title"                            = "Compartir app";
+"settings.share.subtitle"                             = "Con ayuda de su mensajero favorito";
+"settings.temperature.title"                          = "Temperatura";
+"settings.title"                                      = "Ajustes";
+"settings.weather.section.title"                      = "Tiempo";
+"settings.wind.title"                                 = "Viento";
+"siri.donate.prase"                                   = "Previsión meteorológica";
+"siri.intent.no_city"                                 = "Tienes que añadir la ubicación para ver el pronóstico";
+"siri.intent.no_data"                                 = "No se han podido obtener datos del tiempo relevantes, inténtelo más tarde.";
+"start.button.continue"                               = "Bien, acepto";
+"start.feature.first"                                 = "Servicios de localisacion para obdener datos de tiempo más exactos";
+"start.feature.second"                                = "Notificationes para obtener alertas de todo lo peligroso y curioso";
+"start.subtitle"                                      = "Sera posible quando app tenga accesso:";
+"start.title"                                         = "Una experiencia perfecta";
+
+/* Here is an offer for you: */
+"subs.additional_offer.subtitle"                      = "Aquí hay una oferta:";
+
+/* You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then $6.99 per month. Get all the premium features. Don’t miss this limited time deal! */
+"subs.additional_offer.text_format"                   = "Se puede elegir entre un período de prueba más largo (es decir, 7 días en lugar de 3) y pagar incluso menos por trimestre. Prueba 7 días gratis, luego % @. Obtenga todas las funciones premium. ¡No se pierda esta oferta por tiempo limitado!";
+
+/* Not convinced? */
+"subs.additional_offer.title"                         = "¿No decidido?";
+"subs.button.no_internet"                             = "";
+"subs.button.privacy"                                 = "Privacidad";
+"subs.button.restore"                                 = "Recuperar";
+"subs.button.terms"                                   = "Condiciones ";
+"subs.one_button.button.close"                        = "o sigue con la versión limitada";
+"subs.one_button.button.continue"                     = "Continuar";
+"subs.one_button.feature.first"                       = "Todas las funciones";
+"subs.one_button.feature.second"                      = "Eliminar anuncios";
+"subs.one_button.price"                               = "¡Suscribirse por %@/%@!";
+"subs.one_button.title"                               = "Acceso ilimitado";
+"subs.one_button.trial.actual"                        = "Después %@ por %@";
+"subs.one_button.trial.free"                          = "Prueba gratuita de %d días";
+"subs.period.day"                                     = "día";
+"subs.period.month"                                   = "mes";
+"subs.period.quartal"                                 = "trimestre";
+"subs.period.week"                                    = "semana";
+"subs.period.year"                                    = "año";
+
+/* $9.99 per quarter */
+"subs.price_per_period"                               = "%@ por %@";
+
+/* $3.33/month */
+"subs.price_slash_period"                             = "%@/%@";
+
+/* Try Free and Subscribe */
+"subs.try_free_and_subscribe"                         = "Pruéba gratis y suscríbete";
+
+/* That’s just $3.33/month */
+"subs.two_buttons.info_just"                          = "Por solo %@";
+
+/* Try For Free */
+"subs.two_buttons.subtitle"                           = "Prueba gratuita";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime. */
+"subs.two_buttons.text"                               = "Disfruta de todas las características de la aplicación sin publicidad. Pruébala gratis sin compromiso (puedes cancelar en cualquier momento).";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
+"subs.two_buttons.text_format"                        = "Disfruta de todas las características de la aplicación sin publicidad. Pruébala gratis durante %d días (después, %@). Puedes cancelar en cualquier momento.";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
+"subs.two_buttons.text_format7"                       = "Disfruta de todas las características de la aplicación sin publicidad. Pruébala gratis durante %d días (después, %@). Puedes cancelar en cualquier momento.";
+
+/* Full Access */
+"subs.two_buttons.title"                              = "Acceso total";
+"temperature.celsius"                                 = "°c";
+"temperature.celsius.expanded"                        = "celsius";
+"temperature.fahrenheit"                              = "°f";
+"temperature.fahrenheit.expanded"                     = "fahrenheit";
+"visibility.value"                                    = "km";
+"widget_configuration.location_placeholder"           = "Añadir";
+"widget.loading_data.error"                           = "No se han podido obtener datos del tiempo relevantes, inténtelo más tarde.";
+"widget.modern.medium_mid_term.subtitle"              = "El tiempo en la ubicación seleccionada, junto con el pronóstico para las próximas dias";
+"widget.modern.medium_mid_term.title"                 = "Perspectiva de los próximos días";
+"widget.modern.medium.subtitle"                       = "El tiempo en la ubicación seleccionada, junto con el pronóstico para las próximas horas";
+"widget.modern.medium.title"                          = "Pronóstico a corto plazo";
+"widget.modern.small.subtitle"                        = "Timepo de ahora justo en su pantalla de inicio o centro de notificationes";
+"widget.modern.small.title"                           = "Condiciones actuales";
+"widget.modern.square.subtitle"                       = "Краткосрочный и долгосрочный прогноз в одном виджете";
+"widget.modern.square.title"                          = "Clima completo";
+"widget.no_location.title"                            = "Hay que activar los servicios de localización en su dispositivo o añadir una ciudad en el app";
+"wind.e"                                              = "E";
+"wind.e.expanded"                                     = "Eastern";
+"wind.ene"                                            = "ENE";
+"wind.ene.expanded"                                   = "Este Norte Este";
+"wind.ese"                                            = "ESE";
+"wind.ese.expanded"                                   = "Este Sureste";
+"wind.n"                                              = "N";
+"wind.n.expanded"                                     = "Norte";
+"wind.ne"                                             = "NE";
+"wind.ne.expanded"                                    = "Noreste";
+"wind.nne"                                            = "NNE";
+"wind.nne.expanded"                                   = "Norte-Noreste";
+"wind.nnw"                                            = "NNO";
+"wind.nnw.expanded"                                   = "Norte-Noroeste";
+"wind.nw"                                             = "NO";
+"wind.nw.expanded"                                    = "Noroeste";
+"wind.s"                                              = "S";
+"wind.s.expanded"                                     = "Del Sur";
+"wind.se"                                             = "SE";
+"wind.se.expanded"                                    = "Sur Este";
+"wind.speed.kmph"                                     = "km/h";
+"wind.speed.kmph.expanded"                            = "Kilómetros por hora";
+"wind.speed.knots"                                    = "nudos";
+"wind.speed.knots.expanded"                           = "nudos";
+"wind.speed.mph"                                      = "mph";
+"wind.speed.mph.expanded"                             = "millas por hora";
+"wind.speed.mps"                                      = "m/s";
+"wind.speed.mps.expanded"                             = "metros por segundo";
+"wind.sse"                                            = "SSE";
+"wind.sse.expanded"                                   = "Sur Sur Este";
+"wind.ssw"                                            = "SSO";
+"wind.ssw.expanded"                                   = "Sur Sur Oeste";
+"wind.sw"                                             = "SO";
+"wind.sw.expanded"                                    = "Sur Oeste";
+"wind.w"                                              = "O";
+"wind.w.expanded"                                     = "Oeste";
+"wind.wnw"                                            = "ONO";
+"wind.wnw.expanded"                                   = "Oeste-Noroeste";
+"wind.wsw"                                            = "OSO";
+"wind.wsw.expanded"                                   = "Oeste Sur Oeste";
+"att.request.title"                                   = "";
+"att.request.description.first"                       = "";
+"att.request.description.second"                      = "";
+"att.request.note"                                    = "";
+"att.request.cta"                                     = "Bien, acepto";

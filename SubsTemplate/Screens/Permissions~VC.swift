@@ -7,36 +7,39 @@
 
 import UIKit
 
+//import SwiftyAttributes
+//import PinLayout
+
+import StackCraft
+
 public enum Permissions {}
 
-extension UserStore {
+extension Stored {
 
-  @Stored("didPassPrepermission", defaultValue: false)
-  static var didPassPrepermission: Bool
+  @StorageKey("didPassPrepermission", defaultValue: false)
+  fileprivate(set) static var didPassPrepermission: Bool
 
 }
 
 public extension Permissions {
 
-  final class ViewController: Base.ViewController { }
+  final class ViewController: Base.ViewController {
 
+    public override func loadView() {
+      super.loadView()
+      view.backgroundColor = .orange
+    }
+
+    // MARK: - Public
+
+    func pass() async {
+      try? await Task.sleep(nanoseconds: (1.0 * TimeInterval.second).nanoseconds)
+      Stored.didPassPrepermission = true
+    }
+
+  }
 }
 
-//import UIKit
-//
-//import SwiftyAttributes
-//import PinLayout
-//import Alidade
-//import StackCraft
-//
-//protocol IOnboardingInput: AnyObject {
-//
-//    var finishBlock: (() -> Void)? { get set }
-//
-////    func reload(for onboarding: Onboarding)
-//
-//}
-//
 //class OnboardingVC: ScopedViewController<OnboardingComponent>, IOnboardingInput {
 //
 //    private enum Const {
