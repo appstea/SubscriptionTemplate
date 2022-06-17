@@ -78,6 +78,10 @@
 		5C8DBF9F285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF9E285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift */; };
 		5C8DBFA2285BB5770054B427 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBFA1285BB5770054B427 /* PinLayout */; };
 		5C8DBFA5285BB65A0054B427 /* SwiftyAttributes in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBFA4285BB65A0054B427 /* SwiftyAttributes */; };
+		5C8DBFA7285CA4A50054B427 /* Common~DotLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBFA6285CA4A40054B427 /* Common~DotLabel.swift */; };
+		5C8DBFAA285CA5870054B427 /* TextCraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBFA9285CA5870054B427 /* TextCraft.swift */; };
+		5C8DBFAC285CA9220054B427 /* Continuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBFAB285CA9220054B427 /* Continuations.swift */; };
+		5C8DBFAE285CB3EE0054B427 /* Notifications~System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBFAD285CB3EE0054B427 /* Notifications~System.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +163,10 @@
 		5C8DBF9A285BA90C0054B427 /* UIControl~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl~Extensions.swift"; sourceTree = "<group>"; };
 		5C8DBF9C285BAC040054B427 /* UIColor~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor~Extensions.swift"; sourceTree = "<group>"; };
 		5C8DBF9E285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RevenueCat.StoreProduct~Extensions.swift"; sourceTree = "<group>"; };
+		5C8DBFA6285CA4A40054B427 /* Common~DotLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common~DotLabel.swift"; sourceTree = "<group>"; };
+		5C8DBFA9285CA5870054B427 /* TextCraft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCraft.swift; sourceTree = "<group>"; };
+		5C8DBFAB285CA9220054B427 /* Continuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuations.swift; sourceTree = "<group>"; };
+		5C8DBFAD285CB3EE0054B427 /* Notifications~System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notifications~System.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +207,7 @@
 		5C8DBEB328511C210054B427 /* SubsTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				5C8DBFA8285CA5870054B427 /* TextCraft */,
 				5C8DBF58285B8BC50054B427 /* Generated */,
 				5C8DBF3328591DD50054B427 /* Systems */,
 				5C8DBF032858FADD0054B427 /* Services */,
@@ -275,6 +284,7 @@
 			children = (
 				5C8DBEF328521C110054B427 /* Common.swift */,
 				5C8DBEF528521C260054B427 /* Common~GradientView.swift */,
+				5C8DBFA6285CA4A40054B427 /* Common~DotLabel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -286,6 +296,7 @@
 				5C8DBF3128590ED90054B427 /* Error.swift */,
 				5C8DBEF728521EE40054B427 /* Stored.swift */,
 				5C8DBF262859003A0054B427 /* UITypes.swift */,
+				5C8DBFAB285CA9220054B427 /* Continuations.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -370,6 +381,7 @@
 				5C8DBF40285A13540054B427 /* HUD.swift */,
 				5C8DBF3628591E2B0054B427 /* Callbacks.swift */,
 				5C8DBF3428591E090054B427 /* Notifications.swift */,
+				5C8DBFAD285CB3EE0054B427 /* Notifications~System.swift */,
 			);
 			path = Systems;
 			sourceTree = "<group>";
@@ -411,6 +423,14 @@
 			);
 			path = Localizations;
 			sourceTree = SOURCE_ROOT;
+		};
+		5C8DBFA8285CA5870054B427 /* TextCraft */ = {
+			isa = PBXGroup;
+			children = (
+				5C8DBFA9285CA5870054B427 /* TextCraft.swift */,
+			);
+			path = TextCraft;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -537,9 +557,11 @@
 				5C8DBF9F285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift in Sources */,
 				5C8DBEE9285214480054B427 /* Base~Button.swift in Sources */,
 				5C8DBF30285902FC0054B427 /* Subs~Service.swift in Sources */,
+				5C8DBFAC285CA9220054B427 /* Continuations.swift in Sources */,
 				5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */,
 				5C8DBEDA285208850054B427 /* BannerView~Default.swift in Sources */,
 				5C8DBF1E2858FC0D0054B427 /* Analytics~LaunchItem.swift in Sources */,
+				5C8DBFAA285CA5870054B427 /* TextCraft.swift in Sources */,
 				5C8DBF99285BA7760054B427 /* UILabel~DynamicFont.swift in Sources */,
 				5C8DBEEB285214960054B427 /* Base~ViewController.swift in Sources */,
 				5C8DBF3F2859204C0054B427 /* AppDelegate~Proxy.m in Sources */,
@@ -559,6 +581,7 @@
 				5C8DBF3728591E2B0054B427 /* Callbacks.swift in Sources */,
 				5C8DBF2B285902720054B427 /* Subs.swift in Sources */,
 				5C8DBF48285A182A0054B427 /* UIService.swift in Sources */,
+				5C8DBFAE285CB3EE0054B427 /* Notifications~System.swift in Sources */,
 				5C8DBF8E285B99C70054B427 /* UIKit~Async.swift in Sources */,
 				5C8DBEE1285213A70054B427 /* Base~View.swift in Sources */,
 				5C8DBF56285B7CE20054B427 /* Subs~Screen.swift in Sources */,
@@ -568,6 +591,7 @@
 				5C8DBEE3285214220054B427 /* Base.swift in Sources */,
 				5C8DBEE5285214430054B427 /* Base~ImageView.swift in Sources */,
 				5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */,
+				5C8DBFA7285CA4A50054B427 /* Common~DotLabel.swift in Sources */,
 				5C8DBF90285B99DF0054B427 /* TimeInterval~Extension.swift in Sources */,
 				5C8DBEF1285217950054B427 /* Subs~VC.swift in Sources */,
 				5C8DBF54285B5B9F0054B427 /* Equatable~Extensions.swift in Sources */,

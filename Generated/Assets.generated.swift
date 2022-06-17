@@ -30,6 +30,10 @@ public enum Assets {
   public static let accentColor = ColorAsset(name: "AccentColor")
   public enum Colors {
 
+    public enum Banner {
+      public static let `default` = ColorAsset(name: "Colors/Banner/default")
+      public static let upgrade = ColorAsset(name: "Colors/Banner/upgrade")
+    }
     public enum DotLabel {
       public static let dot = ColorAsset(name: "Colors/DotLabel/dot")
     }
@@ -51,11 +55,13 @@ public enum Assets {
       public static let price = ColorAsset(name: "Colors/Subs/price")
       public static let title = ColorAsset(name: "Colors/Subs/title")
     }
-    public static let defaultBannerUpgrade = ColorAsset(name: "Colors/defaultBannerUpgrade")
-    public static let upgradeView = ColorAsset(name: "Colors/upgradeView")
   }
   public enum Images {
 
+    public enum Banner {
+      public static let `default` = ImageAsset(name: "Images/Banner/default")
+      public static let icon = ImageAsset(name: "Images/Banner/icon")
+    }
     public enum Permissions {
       public static let image = ImageAsset(name: "Images/Permissions/image")
     }

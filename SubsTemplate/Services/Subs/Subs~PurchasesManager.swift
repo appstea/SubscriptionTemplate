@@ -86,6 +86,7 @@ extension Subs {
       Purchases.configure(withAPIKey: rcSetup.apiKey)
       Purchases.shared.delegate = self
       SKPaymentQueue.default().add(transactionsObserver)
+      syncIfNeeded()
     }
 
     // MARK: - Public
@@ -324,7 +325,7 @@ private extension Subs.PurchasesManager {
       }
       debugPrint("[DEBUG] Products: \(self.products)")
       self.isLoadingProducts = false
-
+      Notification.Subs.Update.post()
     }
   }
 

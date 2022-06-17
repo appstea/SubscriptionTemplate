@@ -21,10 +21,10 @@ extension Stored {
 
 final class UIService: AppService {
 
-  let window = UIWindow(frame: UIScreen.main.bounds)
+  private var window: UIWindow?
 
   var presenter: UIViewController? {
-    window.rootViewController?.topMostController
+    window?.rootViewController?.topMostController
   }
 
   // MARK: - Init
@@ -57,6 +57,7 @@ final class UIService: AppService {
 
   func start(from window: UIWindow) {
     Task {
+      self.window = window
       await start(from: window)
     }
   }
@@ -125,7 +126,7 @@ private extension UIService {
     window.rootViewController = vc
     window.makeKeyAndVisible()
 
-    await vc.pass()
+    await vc.result()
     await showSubs(from: window)
     await checkIDFAAccessIfNeeded()
     await showMainScreen(from: window)
@@ -144,7 +145,7 @@ private extension UIService {
     window.rootViewController = vc
     window.makeKeyAndVisible()
 
-    await vc?.expectResult()
+    await vc?.result()
   }
 
   // MARK: - ATT check

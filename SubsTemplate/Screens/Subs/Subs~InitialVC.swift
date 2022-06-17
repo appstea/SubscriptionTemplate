@@ -286,7 +286,7 @@ private extension Subs.InitialVC {
         .withFont(.systemFont(ofSize: isPad ? 24 : 18, weight: .semibold))
         .withTextColor(Color.Subs.continue.color))
        +
-       (L10n.Subs.TwoButtons.infoJust(product.localizedPriceSlashPeriodUnit())
+       (L10n.Subs.TwoButtons.infoJust(product.localizedMonthlyPriceSlashMonth())
         .withFont(.systemFont(ofSize: isPad ? 16 : 12, weight: .regular))
         .withTextColor(Color.Subs.title.color)
        ))

@@ -30,6 +30,18 @@ extension StoreProduct {
   /// $3.33/month for 9.99$ per quartal
   func localizedPriceSlashPeriodUnit() -> String { sk1Product?.localizedPriceSlashPeriodUnit() ?? "" }
 
+  /// $0.99/month for 11.99$ per year
+  func localizedMonthlyPriceSlashMonth() -> String {
+    guard let pricePerMonth = pricePerMonth,
+          let product = sk1Product,
+          let localizedPrice = product.numberFormatter.string(from: pricePerMonth)
+    else { return "" }
+
+    let localizedPeriod = product.localizedPeriod(for: .month)
+    let result = L10n.Subs.priceSlashPeriod(localizedPrice, localizedPeriod)
+    return result
+  }
+
   func localizedPeriodUnit() -> String { sk1Product?.localizedPeriodUnit() ?? "" }
 
   func localizedPeriod() -> String { sk1Product?.localizedPeriod() ?? "" }
@@ -46,7 +58,7 @@ fileprivate extension SKProduct {
     $0.numberStyle = .currency
     $0.formatterBehavior = .behavior10_4
   }
-  private var numberFormatter: NumberFormatter {
+  var numberFormatter: NumberFormatter {
     let result = Self.numberFormatter
     result.locale = priceLocale
     return result
@@ -84,16 +96,20 @@ fileprivate extension SKProduct {
   }
 
   func localizedPeriodUnit() -> String {
-    subscriptionPeriod?.map {
-      typealias L10n = SubsTemplate.L10n.Subs.Period
-      switch $0.unit {
-      case .day: return L10n.day
-      case .week: return L10n.week
-      case .month: return L10n.month
-      case .year: return L10n.year
-      @unknown default: return ""
-      }
-    } ?? ""
+    subscriptionPeriod?.map({ localizedPeriod(for: $0.unit) }) ?? ""
+  }
+
+  // MARK: - Utils
+
+  func localizedPeriod(for unit: SKProduct.PeriodUnit) -> String {
+    typealias L10n = SubsTemplate.L10n.Subs.Period
+    switch unit {
+    case .day: return L10n.day
+    case .week: return L10n.week
+    case .month: return L10n.month
+    case .year: return L10n.year
+    @unknown default: return ""
+    }
   }
 
   func localizedPeriod() -> String {

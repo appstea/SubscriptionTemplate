@@ -21,7 +21,7 @@ extension Subs {
     let intent: Intent
 
     private var onClose: ((UIViewController) -> Void)?
-    private var continuation: CheckedContinuation<Void, Never>?
+    private var continuation: Continuation<Void>?
 
     // MARK: - Readonly
 
@@ -56,7 +56,7 @@ extension Subs {
     // MARK: - Public
 
     @MainActor
-    func expectResult() async {
+    func result() async {
       await withCheckedContinuation { c in
         continuation = c
       }

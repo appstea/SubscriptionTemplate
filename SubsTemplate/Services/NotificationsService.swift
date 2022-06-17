@@ -20,7 +20,7 @@ final class NotificationsService: AppService {
   var notificationCenter: UNUserNotificationCenter { .current() }
 
   private var status: Status?
-  private var continuations: [CheckedContinuation<Status, Never>] = []
+  private var continuations: [Continuation<Status>] = []
 
   static let shared: NotificationsService? = NotificationsService()
   private override init() {
