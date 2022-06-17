@@ -1,0 +1,31 @@
+filename: "Weather app translations"
+langs:
+  en: "en"
+  de: "de"
+  es: "es"
+  fr: "fr"
+  id: "id"
+  it: "it"
+  ja: "ja"
+  ko: "ko"
+  pt-BR: "pt-BR"
+  pt-PT: "pt-PT"
+  ru: "ru"
+  th: "th"
+  tr: "tr"
+  vi: "vi"
+  zh-Hans: "zh-Hans"
+  zh-Hant: "zh-Hant"
+  uk: "uk"
+  he: "he"
+  ar: "ar"
+fetch: true        
+keys_column: 0     
+comments_column: 1  
+output_basenames:
+  - Localizable
+  - InfoPlist
+  - NowForecast
+  - WidgetConfiguration
+  - Social
+output_dir: "../Localizations/"

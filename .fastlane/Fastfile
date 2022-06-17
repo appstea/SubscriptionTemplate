@@ -1,0 +1,58 @@
+require 'babelish'
+require 'json'
+require 'date'
+
+default_platform(:ios)
+
+import_from_git(
+  url: 'git@github.com:appstea/Fastlane_Actions.git', 
+  path: 'Fastfile',
+)
+
+platform :ios do
+
+  def profiles(profileType)
+    return {
+      "com.appstea.proto" => "match #{profileType} com.appstea.protoweather",
+    }
+  end
+
+  error do |lane, exception|
+    e_name = exception.to_s
+    if e_name == "Broken pipe @ io_writev - <STDOUT>"
+        return
+    end
+
+    build = formatted_build_number($project_name, $scheme)
+    log_url = "\n#{console_log_url()}"
+    e_descr = "\n#{e_name}\nOutput: #{exception.error_info.to_s}"
+
+    if lane.to_s == "adhoc"
+      notify_tg("❌ AdHoc 🏠 build failed: #{build}#{log_url}#{e_descr}", $tg_chat_id, $tg_bot_token)        
+    elsif lane.to_s == "store"
+      notify_tg("❌ Store ✈️ build failed: #{build}#{log_url}#{e_descr}", $tg_chat_id, $tg_bot_token)    
+    end
+  end
+
+  lane :update_profiles do
+      ENV["MATCH_PASSWORD"] = "qrj6cSef4t5i87rmUdWLcyTeslzpMl2"
+      ids = [
+        "com.appstea.proto",
+      ]
+
+      types = ["development", "adhoc", "appstore"]
+      git = "git@github.com:appstea/iOS_Certificates.git"
+      for type in types
+        match(type: type, app_identifier: ids, readonly: true, git_url: git, clone_branch_directly: true, shallow_clone: true)
+      end
+  end
+
+  lane :update_l10n do
+    babelish = 'babelish csv2strings'
+    system(babelish)
+
+    swiftgen_l10n = '../Pods/SwiftGen/bin/swiftgen config run --config ../SwiftGen/.swiftgen.yml'
+    system(swiftgen_l10n)
+  end
+
+end
