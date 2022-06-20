@@ -38,7 +38,6 @@
 		5C8DBF182858FC0D0054B427 /* Analytics~Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF0B2858FC0D0054B427 /* Analytics~Event.swift */; };
 		5C8DBF192858FC0D0054B427 /* Analytics~SubsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF0C2858FC0D0054B427 /* Analytics~SubsEvent.swift */; };
 		5C8DBF1D2858FC0D0054B427 /* Analytics~Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */; };
-		5C8DBF1E2858FC0D0054B427 /* Analytics~LaunchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF112858FC0D0054B427 /* Analytics~LaunchItem.swift */; };
 		5C8DBF1F2858FC0D0054B427 /* Analytics~BranchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF132858FC0D0054B427 /* Analytics~BranchEvent.swift */; };
 		5C8DBF212858FC0D0054B427 /* Analytics~FIREvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF152858FC0D0054B427 /* Analytics~FIREvent.swift */; };
 		5C8DBF222858FC0D0054B427 /* Analytics~OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF162858FC0D0054B427 /* Analytics~OSLog.swift */; };
@@ -113,7 +112,6 @@
 		5C8DBF0B2858FC0D0054B427 /* Analytics~Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~Event.swift"; sourceTree = "<group>"; };
 		5C8DBF0C2858FC0D0054B427 /* Analytics~SubsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~SubsEvent.swift"; sourceTree = "<group>"; };
 		5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~Logger.swift"; sourceTree = "<group>"; };
-		5C8DBF112858FC0D0054B427 /* Analytics~LaunchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~LaunchItem.swift"; sourceTree = "<group>"; };
 		5C8DBF132858FC0D0054B427 /* Analytics~BranchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~BranchEvent.swift"; sourceTree = "<group>"; };
 		5C8DBF152858FC0D0054B427 /* Analytics~FIREvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~FIREvent.swift"; sourceTree = "<group>"; };
 		5C8DBF162858FC0D0054B427 /* Analytics~OSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~OSLog.swift"; sourceTree = "<group>"; };
@@ -334,7 +332,6 @@
 		5C8DBF082858FBF90054B427 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DBF112858FC0D0054B427 /* Analytics~LaunchItem.swift */,
 				5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */,
 				5C8DBF092858FC0D0054B427 /* Analytics~Service.swift */,
 				5C8DBF0A2858FC0D0054B427 /* Events */,
@@ -560,7 +557,6 @@
 				5C8DBFAC285CA9220054B427 /* Continuations.swift in Sources */,
 				5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */,
 				5C8DBEDA285208850054B427 /* BannerView~Default.swift in Sources */,
-				5C8DBF1E2858FC0D0054B427 /* Analytics~LaunchItem.swift in Sources */,
 				5C8DBFAA285CA5870054B427 /* TextCraft.swift in Sources */,
 				5C8DBF99285BA7760054B427 /* UILabel~DynamicFont.swift in Sources */,
 				5C8DBEEB285214960054B427 /* Base~ViewController.swift in Sources */,
@@ -664,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_NUMBER = 2;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -694,6 +691,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -718,6 +716,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSION_NUMBER = 1.0;
 			};
 			name = Debug;
 		};
@@ -725,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_NUMBER = 2;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -755,6 +755,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -774,6 +775,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VERSION_NUMBER = 1.0;
 			};
 			name = Release;
 		};
@@ -785,7 +787,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -797,7 +799,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = $VERSION_NUMBER;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstea.proto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.appstea.proto";
@@ -817,7 +819,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -829,7 +831,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = $VERSION_NUMBER;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstea.proto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.appstea.proto";
@@ -844,6 +846,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_NUMBER = 2;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -874,6 +877,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -893,6 +897,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VERSION_NUMBER = 1.0;
 			};
 			name = AdHoc;
 		};
@@ -904,7 +909,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -916,7 +921,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = $VERSION_NUMBER;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstea.proto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.appstea.proto";

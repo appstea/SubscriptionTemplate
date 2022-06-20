@@ -1,0 +1,3 @@
+clean(true)
+output_directory("./archives/")
+output_name("Apps&Subs")

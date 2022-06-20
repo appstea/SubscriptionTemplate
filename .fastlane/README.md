@@ -13,20 +13,31 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
+### update_l10n
+
+```sh
+[bundle exec] fastlane update_l10n
+```
+
+
+
+----
+
+
 ## iOS
+
+### ios adhoc
+
+```sh
+[bundle exec] fastlane ios adhoc
+```
+
+
 
 ### ios update_profiles
 
 ```sh
 [bundle exec] fastlane ios update_profiles
-```
-
-
-
-### ios update_l10n
-
-```sh
-[bundle exec] fastlane ios update_l10n
 ```
 
 
