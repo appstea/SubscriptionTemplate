@@ -22,7 +22,7 @@ platform :ios do
       xcversion(version: "13.3.1")
     end
     $tg_bot_token = "1025580642:AAGW-ykbVYJDIrl1ktLaI9u6k3_pafOUNn8"
-    $tg_chat_id = "-443079966"
+    $tg_chat_id = "-446147639"
     # https://console.firebase.google.com/u/0/project/subscription-template/appdistribution/app/ios:com.appstea.proto/releases
     $fir_distribuition_builds_url = "https://tinyurl.com/34fd67c9"
     $fir_app_id = "1:1039626167029:ios:e0f6a03c25da9b978b9bbc"
