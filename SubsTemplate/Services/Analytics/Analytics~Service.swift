@@ -21,8 +21,8 @@ extension Analytics {
       let loggers: [IAnalyticsLogger?] = [
         (isDebug || isAdHoc) ? OSLogger() : nil,
 
-//        component.services.firebase.map { _ in FIRLogger() },
-//        component.services.branch.map { _ in BranchLogger() },
+        FirebaseService.shared.map { _ in FIRLogger() },
+        BranchService.shared.map { _ in BranchLogger() },
       ]
       return loggers.compactMap { $0 }
     }()
