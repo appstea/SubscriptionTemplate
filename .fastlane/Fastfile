@@ -21,15 +21,15 @@ platform :ios do
     if is_ci 
       xcversion(version: "13.3.1")
     end
-    # $tg_bot_token = "1025580642:AAGW-ykbVYJDIrl1ktLaI9u6k3_pafOUNn8"
-    # $tg_chat_id = "-443079966"
+    $tg_bot_token = "1025580642:AAGW-ykbVYJDIrl1ktLaI9u6k3_pafOUNn8"
+    $tg_chat_id = "-443079966"
     # https://console.firebase.google.com/u/0/project/subscription-template/appdistribution/app/ios:com.appstea.proto/releases
     $fir_distribuition_builds_url = "https://tinyurl.com/34fd67c9"
     $fir_app_id = "1:1039626167029:ios:e0f6a03c25da9b978b9bbc"
     $project_name = "SubsTemplate.xcodeproj"
     # $workspace_name = "SubsTemplate.xcworkspace"
     $scheme = "SubsTemplate"
-    $release_notes = "No release notes yet" # fetch_release_notes()
+    $release_notes = fetch_release_notes()
   end
 
   error do |lane, exception|
@@ -37,11 +37,11 @@ platform :ios do
     if e_name == "Broken pipe @ io_writev - <STDOUT>"
         return
     end
-
+  
     build = formatted_build_number($project_name, $scheme)
     log_url = "\n#{console_log_url()}"
     e_descr = "\n#{e_name}\nOutput: #{exception.error_info.to_s}"
-
+  
     if lane.to_s == "adhoc"
       notify_tg("❌ AdHoc 🏠 build failed: #{build}#{log_url}#{e_descr}", $tg_chat_id, $tg_bot_token)        
     elsif lane.to_s == "store"
@@ -60,8 +60,8 @@ platform :ios do
     )
 
     build_number = formatted_build_number($project_name, $scheme)
-    # message = notification_build_message("AdHoc 🏠", build_number, $release_notes, $fir_distribuition_builds_url)
-    # notify_tg(message, $tg_chat_id, $tg_bot_token)
+    message = notification_build_message("AdHoc 🏠", build_number, $release_notes, $fir_distribuition_builds_url)
+    notify_tg(message, $tg_chat_id, $tg_bot_token)
   end
 
   lane :update_profiles do
