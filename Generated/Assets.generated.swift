@@ -31,8 +31,8 @@ public enum Assets {
   public enum Colors {
 
     public enum Banner {
-      public static let `default` = ColorAsset(name: "Colors/Banner/default")
-      public static let upgrade = ColorAsset(name: "Colors/Banner/upgrade")
+      public static let background = ColorAsset(name: "Colors/Banner/background")
+      public static let cta = ColorAsset(name: "Colors/Banner/cta")
     }
     public enum DotLabel {
       public static let dot = ColorAsset(name: "Colors/DotLabel/dot")
@@ -68,7 +68,7 @@ public enum Assets {
     public enum Subs {
       public static let close = ImageAsset(name: "Images/Subs/close")
       public static let cross = ImageAsset(name: "Images/Subs/cross")
-      public static let girl = ImageAsset(name: "Images/Subs/girl")
+      public static let image = ImageAsset(name: "Images/Subs/image")
       public static let star = ImageAsset(name: "Images/Subs/star")
     }
   }

@@ -33,7 +33,7 @@ final public class BannerView: Base.View {
   public override func setup() {
     super.setup()
     isUserInteractionEnabled = true
-    backgroundColor = Color.Banner.default.color
+    backgroundColor = .white
     clipsToBounds = true
     addSubview(defaultView)
     addSubview(ctaButton)

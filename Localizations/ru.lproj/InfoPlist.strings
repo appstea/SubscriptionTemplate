@@ -1,2 +1,8 @@
-"CFBundleDisplayName"                          = "App & Subs";
+"CFBundleDisplayName"                          = "Погода & Климат";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Получайте локальный прогноз и предупреждения для тех мест где вы бываете. ";
+"NSLocationAlwaysUsageDescription"             = "Получайте локальный прогноз и предупреждения для тех мест где вы бываете. ";
+"NSLocationUsageDescription"                   = "Местный прогноз без ввода названий вручную. ";
+"NSLocationWhenInUseUsageDescription"          = "Местный прогноз без ввода названий вручную. ";
+"NSSiriUsageDescription"                       = "Ярлыки";
+"NSCalendarsUsageDescription"                  = "Климату нужен ваш календарь, чтобы предоставить вам персонализированную рекламу";
 "NSUserTrackingUsageDescription"               = "Эта информация используется только для предоставления релевантной рекламы. ";

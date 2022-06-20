@@ -55,7 +55,7 @@ extension Subs {
     }
 
     private lazy var imageView = Base.ImageView {
-      $0.image = Asset.Subs.girl.image
+      $0.image = Asset.Subs.image.image
       $0.contentMode = .scaleAspectFit
     }
 

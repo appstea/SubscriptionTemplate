@@ -1,2 +1,8 @@
-"CFBundleDisplayName"                          = "App & Subs";
+"CFBundleDisplayName"                          = "Météo et Climat";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Recevez la météo locale et des alertes pendant vos voyages.";
+"NSLocationAlwaysUsageDescription"             = "Recevez la météo locale et des alertes pendant vos voyages.";
+"NSLocationUsageDescription"                   = "Recevez la météo locale pour votre emplacement spécifique.";
+"NSLocationWhenInUseUsageDescription"          = "Recevez la météo locale pour votre emplacement spécifique.";
+"NSSiriUsageDescription"                       = "Raccourcis";
+"NSCalendarsUsageDescription"                  = "Climate a besoin de votre calendrier pour vous offrir une expérience publicitaire personnalisée";
 "NSUserTrackingUsageDescription"               = "Ces données serviront uniquement à vous fournir des annonces pertinentes. ";

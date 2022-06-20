@@ -1,0 +1,87 @@
+"apple.login.signout"                 = "";
+"att.request.cta"                     = "";
+"att.request.description.first"       = "";
+"att.request.description.second"      = "";
+"att.request.note"                    = "";
+"att.request.title"                   = "";
+"check.internet.title"                = "";
+"default_banner.title"                = "";
+"default_banner.upgrade.title"        = "";
+"general.button.back"                 = "";
+"general.button.close"                = "";
+"general.button.done"                 = "";
+"general.button.ok"                   = "";
+"general.button.retry"                = "";
+"no_internet.subtitle"                = "";
+"no_internet.title"                   = "";
+"no_mail_app.subtitle"                = "";
+"no_mail_app.title"                   = "";
+"settings.contact_us.subtitle"        = "";
+"settings.contact_us.title"           = "";
+"settings.help_support.section.title" = "";
+"settings.privacy.subtitle"           = "";
+"settings.privacy.title"              = "";
+"settings.rateapp.title"              = "";
+"settings.restore_fail.subtitle"      = "";
+"settings.restore.subtitle"           = "";
+"settings.restore.title"              = "";
+"settings.share_app.title"            = "";
+"settings.share.subtitle"             = "";
+"start.button.continue"               = "";
+"start.feature.first"                 = "";
+"start.feature.second"                = "";
+"start.subtitle"                      = "";
+"start.title"                         = "";
+
+/* Here is an offer for you: */
+"subs.additional_offer.subtitle"      = "";
+
+/* You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then $6.99 per month. Get all the premium features. Don’t miss this limited time deal! */
+"subs.additional_offer.text_format"   = "";
+
+/* Not convinced? */
+"subs.additional_offer.title"         = "";
+"subs.button.no_internet"             = "";
+"subs.button.privacy"                 = "";
+"subs.button.restore"                 = "";
+"subs.button.terms"                   = "";
+"subs.one_button.button.close"        = "";
+"subs.one_button.button.continue"     = "";
+"subs.one_button.feature.first"       = "";
+"subs.one_button.feature.second"      = "";
+"subs.one_button.price"               = "";
+"subs.one_button.title"               = "";
+"subs.one_button.trial.actual"        = "";
+"subs.one_button.trial.free"          = "";
+"subs.period.day"                     = "";
+"subs.period.month"                   = "";
+"subs.period.quartal"                 = "";
+"subs.period.week"                    = "";
+"subs.period.year"                    = "";
+
+/* $9.99 per quarter */
+"subs.price_per_period"               = "";
+
+/* $3.33/month */
+"subs.price_slash_period"             = "";
+
+/* Try Free and Subscribe */
+"subs.try_free_and_subscribe"         = "";
+
+/* That’s just $3.33/month */
+"subs.two_buttons.info_just"          = "";
+
+/* Try For Free */
+"subs.two_buttons.subtitle"           = "";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime. */
+"subs.two_buttons.text"               = "";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
+"subs.two_buttons.text_format"        = "";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
+"subs.two_buttons.text_format7"       = "";
+
+/* Full Access */
+"subs.two_buttons.title"              = "";

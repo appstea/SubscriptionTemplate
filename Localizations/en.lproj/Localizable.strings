@@ -1,248 +1,87 @@
-"accessibility.label.humidity"                        = "Humidity";
-"accessibility.label.temp.max"                        = "Maximum";
-"accessibility.label.temp.min"                        = "Minimum";
-"apple.login.signout"                                 = "Log out";
-"check.internet.title"                                = "Please, check your internet connection and try again later";
-"current_weather.feels_like"                          = "%@ feels like";
-"current_weather.pressure"                            = "%@ pressure";
-"current_weather.wind"                                = "%@ wind";
-"default_banner.title"                                = "Premium\nNo ads & more features!";
-"default_banner.upgrade.title"                        = "UPGRADE";
-"empty_view.subtitle"                                 = "Select your location to start";
-"empty_view.title"                                    = "My location";
-"general.button.back"                                 = "Back";
-"general.button.close"                                = "Close";
-"general.button.done"                                 = "Done";
-"general.button.ok"                                   = "Ok";
-"general.button.retry"                                = "Retry";
-"hour.cell.now"                                       = "Now";
-"hour.cell.sunrise"                                   = "Sunrise";
-"hour.cell.sunset"                                    = "Sunset";
-"imperial.value"                                      = "imperial";
-"metric.value"                                        = "metric";
-"next_day.cell.today"                                 = "Today";
-"no_internet.subtitle"                                = "No internet connection, try later";
-"no_internet.title"                                   = "Ooops";
-"no_mail_app.subtitle"                                = "You don't have Mail app";
-"no_mail_app.title"                                   = "Ooops";
-
-/* Forecast is: {T for the specified time}, {description}. {emoji}
-Open the app to compare the forecast with the actual weather observation data. */
-"notification.3_days_ago.description"                 = "Forecast is: %@, %@. %@\nOpen the app to compare the forecast with the actual weather observation data.";
-
-/* Minsk, Minsk, Belarus. */
-"notification.3_days_ago.title"                       = "%@";
-
-/* Forecast is: {T for the specified time}, {description}. {emoji}
-Open the app to compare the forecast with the actual weather observation data. */
-"notification.5_days_ago.description"                 = "Forecast is: %@, %@. %@\nOpen the app to compare the forecast with the actual weather observation data.";
-
-/* Minsk, Minsk, Belarus. */
-"notification.5_days_ago.title"                       = "%@";
-"notification.comparing.colder"                       = "colder";
-"notification.comparing.warmer"                       = "warmer";
-
-/* {emoji} {description}, min: {min T for the day}, max: {max T for the day} */
-"notification.evening_forecast.description"           = "%@ %@, min: %@, max: %@";
-
-/* Minsk. Tomorrow:
- */
-"notification.evening_forecast.title"                 = "%@. Tomorrow:";
-
-/* This is the reminder */
-"notification.internet_comes_back.description"        = "";
-
-/* That you asked for */
-"notification.internet_comes_back.title"              = "";
-
-/* Exactly a month ago the weather was: {T now}, {description}. {emoji}
-Open the app to check how the weather changed in one month. */
-"notification.month_ago.description"                  = "Exactly a month ago the weather was: %@, %@. %@\nOpen the app to check how the weather changed in one month.";
-
-/* Minsk, Minsk, Belarus. */
-"notification.month_ago.title"                        = "%@";
-
-/* {emoji} {T for the specified time}, {description}. {compare T for the specified time for 2 upcoming days} {colder / warmer} than yesterday. */
-"notification.morning_comparing_forecast.description" = "%@ %@, %@. %@ %@ than yesterday.";
-
-/* Minsk. Morning outlook: */
-"notification.morning_comparing_forecast.title"       = "%@. Morning outlook:";
-
-/* {emoji} {T for the specified time}, {description} */
-"notification.morning_forecast.description"           = "%@ %@, %@";
-
-/* Minsk. Morning outlook: */
-"notification.morning_forecast.title"                 = "%@. Morning outlook:";
-"notification.no_location.description"                = "Please enable location permission in settings or add any city in the app.";
-"notification.no_location.title"                      = "%@";
-
-/* Exactly a week ago the weather was: {T now}, {description}. {emoji}
-Open the app to check how the weather changed in one week. */
-"notification.week_ago.description"                   = "Exactly a week ago the weather was: %@, %@. %@\nOpen the app to check how the weather changed in one week.";
-
-/* Minsk, Minsk, Belarus. */
-"notification.week_ago.title"                         = "%@";
-
-/* Exactly a year ago the weather was: {T now}, {description}. {emoji} 
-Open the app to check how the weather changed in one year. */
-"notification.year_ago.description"                   = "Exactly a year ago the weather was: %@, %@. %@\nOpen the app to check how the weather changed in one year.";
-
-/* Minsk, Minsk, Belarus. */
-"notification.year_ago.title"                         = "%@";
-"pressure.hpa.expanded.value"                         = "hectopascals";
-"pressure.hpa.value"                                  = "hPa";
-"pressure.inches.expanded.value"                      = "inches";
-"pressure.inches.value"                               = "inches";
-"pressure.kpa.expanded.value"                         = "kilopascals";
-"pressure.kpa.value"                                  = "kPa";
-"pressure.mm.expanded.value"                          = "millimeters";
-"pressure.mm.value"                                   = "mm";
-"rain.expanded.value"                                 = "millimeters";
-"rain.value"                                          = "mm";
-"search.bar.placeholder"                              = "Type location name";
-"search.my_cities"                                    = "My locations";
-"search.title"                                        = "Search";
-"settings.connect.section.title"                      = "Connect";
-"settings.contact_us.subtitle"                        = "We would love to hear from you";
-"settings.contact_us.title"                           = "Contact Us";
-"settings.evening_report.title"                       = "Evening forecast";
-"settings.help_support.section.title"                 = "Help & Support";
-"settings.morning_report.title"                       = "Morning report";
-"settings.notification_center.section.title"          = "Notification Center";
-"settings.notifications.title"                        = "Receive daily notifications";
-"settings.pressure.title"                             = "Pressure";
-"settings.privacy.subtitle"                           = "And other legal texts";
-"settings.privacy.title"                              = "Privacy Policy";
-"settings.rate.subtitle"                              = "Help more users enjoy the weather";
-"settings.rateapp.title"                              = "Rate the App";
-"settings.restore_fail.subtitle"                      = "Sorry, it looks like you don't have any purchases ";
-"settings.restore.subtitle"                           = "We’ll find stuff you have already bought";
-"settings.restore.title"                              = "Restore Purchases";
-"settings.share_app.title"                            = "Share App";
-"settings.share.subtitle"                             = "Share via your favorite messenger";
-"settings.temperature.title"                          = "Temperature";
-"settings.title"                                      = "Settings";
-"settings.weather.section.title"                      = "Weather";
-"settings.wind.title"                                 = "Wind";
-"siri.donate.prase"                                   = "Weather forecast ";
-"siri.intent.no_city"                                 = "Please, add any city in the app to see forecast";
-"siri.intent.no_data"                                 = "Problems with data loading, try again later";
-"start.button.continue"                               = "Ok, I understand";
-"start.feature.first"                                 = "Location, so that the app can ensure that you get the most accurate local weather data";
-"start.feature.second"                                = "Notifications, to be aware of important, dangerous and disrupting weather changes";
-"start.subtitle"                                      = "Will be possible if you grant access to:";
-"start.title"                                         = "Best weather experience";
+"apple.login.signout"                 = "Log out";
+"att.request.cta"                     = "Ok, I understand";
+"att.request.description.first"       = "For a better user experience";
+"att.request.description.second"      = "For content that aligns with your interests";
+"att.request.note"                    = "You can always review your decision and make changes in settings at any time";
+"att.request.title"                   = "Enable tracking";
+"check.internet.title"                = "Please, check your internet connection and try again later";
+"default_banner.title"                = "Premium\nNo ads & more features!";
+"default_banner.upgrade.title"        = "UPGRADE";
+"general.button.back"                 = "Back";
+"general.button.close"                = "Close";
+"general.button.done"                 = "Done";
+"general.button.ok"                   = "Ok";
+"general.button.retry"                = "Retry";
+"no_internet.subtitle"                = "No internet connection, try later";
+"no_internet.title"                   = "Ooops";
+"no_mail_app.subtitle"                = "You don't have Mail app";
+"no_mail_app.title"                   = "Ooops";
+"settings.contact_us.subtitle"        = "We would love to hear from you";
+"settings.contact_us.title"           = "Contact Us";
+"settings.help_support.section.title" = "Help & Support";
+"settings.privacy.subtitle"           = "And other legal texts";
+"settings.privacy.title"              = "Privacy Policy";
+"settings.rateapp.title"              = "Rate the App";
+"settings.restore_fail.subtitle"      = "Sorry, it looks like you don't have any purchases ";
+"settings.restore.subtitle"           = "We’ll find stuff you have already bought";
+"settings.restore.title"              = "Restore Purchases";
+"settings.share_app.title"            = "Share App";
+"settings.share.subtitle"             = "Share via your favorite messenger";
+"start.button.continue"               = "Ok, I understand";
+"start.feature.first"                 = "Location, so that the app can ensure that you get the most accurate local weather data";
+"start.feature.second"                = "Notifications, to be aware of important, dangerous and disrupting weather changes";
+"start.subtitle"                      = "Will be possible if you grant access to:";
+"start.title"                         = "Best weather experience";
 
 /* Here is an offer for you: */
-"subs.additional_offer.subtitle"                      = "Here is an offer for you:";
+"subs.additional_offer.subtitle"      = "Here is an offer for you:";
 
 /* You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then $6.99 per month. Get all the premium features. Don’t miss this limited time deal! */
-"subs.additional_offer.text_format"                   = "You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then %@. Get all the premium features. Don’t miss this limited time deal!";
+"subs.additional_offer.text_format"   = "You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then %@. Get all the premium features. Don’t miss this limited time deal!";
 
 /* Not convinced? */
-"subs.additional_offer.title"                         = "Not convinced?";
-"subs.button.no_internet"                             = "Remind me when internet connection is back";
-"subs.button.privacy"                                 = "Privacy";
-"subs.button.restore"                                 = "Restore";
-"subs.button.terms"                                   = "Terms";
-"subs.one_button.button.close"                        = "or continue with a limited version";
-"subs.one_button.button.continue"                     = "Continue";
-"subs.one_button.feature.first"                       = "Enjoy all features of the app";
-"subs.one_button.feature.second"                      = "Remove ads";
-"subs.one_button.price"                               = "subscribe for %@ per %@";
-"subs.one_button.title"                               = "Unlimited access\nto all features";
-"subs.one_button.trial.actual"                        = "Then %@ per %@";
-"subs.one_button.trial.free"                          = "%d days trial";
-"subs.period.day"                                     = "day";
-"subs.period.month"                                   = "month";
-"subs.period.quartal"                                 = "quarter";
-"subs.period.week"                                    = "week";
-"subs.period.year"                                    = "year";
+"subs.additional_offer.title"         = "Not convinced?";
+"subs.button.no_internet"             = "Remind me when internet connection is back";
+"subs.button.privacy"                 = "Privacy";
+"subs.button.restore"                 = "Restore";
+"subs.button.terms"                   = "Terms";
+"subs.one_button.button.close"        = "or continue with a limited version";
+"subs.one_button.button.continue"     = "Continue";
+"subs.one_button.feature.first"       = "Enjoy all features of the app";
+"subs.one_button.feature.second"      = "Remove ads";
+"subs.one_button.price"               = "subscribe for %@ per %@";
+"subs.one_button.title"               = "Unlimited access\nto all features";
+"subs.one_button.trial.actual"        = "Then %@ per %@";
+"subs.one_button.trial.free"          = "%d days trial";
+"subs.period.day"                     = "day";
+"subs.period.month"                   = "month";
+"subs.period.quartal"                 = "quarter";
+"subs.period.week"                    = "week";
+"subs.period.year"                    = "year";
 
 /* $9.99 per quarter */
-"subs.price_per_period"                               = "%@ per %@";
+"subs.price_per_period"               = "%@ per %@";
 
 /* $3.33/month */
-"subs.price_slash_period"                             = "%@/%@";
+"subs.price_slash_period"             = "%@/%@";
 
 /* Try Free and Subscribe */
-"subs.try_free_and_subscribe"                         = "Try Free and Subscribe";
+"subs.try_free_and_subscribe"         = "Try Free and Subscribe";
 
 /* That’s just $3.33/month */
-"subs.two_buttons.info_just"                          = "That's just %@";
+"subs.two_buttons.info_just"          = "That's just %@";
 
 /* Try For Free */
-"subs.two_buttons.subtitle"                           = "Try For Free";
+"subs.two_buttons.subtitle"           = "Try For Free";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime. */
-"subs.two_buttons.text"                               = "Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime.";
+"subs.two_buttons.text"               = "Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime.";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
-"subs.two_buttons.text_format"                        = "Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try %d days free, then %@. No commitment. Cancel anytime.";
+"subs.two_buttons.text_format"        = "Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try %d days free, then %@. No commitment. Cancel anytime.";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
-"subs.two_buttons.text_format7"                       = "Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try %d days free, then %@. No commitment. Cancel anytime.";
+"subs.two_buttons.text_format7"       = "Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try %d days free, then %@. No commitment. Cancel anytime.";
 
 /* Full Access */
-"subs.two_buttons.title"                              = "Full Access";
-"temperature.celsius"                                 = "°c";
-"temperature.celsius.expanded"                        = "celsius";
-"temperature.fahrenheit"                              = "°f";
-"temperature.fahrenheit.expanded"                     = "fahrenheit";
-"visibility.value"                                    = "km";
-"widget_configuration.location_placeholder"           = "Add";
-"widget.loading_data.error"                           = "Problems with data loading, try again later";
-"widget.modern.medium_mid_term.subtitle"              = "Current weather conditions for the selected location along with the forecast for the coming days";
-"widget.modern.medium_mid_term.title"                 = "Next Days Outlook";
-"widget.modern.medium.subtitle"                       = "Current weather conditions for the selected location along with the forecast for the coming hours ";
-"widget.modern.medium.title"                          = "Short Term Forecast ";
-"widget.modern.small.subtitle"                        = "Current weather conditions for the selected location right on your Home Screen or in Notification Center";
-"widget.modern.small.title"                           = "Current Conditions";
-"widget.modern.square.subtitle"                       = "Short and long term forecast on the same widget";
-"widget.modern.square.title"                          = "All At Once";
-"widget.no_location.title"                            = "Please enable location permission in settings or add any city in the app";
-"wind.e"                                              = "E";
-"wind.e.expanded"                                     = "East";
-"wind.ene"                                            = "ENE";
-"wind.ene.expanded"                                   = "East North East";
-"wind.ese"                                            = "ESE";
-"wind.ese.expanded"                                   = "East South East";
-"wind.n"                                              = "N";
-"wind.n.expanded"                                     = "North";
-"wind.ne"                                             = "NE";
-"wind.ne.expanded"                                    = "North East";
-"wind.nne"                                            = "NNE";
-"wind.nne.expanded"                                   = "North North East";
-"wind.nnw"                                            = "NNW";
-"wind.nnw.expanded"                                   = "North North West";
-"wind.nw"                                             = "NW";
-"wind.nw.expanded"                                    = "North West";
-"wind.s"                                              = "S";
-"wind.s.expanded"                                     = "South";
-"wind.se"                                             = "SE";
-"wind.se.expanded"                                    = "South East";
-"wind.speed.kmph"                                     = "km/h";
-"wind.speed.kmph.expanded"                            = "kilometers per hour";
-"wind.speed.knots"                                    = "knots";
-"wind.speed.knots.expanded"                           = "knots";
-"wind.speed.mph"                                      = "mph";
-"wind.speed.mph.expanded"                             = "miles per hour";
-"wind.speed.mps"                                      = "m/s";
-"wind.speed.mps.expanded"                             = "meters per second";
-"wind.sse"                                            = "SSE";
-"wind.sse.expanded"                                   = "South South East";
-"wind.ssw"                                            = "SSW";
-"wind.ssw.expanded"                                   = "South South West";
-"wind.sw"                                             = "SW";
-"wind.sw.expanded"                                    = "South West";
-"wind.w"                                              = "W";
-"wind.w.expanded"                                     = "West";
-"wind.wnw"                                            = "WNW";
-"wind.wnw.expanded"                                   = "West North West";
-"wind.wsw"                                            = "WSW";
-"wind.wsw.expanded"                                   = "West South West";
-"att.request.title"                                   = "Enable tracking";
-"att.request.description.first"                       = "For a better user experience";
-"att.request.description.second"                      = "For content that aligns with your interests";
-"att.request.note"                                    = "You can always review your decision and make changes in settings at any time";
-"att.request.cta"                                     = "Ok, I understand";
+"subs.two_buttons.title"              = "Full Access";

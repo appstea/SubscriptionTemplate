@@ -1,0 +1,8 @@
+"CFBundleDisplayName"                          = "الطقس والمناخ";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "تعرف على حالة الطقس المحلي واحصل على إشعارات بخصوص الوجهات الجديدة التي تسافر إليها.";
+"NSLocationAlwaysUsageDescription"             = "تعرف على حالة الطقس المحلي واحصل على إشعارات بخصوص الوجهات الجديدة التي تسافر إليها.";
+"NSLocationUsageDescription"                   = "تعرف على حالة الطقس المحلي لموقعك المحدد.";
+"NSLocationWhenInUseUsageDescription"          = "تعرف على حالة الطقس المحلي لموقعك المحدد.";
+"NSSiriUsageDescription"                       = "الاختصارات";
+"NSCalendarsUsageDescription"                  = "يحتاج التطبيق إلى التقويم على جهازك لتوفير تجربة إعلانات شخصية ومخصصة لك";
+"NSUserTrackingUsageDescription"               = "نود أن نعرف كيف قمت بتثبيت هذا التطبيق.";

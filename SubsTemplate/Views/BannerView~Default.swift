@@ -27,13 +27,13 @@ public extension BannerView {
     private let titleLabel = UILabel {
       $0.text = L10n.DefaultBanner.title
       $0.numberOfLines = 2
-      $0.textColor = .white
+      $0.textColor = .black
       $0.setDynamicFont(font: .systemFont(ofSize: Const.upgradeLabelFontSize, weight: .medium))
       $0.adjustsFontSizeToFitWidth = true
       $0.minimumScaleFactor = isPad ? 0.5 : 0.75
     }
-    private let upgradeView = Base.View {
-      $0.backgroundColor = Color.Banner.upgrade.color
+    private let ctaButton = Base.View {
+      $0.backgroundColor = Color.Banner.cta.color
       $0.layer.cornerRadius = Const.upgradeViewHeight / 2
     }
     private let upgradeLabel = Base.Label {
@@ -49,8 +49,8 @@ public extension BannerView {
     public override func setup() {
       super.setup()
       backgroundColor = .clear
-      addSubviews(iconView, upgradeView, titleLabel)
-      upgradeView.addSubview(upgradeLabel)
+      addSubviews(iconView, ctaButton, titleLabel)
+      ctaButton.addSubview(upgradeLabel)
     }
 
     public override func layoutSubviews() {
@@ -60,7 +60,7 @@ public extension BannerView {
         .vCenter()
 
       let w = upgradeLabel.sizeThatFits(bounds.size).width
-      upgradeView.pin.vCenter()
+      ctaButton.pin.vCenter()
         .end(Const.leftOffset)
         .height(Const.upgradeViewHeight)
         .width(w + Const.upgradeLabelOffset * 2.0)
@@ -72,7 +72,7 @@ public extension BannerView {
         .top(to: iconView.edge.top)
         .bottom(to: iconView.edge.bottom)
         .start(to: iconView.edge.end).marginStart(Const.titleLeftOffset)
-        .end(to: upgradeView.edge.start).marginEnd(-Const.titleLeftOffset)
+        .end(to: ctaButton.edge.start).marginEnd(-Const.titleLeftOffset)
     }
 
   }

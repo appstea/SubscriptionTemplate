@@ -19,7 +19,7 @@ public extension MainScreen {
 
     public override func loadView() {
       super.loadView()
-      view.backgroundColor = .lightGray
+      view.backgroundColor = Color.Main.back.color
       view.addSubviews(bannerView)
     }
 

@@ -1,0 +1,87 @@
+"apple.login.signout"                 = "تسجيل الخروج";
+"att.request.cta"                     = "حسنًا، فهمت الأمر";
+"att.request.description.first"       = "";
+"att.request.description.second"      = "";
+"att.request.note"                    = "";
+"att.request.title"                   = "";
+"check.internet.title"                = "يرجى التحقق من اتصالك بالإنترنت والمحاولة مجددًا في وقت لاحق";
+"default_banner.title"                = "حساب Premium\nمن دون إعلانات وبمزيد من الخاصيات!";
+"default_banner.upgrade.title"        = "الترقية";
+"general.button.back"                 = "الرجوع";
+"general.button.close"                = "إغلاق";
+"general.button.done"                 = "تم";
+"general.button.ok"                   = "موافق";
+"general.button.retry"                = "إعادة المحاولة";
+"no_internet.subtitle"                = "لا يوجد اتصال بالإنترنت. حاول في وقت لاحق";
+"no_internet.title"                   = "عذرًا";
+"no_mail_app.subtitle"                = "ليس لديك تطبيق للبريد";
+"no_mail_app.title"                   = "عذرًا";
+"settings.contact_us.subtitle"        = "نود أن نسمع منك";
+"settings.contact_us.title"           = "تواصل معنا";
+"settings.help_support.section.title" = "المساعدة والدعم";
+"settings.privacy.subtitle"           = "والنصوص القانونية الأخرى";
+"settings.privacy.title"              = "سياسة الخصوصية";
+"settings.rateapp.title"              = "تقييم التطبيق";
+"settings.restore_fail.subtitle"      = "عذرًا، يبدو أنك لم تجرِ أي عمليات شراء";
+"settings.restore.subtitle"           = "سنعثر على الأشياء التي اشتريتها بالفعل";
+"settings.restore.title"              = "استعادة المشتريات";
+"settings.share_app.title"            = "مشاركة التطبيق";
+"settings.share.subtitle"             = "المشاركة عبر تطبيق الرسائل المفضل لديك";
+"start.button.continue"               = "حسنًا، فهمت الأمر";
+"start.feature.first"                 = "الموقع، كي يستطيع التطبيق التأكد من حصولك على أدق بيانات الطقس المحلي";
+"start.feature.second"                = "الإشعارات، من أجل البقاء على اطلاع بتغيرات الطقس الهامة، وخصوصًا المزعجة والخطيرة منها";
+"start.subtitle"                      = "سيكون الأمر ممكنًا إذا سمحت بالوصول إلى:";
+"start.title"                         = "أفضل تجربة مع تطبيقات الطقس";
+
+/* Here is an offer for you: */
+"subs.additional_offer.subtitle"      = "إليك عرض لا يُقاوَم:";
+
+/* You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then $6.99 per month. Get all the premium features. Don’t miss this limited time deal! */
+"subs.additional_offer.text_format"   = "يمكنك الاختيار من بين فترة تجريبية أطول (7 أيام بدلًا من 3) ودفع مبلغ أقل بشكل ربع سنوي. جرب التطبيق لمدة 7 أيام مجانًا، ثم %@. احصل على كل خاصيات premium ولا تفوت هذه الفرصة محدودة الوقت!";
+
+/* Not convinced? */
+"subs.additional_offer.title"         = "ألم تقتنع بعد؟";
+"subs.button.no_internet"             = "";
+"subs.button.privacy"                 = "الخصوصية";
+"subs.button.restore"                 = "استعادة";
+"subs.button.terms"                   = "الشروط";
+"subs.one_button.button.close"        = "أو الاستمرار مع الإصدار المحدود";
+"subs.one_button.button.continue"     = "المتابعة";
+"subs.one_button.feature.first"       = "الاستمتاع بكل خاصيات التطبيق";
+"subs.one_button.feature.second"      = "إزالة الإعلانات";
+"subs.one_button.price"               = "الاشتراك مقابل %@ كل %@";
+"subs.one_button.title"               = "صلاحية وصول غير محدودة\nإلى كل الخاصيات";
+"subs.one_button.trial.actual"        = "ثم %@ كل %@";
+"subs.one_button.trial.free"          = "التجربة لمدة %d من الأيام";
+"subs.period.day"                     = "يوم";
+"subs.period.month"                   = "شهر";
+"subs.period.quartal"                 = "ربع سنوي";
+"subs.period.week"                    = "أسبوع";
+"subs.period.year"                    = "سنة";
+
+/* $9.99 per quarter */
+"subs.price_per_period"               = "%@ كل %@";
+
+/* $3.33/month */
+"subs.price_slash_period"             = "%@/%@";
+
+/* Try Free and Subscribe */
+"subs.try_free_and_subscribe"         = "فلتجربه مجانًا واشترك";
+
+/* That’s just $3.33/month */
+"subs.two_buttons.info_just"          = "وذلك فقط %@";
+
+/* Try For Free */
+"subs.two_buttons.subtitle"           = "فلتجربه مجانًا";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime. */
+"subs.two_buttons.text"               = "استمتع بكل خاصيات التطبيق من دون إعلانات، وأيضًا بكل الخاصيات الجديدة التي ستتاح لك لتستخدمها. يمكنك تجربته مجانًا دون أي التزامات، لأنك تستطيع في أي وقت الإلغاء.";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
+"subs.two_buttons.text_format"        = "استمتع بكل خاصيات التطبيق من دون إعلانات، وأيضًا بكل الخاصيات الجديدة التي ستتاح لك لتستخدمها. يمكنك تجربته مجانًا لمدة %d من الأيام، ثم %@. لا توجد أي التزامات، لأنك تستطيع في أي وقت الإلغاء.";
+
+/* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
+"subs.two_buttons.text_format7"       = "استمتع بكل خاصيات التطبيق من دون إعلانات، وأيضًا بكل الخاصيات الجديدة التي ستتاح لك لتستخدمها. يمكنك تجربته مجانًا لمدة %d من الأيام، ثم %@. لا توجد أي التزامات، لأنك تستطيع في أي وقت الإلغاء.";
+
+/* Full Access */
+"subs.two_buttons.title"              = "صلاحية وصول كاملة";

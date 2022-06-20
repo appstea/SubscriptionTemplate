@@ -1,2 +1,8 @@
-"CFBundleDisplayName"                          = "App & Subs";
+"CFBundleDisplayName"                          = "Apps&Subs";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Get local weather and alerts for new destinations as you travel.";
+"NSLocationAlwaysUsageDescription"             = "Get local weather and alerts for new destinations as you travel.";
+"NSLocationUsageDescription"                   = "Get local weather for your specific location.";
+"NSLocationWhenInUseUsageDescription"          = "Get local weather for your specific location.";
+"NSSiriUsageDescription"                       = "Shortcuts";
+"NSCalendarsUsageDescription"                  = "Climate needs your calendar to provide personalised advertising experience tailored to you";
 "NSUserTrackingUsageDescription"               = "We woud like to undertstand how you installed this app.";

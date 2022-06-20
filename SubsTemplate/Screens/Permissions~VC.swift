@@ -127,17 +127,19 @@ public extension Permissions {
       stackView.pin.hCenter().width(contentWidth).vertically(safeArea)
 
       stackView.reload {
-        (isPad && isPortrait) ? 120.fixed : 60.fixed
+        (isPad && isPortrait) ? 190.fixed : 95.fixed
         imageView.vComponent
           .size((isPad && isPortrait)
-                ? CGSize(width: 441.ui, height: 301.ui)
-                : CGSize(width: 315.ui, height: 215.ui))
+//                ? CGSize(width: 441.ui, height: 301.ui)
+                ? CGSize(width: 525.ui, height: 263.ui)
+//                : CGSize(width: 315.ui, height: 215.ui))
+                : CGSize(width: 375.ui, height: 188.ui))
           .alignment(.center)
-        isPad ? 60.floating :  45.floating
+        isPad ? 110.fixed : 83.fixed
         titleLabel.vComponent.maxHeight(40.ui)
-        20.floating
+        20.fixed//floating
         subtitleLabel.vComponent.maxHeight(30.ui)
-        16.floating
+        16.fixed//floating
 //        dotLabel_0.vComponent.maxHeight(120.ui)
 //        10.floating
         dotLabel_1.vComponent.maxHeight(120.ui)
