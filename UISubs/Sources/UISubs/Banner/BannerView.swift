@@ -16,6 +16,12 @@ public final class BannerView: UIBase.View {
     static let bannerSize: CGSize = isPad ? CGSize(width: 728, height: 90) : CGSize(width: 320, height: 50)
   }
 
+
+  private let lineView: UIBase.View = {
+    let result = UIBase.View()
+    result.backgroundColor = .black.withAlphaComponent(0.5)
+    return result
+  }()
   private var banner: UIView?
   private let ctaButton = UIBase.Button()
   private lazy var defaultView = BannerView.DefaultView()
@@ -37,12 +43,17 @@ public final class BannerView: UIBase.View {
     backgroundColor = .white
     clipsToBounds = true
     addSubview(defaultView)
+    addSubview(lineView)
     addSubview(ctaButton)
     ctaButton.addAction { [unowned self] _ in onClick?() }
   }
 
   public override func layoutSubviews() {
     super.layoutSubviews()
+
+    lineView.pin
+      .top().start().end()
+      .height(1.0 / UIScreen.main.scale)
 
     defaultView.pin.hCenter().size(Const.bannerSize)
     if isPad {
@@ -69,6 +80,7 @@ public final class BannerView: UIBase.View {
   public func setBanner(banner: UIView) {
     self.banner = banner
 
+    lineView.isHidden = true
     ctaButton.isHidden = true
     defaultView.isHidden = true
 
@@ -80,6 +92,7 @@ public final class BannerView: UIBase.View {
     banner?.removeFromSuperview()
     banner = nil
 
+    lineView.isHidden = false
     ctaButton.isHidden = false
     defaultView.isHidden = false
   }

@@ -1,20 +1,28 @@
 //
-//  AppDelegate+AppDelegate_Proxy.m
+//  CascadeAppDelegate.m
+//  
 //
-//  Created by dDomovoj on 7/26/21.
-//  Copyright © 2021 AppsTea. All rights reserved.
+//  Created by dDomovoj on 6/21/22.
 //
 
-#import "SubsTemplate-Swift.h"
+#import "CascadeAppDelegate.h"
 
-@implementation AppDelegate (Proxy)
+@implementation CascadeAppDelegate
+
+- (NSArray<id<UIApplicationDelegate>>*)targets {
+  return @[];
+}
+
+@end
+
+@implementation CascadeAppDelegate (Proxy)
 
 + (BOOL)instancesRespondToSelector:(SEL)aSelector {
   return YES;
 }
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
-  for (UIResponder<UIApplicationDelegate> *service in self.services) {
+  for (UIResponder<UIApplicationDelegate> *service in self.targets) {
     if ([service respondsToSelector: anInvocation.selector]) {
       [anInvocation invokeWithTarget: service];
     }
@@ -22,7 +30,7 @@
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-  for (UIResponder<UIApplicationDelegate> *service in self.services) {
+  for (UIResponder<UIApplicationDelegate> *service in self.targets) {
     if ([service respondsToSelector: aSelector]) {
       return [service methodSignatureForSelector: aSelector];
     }
@@ -36,7 +44,7 @@
   }
 
   BOOL result = NO;
-  for (UIResponder<UIApplicationDelegate> *service in self.services) {
+  for (UIResponder<UIApplicationDelegate> *service in self.targets) {
     if ([service respondsToSelector: aSelector]) {
       result = YES;
     }

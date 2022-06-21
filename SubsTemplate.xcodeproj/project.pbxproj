@@ -39,7 +39,6 @@
 		5C8DBF2B285902720054B427 /* Subs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF2A285902720054B427 /* Subs.swift */; };
 		5C8DBF2D285902870054B427 /* Session~Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF2C285902870054B427 /* Session~Service.swift */; };
 		5C8DBF30285902FC0054B427 /* Subs~Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF2F285902FC0054B427 /* Subs~Service.swift */; };
-		5C8DBF3F2859204C0054B427 /* AppDelegate~Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF3E2859204C0054B427 /* AppDelegate~Proxy.m */; };
 		5C8DBF41285A13540054B427 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF40285A13540054B427 /* HUD.swift */; };
 		5C8DBF43285A13C10054B427 /* Subs~PurchasesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF42285A13C10054B427 /* Subs~PurchasesManager.swift */; };
 		5C8DBF46285A166E0054B427 /* Subs~InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF45285A166E0054B427 /* Subs~InitialVC.swift */; };
@@ -62,6 +61,7 @@
 		5CD035DD2861EBDD0092ECCC /* CallbacksCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD035DC2861EBDD0092ECCC /* CallbacksCraft */; };
 		5CD035DF2861ECCB0092ECCC /* UIBase in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD035DE2861ECCB0092ECCC /* UIBase */; };
 		5CD035E32861FC730092ECCC /* UICommon in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD035E22861FC730092ECCC /* UICommon */; };
+		5CFA5519286240FA00B71D76 /* Cascade in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFA5518286240FA00B71D76 /* Cascade */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,8 +105,6 @@
 		5C8DBF2A285902720054B427 /* Subs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subs.swift; sourceTree = "<group>"; };
 		5C8DBF2C285902870054B427 /* Session~Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session~Service.swift"; sourceTree = "<group>"; };
 		5C8DBF2F285902FC0054B427 /* Subs~Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~Service.swift"; sourceTree = "<group>"; };
-		5C8DBF3D2859204C0054B427 /* SubsTemplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubsTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
-		5C8DBF3E2859204C0054B427 /* AppDelegate~Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate~Proxy.m"; sourceTree = "<group>"; };
 		5C8DBF40285A13540054B427 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		5C8DBF42285A13C10054B427 /* Subs~PurchasesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~PurchasesManager.swift"; sourceTree = "<group>"; };
 		5C8DBF45285A166E0054B427 /* Subs~InitialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Subs~InitialVC.swift"; sourceTree = "<group>"; };
@@ -130,6 +128,7 @@
 		5CD035E02861FAFE0092ECCC /* Asyncable */ = {isa = PBXFileReference; lastKnownFileType = text; path = Asyncable; sourceTree = SOURCE_ROOT; };
 		5CD035E12861FB8F0092ECCC /* UICommon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UICommon; sourceTree = "<group>"; };
 		5CD035E42861FE8A0092ECCC /* UISubs */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UISubs; sourceTree = "<group>"; };
+		5CF1EC3E28623B6400C23269 /* Cascade */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Cascade; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +148,7 @@
 				5CD035E32861FC730092ECCC /* UICommon in Frameworks */,
 				5C8DBFA5285BB65A0054B427 /* SwiftyAttributes in Frameworks */,
 				5C8DBFA2285BB5770054B427 /* PinLayout in Frameworks */,
+				5CFA5519286240FA00B71D76 /* Cascade in Frameworks */,
 				5CD035DD2861EBDD0092ECCC /* CallbacksCraft in Frameworks */,
 				5C8DBED028511FC40054B427 /* FirebaseAnalytics in Frameworks */,
 			);
@@ -169,6 +169,7 @@
 		5C8DBEA828511C210054B427 = {
 			isa = PBXGroup;
 			children = (
+				5CF1EC3E28623B6400C23269 /* Cascade */,
 				5CD035E42861FE8A0092ECCC /* UISubs */,
 				5CD035E12861FB8F0092ECCC /* UICommon */,
 				5CD035E02861FAFE0092ECCC /* Asyncable */,
@@ -221,8 +222,6 @@
 		5C8DBEEC285215740054B427 /* Bootstrap */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DBF3D2859204C0054B427 /* SubsTemplate-Bridging-Header.h */,
-				5C8DBF3E2859204C0054B427 /* AppDelegate~Proxy.m */,
 				5C8DBEB428511C210054B427 /* AppDelegate.swift */,
 				5C8DBEB628511C210054B427 /* SceneDelegate.swift */,
 			);
@@ -276,8 +275,8 @@
 			children = (
 				5C8DBF082858FBF90054B427 /* Analytics */,
 				5C8DBF2E285902E60054B427 /* Subs */,
-				5C8DBF49285A19250054B427 /* UserInterface */,
 				5C8DBF042858FB000054B427 /* BranchService.swift */,
+				5C8DBF47285A182A0054B427 /* UIService.swift */,
 				5C8DBF062858FBDF0054B427 /* FirebaseService.swift */,
 				5C8DBF2C285902870054B427 /* Session~Service.swift */,
 				5C8DBF282859012E0054B427 /* NotificationsService.swift */,
@@ -344,14 +343,6 @@
 			path = Subs;
 			sourceTree = "<group>";
 		};
-		5C8DBF49285A19250054B427 /* UserInterface */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF47285A182A0054B427 /* UIService.swift */,
-			);
-			path = UserInterface;
-			sourceTree = "<group>";
-		};
 		5C8DBF58285B8BC50054B427 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +391,7 @@
 				5CD035DE2861ECCB0092ECCC /* UIBase */,
 				5CD035E22861FC730092ECCC /* UICommon */,
 				5C7DD816286222360091AACF /* UISubs */,
+				5CFA5518286240FA00B71D76 /* Cascade */,
 			);
 			productName = SubsTemplate;
 			productReference = 5C8DBEB128511C210054B427 /* SubsTemplate.app */;
@@ -499,7 +491,6 @@
 				5C8DBF9F285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift in Sources */,
 				5C8DBF30285902FC0054B427 /* Subs~Service.swift in Sources */,
 				5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */,
-				5C8DBF3F2859204C0054B427 /* AppDelegate~Proxy.m in Sources */,
 				5C8DBEB928511C210054B427 /* MainScreen~VC.swift in Sources */,
 				5C8DBF2D285902870054B427 /* Session~Service.swift in Sources */,
 				5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */,
@@ -724,7 +715,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.appstea.proto";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SubsTemplate/Bootstrap/SubsTemplate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -756,7 +746,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.appstea.proto";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SubsTemplate/Bootstrap/SubsTemplate-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -846,7 +835,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.appstea.proto";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "SubsTemplate/Bootstrap/SubsTemplate-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1000,6 +988,10 @@
 		5CD035E22861FC730092ECCC /* UICommon */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UICommon;
+		};
+		5CFA5518286240FA00B71D76 /* Cascade */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Cascade;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

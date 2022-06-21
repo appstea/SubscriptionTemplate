@@ -7,15 +7,16 @@
 
 import UIKit
 
+import Cascade
+
 protocol IApplicationService: UIApplicationDelegate { }
 
 class AppService: NSObject, IApplicationService { }
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class SubsSDKAppDelegate: Cascade.AppDelegate {
 
   @objc
-  func services() -> [UIApplicationDelegate] {[
+  override func targets() -> [UIApplicationDelegate] {[
     Analytics.Service.shared,
     SessionService.current,
     FirebaseService.shared,
@@ -25,9 +26,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     NotificationsService.shared,
   ].compactMap { $0 }}
 
-  func application(_ application: UIApplication,
-                   configurationForConnecting connectingSceneSession: UISceneSession,
-                   options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+}
+
+@main
+final class AppDelegate: Cascade.AppDelegate {
+
+  private let sdk = SubsSDKAppDelegate()
+
+  @objc
+  override func targets() -> [UIApplicationDelegate] {[
+    sdk,
+  ].compactMap { $0 }}
+
+  override func application(_ application: UIApplication,
+                            configurationForConnecting connectingSceneSession: UISceneSession,
+                            options: UIScene.ConnectionOptions) -> UISceneConfiguration {
     UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
   }
 
