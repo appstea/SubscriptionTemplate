@@ -7,7 +7,7 @@ import Foundation
 
 // MARK: - UIScalable
 
-protocol UIScalable {
+public protocol UIScalable {
 
   associatedtype UIValue
 
@@ -17,71 +17,71 @@ protocol UIScalable {
 
 extension Int: UIScalable {
 
-  typealias UIValue = CGFloat
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = CGFloat
+  public var ui: UIValue { UI.value(self) }
 
 }
 
 extension UInt: UIScalable {
 
-  typealias UIValue = CGFloat
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = CGFloat
+  public var ui: UIValue { UI.value(self) }
 
 }
 
 extension CGFloat: UIScalable {
 
-  typealias UIValue = CGFloat
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = CGFloat
+  public var ui: UIValue { UI.value(self) }
 
 }
 
 extension Double: UIScalable {
 
-  typealias UIValue = CGFloat
-  var ui: UIValue { UI.value(CGFloat(self)) }
+  public typealias UIValue = CGFloat
+  public var ui: UIValue { UI.value(CGFloat(self)) }
 
 }
 
 extension Float: UIScalable {
 
-  typealias UIValue = CGFloat
-  var ui: UIValue { UI.value(CGFloat(self)) }
+  public typealias UIValue = CGFloat
+  public var ui: UIValue { UI.value(CGFloat(self)) }
 
 }
 
 extension CGPoint: UIScalable {
 
-  typealias UIValue = CGPoint
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = CGPoint
+  public var ui: UIValue { UI.value(self) }
 
 }
 
 extension CGSize: UIScalable {
 
-  typealias UIValue = CGSize
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = CGSize
+  public var ui: UIValue { UI.value(self) }
 
 }
 
 extension UIOffset: UIScalable {
 
-  typealias UIValue = UIOffset
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = UIOffset
+  public var ui: UIValue { UI.value(self) }
 
 }
 
 extension UIEdgeInsets: UIScalable {
 
-  typealias UIValue = UIEdgeInsets
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = UIEdgeInsets
+  public var ui: UIValue { UI.value(self) }
 
 }
 
 extension UIFont: UIScalable {
 
-  typealias UIValue = UIFont
-  var ui: UIValue { UI.value(self) }
+  public typealias UIValue = UIFont
+  public var ui: UIValue { UI.value(self) }
 
 }
 

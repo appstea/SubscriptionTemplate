@@ -44,8 +44,6 @@
 		5C8DBF43285A13C10054B427 /* Subs~PurchasesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF42285A13C10054B427 /* Subs~PurchasesManager.swift */; };
 		5C8DBF46285A166E0054B427 /* Subs~InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF45285A166E0054B427 /* Subs~InitialVC.swift */; };
 		5C8DBF48285A182A0054B427 /* UIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF47285A182A0054B427 /* UIService.swift */; };
-		5C8DBF4C285A192F0054B427 /* UIScalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF4A285A192F0054B427 /* UIScalable.swift */; };
-		5C8DBF4D285A192F0054B427 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF4B285A192F0054B427 /* UIExtension.swift */; };
 		5C8DBF52285B5A050054B427 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBF51285B5A050054B427 /* Reachability */; };
 		5C8DBF54285B5B9F0054B427 /* Equatable~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */; };
 		5C8DBF56285B7CE20054B427 /* Subs~Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF55285B7CE20054B427 /* Subs~Screen.swift */; };
@@ -113,8 +111,6 @@
 		5C8DBF42285A13C10054B427 /* Subs~PurchasesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~PurchasesManager.swift"; sourceTree = "<group>"; };
 		5C8DBF45285A166E0054B427 /* Subs~InitialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Subs~InitialVC.swift"; sourceTree = "<group>"; };
 		5C8DBF47285A182A0054B427 /* UIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIService.swift; sourceTree = "<group>"; };
-		5C8DBF4A285A192F0054B427 /* UIScalable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScalable.swift; sourceTree = "<group>"; };
-		5C8DBF4B285A192F0054B427 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Equatable~Extensions.swift"; sourceTree = "<group>"; };
 		5C8DBF55285B7CE20054B427 /* Subs~Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~Screen.swift"; sourceTree = "<group>"; };
 		5C8DBF59285B8BC50054B427 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
@@ -292,8 +288,8 @@
 		5C8DBF082858FBF90054B427 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */,
 				5C8DBF092858FC0D0054B427 /* Analytics~Service.swift */,
+				5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */,
 				5C8DBF0A2858FC0D0054B427 /* Events */,
 				5C8DBF122858FC0D0054B427 /* Networks */,
 			);
@@ -351,8 +347,6 @@
 		5C8DBF49285A19250054B427 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DBF4B285A192F0054B427 /* UIExtension.swift */,
-				5C8DBF4A285A192F0054B427 /* UIScalable.swift */,
 				5C8DBF47285A182A0054B427 /* UIService.swift */,
 			);
 			path = UserInterface;
@@ -526,11 +520,9 @@
 				5C8DBEF1285217950054B427 /* Subs~VC.swift in Sources */,
 				5C8DBF54285B5B9F0054B427 /* Equatable~Extensions.swift in Sources */,
 				5C8DBF002858F6910054B427 /* UIViewController~Extensions.swift in Sources */,
-				5C8DBF4D285A192F0054B427 /* UIExtension.swift in Sources */,
 				5C8DBF242858FF460054B427 /* Globals.swift in Sources */,
 				5C8DBEEF285215FA0054B427 /* Permissions~VC.swift in Sources */,
 				5C8DBF052858FB000054B427 /* BranchService.swift in Sources */,
-				5C8DBF4C285A192F0054B427 /* UIScalable.swift in Sources */,
 				5C8DBF212858FC0D0054B427 /* Analytics~FIREvent.swift in Sources */,
 				5C8DBEB728511C210054B427 /* SceneDelegate.swift in Sources */,
 				5C8DBF292859012E0054B427 /* NotificationsService.swift in Sources */,

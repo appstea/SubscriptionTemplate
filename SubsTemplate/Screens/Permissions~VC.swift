@@ -147,7 +147,13 @@ public extension Permissions {
         16.fixed//floating
 //        dotLabel_0.vComponent.maxHeight(120.ui)
 //        10.floating
-        dotLabel_1.vComponent.maxHeight(120.ui)
+        if isPad {
+          dotLabel_1.vComponent.maxHeight(120.ui)
+            .width(.fixed(Const.buttonSize.width))
+        }
+        else {
+          dotLabel_1.vComponent.maxHeight(120.ui)
+        }
         20.floating
         continueButton.vComponent
           .size(Const.buttonSize)

@@ -7,19 +7,19 @@ import Foundation
 
 // MARK: - UI
 
-enum UI {
+public enum UI {
 
-  typealias Widths = [UIUserInterfaceIdiom: CGFloat]
+  public typealias Widths = [UIUserInterfaceIdiom: CGFloat]
 
   private static var _baseWidths = Widths()
   private static var _scaleFactor: CGFloat?
 
-  static func setBaseWidths(_ widths: Widths) {
+  public static func setBaseWidths(_ widths: Widths) {
     _baseWidths = widths
     _scaleFactor = calculateScale()
   }
 
-  static func scaleFactor() -> CGFloat {
+  public static func scaleFactor() -> CGFloat {
     if let scale = _scaleFactor {
       return scale
     }
