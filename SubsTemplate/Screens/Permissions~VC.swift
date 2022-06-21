@@ -142,19 +142,20 @@ public extension Permissions {
           .alignment(.center)
         isPad ? 110.fixed : 83.fixed
         titleLabel.vComponent.maxHeight(40.ui)
-        20.fixed//floating
+        isPad ? 20.floating : 20.fixed
         subtitleLabel.vComponent.maxHeight(30.ui)
-        16.fixed//floating
+        isPad ? 16.floating : 16.fixed
 //        dotLabel_0.vComponent.maxHeight(120.ui)
 //        10.floating
         if isPad {
           dotLabel_1.vComponent.maxHeight(120.ui)
             .width(.fixed(Const.buttonSize.width))
+            .alignment(.center)
         }
         else {
           dotLabel_1.vComponent.maxHeight(120.ui)
         }
-        20.floating
+        isPad ? 160.floating : 20.floating
         continueButton.vComponent
           .size(Const.buttonSize)
           .alignment(.center)
