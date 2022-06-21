@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2D8C4B28624DC400715EB2 /* BannerConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D8C4A28624DC400715EB2 /* BannerConstructor.swift */; };
 		5C7DD817286222360091AACF /* UISubs in Frameworks */ = {isa = PBXBuildFile; productRef = 5C7DD816286222360091AACF /* UISubs */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
 		5C7DD82B28622D2C0091AACF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81C28622D2C0091AACF /* InfoPlist.strings */; };
@@ -65,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C2D8C4A28624DC400715EB2 /* BannerConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerConstructor.swift; sourceTree = "<group>"; };
 		5C7DD81B28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5C7DD81D28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C7DD81E28622D2C0091AACF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 			children = (
 				5C8DBF40285A13540054B427 /* HUD.swift */,
 				5C8DBFAD285CB3EE0054B427 /* Notification~System.swift */,
+				5C2D8C4A28624DC400715EB2 /* BannerConstructor.swift */,
 			);
 			path = Systems;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */,
 				5C8DBEB928511C210054B427 /* MainScreen~VC.swift in Sources */,
 				5C8DBF2D285902870054B427 /* Session~Service.swift in Sources */,
+				5C2D8C4B28624DC400715EB2 /* BannerConstructor.swift in Sources */,
 				5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */,
 				5C8DBF1D2858FC0D0054B427 /* Analytics~Logger.swift in Sources */,
 				5C8DBEF428521C110054B427 /* Common.swift in Sources */,

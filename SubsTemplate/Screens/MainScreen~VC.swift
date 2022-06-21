@@ -16,7 +16,9 @@ public extension MainScreen {
 
   final class ViewController: UIBase.ViewController {
 
-    private let bannerView = BannerView()
+    private lazy var bannerView = BannerConstructor {
+      .init(source: .bottomUpsell, intent: .normal, presenter: self)
+    }.build()
 
     // MARK: - Lifecycle
 
@@ -24,16 +26,6 @@ public extension MainScreen {
       super.loadView()
       view.backgroundColor = Color.Main.back.color
       view.addSubviews(bannerView)
-    }
-
-    public override func viewDidLoad() {
-      super.viewDidLoad()
-      bannerView.onClick = { [weak self] in
-        Subs.Service.shared?.showSubscription(source: .bottomUpsell, intent: .normal, from: self)
-      }
-
-      addObservers()
-      updateBannerIfNeeded()
     }
 
     public override func viewWillTransition(to size: CGSize,
@@ -58,49 +50,4 @@ public extension MainScreen {
     }
 
   }
-}
-
-// MARK: - Private
-
-private extension MainScreen.ViewController {
-
-  func addObservers() {
-    Notification.Subs.Update.observe { [weak self] in self?.updateBannerIfNeeded() }.bind(to: self)
-    Notification.System.DidBecomeActive.observe { [weak self] in self?.loadBanner() }.bind(to: self)
-    Notification.System.DidEnterBackground.observe { [weak self] in self?.removeBanner() }.bind(to: self)
-    Notification.System.WillResignActive.observe { [weak self] in self?.removeBanner() }.bind(to: self)
-  }
-
-  // MARK: - Banner
-
-  func updateBannerIfNeeded() {
-    if Subs.Service.shared?.isPremium == true {
-      removeBanner()
-    }
-    else {
-      loadBanner()
-    }
-    view.setNeedsUpdateConstraints()
-    view.layoutIfNeeded()
-  }
-
-  func loadBanner() {
-    if Subs.Service.shared?.isPremium == true { return }
-
-//    Ads.Service.shared?.getBanner(vc: self, loadedBlock: { [weak self] banner in
-//      self?.bannerView.setBanner(banner: banner)
-//    }, errorBlock: { [weak self] in
-//      DispatchQueue.main.async {
-//        self?.removeBanner()
-//      }
-//      DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-//        self?.loadBanner()
-//      }
-//    })
-  }
-
-  func removeBanner() {
-    bannerView.removeBanner()
-  }
-
 }

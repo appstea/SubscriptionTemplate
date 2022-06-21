@@ -75,18 +75,6 @@ final class UIService: AppService {
     presenter?.present(alert, animated: true)
   }
 
-  func showShareView(items: [Any], sourceView: UIView?) {
-    let alert = UIActivityViewController(activityItems: items, applicationActivities: [])
-    if isPad {
-      guard let sourceView = sourceView else { return }
-
-      alert.popoverPresentationController?.sourceView = sourceView
-    }
-
-    alert.completionWithItemsHandler = { _, _, _, _ in }
-    presenter?.present(alert, animated: true)
-  }
-
   func checkInternetConnection() -> Bool {
     guard let connection = try? Reachability().connection else { return false }
 

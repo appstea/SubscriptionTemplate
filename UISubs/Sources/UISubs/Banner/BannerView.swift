@@ -9,6 +9,7 @@ import UIKit
 import PinLayout
 
 import UIBase
+import CallbacksCraft
 
 public final class BannerView: UIBase.View {
 
@@ -27,6 +28,7 @@ public final class BannerView: UIBase.View {
   private lazy var defaultView = BannerView.DefaultView()
 
   public var onClick: (() -> Void)?
+  public let onMoveToSuperview = Callbacks()
 
   // MARK: - Lifecycle
 
