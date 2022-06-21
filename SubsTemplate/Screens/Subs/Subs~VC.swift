@@ -13,9 +13,12 @@ import SafariServices
 import RevenueCat
 import Reachability
 
+import UIBase
+
 extension Subs {
 
-  class ViewController: Base.ViewController {
+  @objc(SubsViewController)
+  class ViewController: UIBase.ViewController {
 
     let source: Source
     let intent: Intent

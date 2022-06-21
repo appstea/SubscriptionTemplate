@@ -7,6 +7,8 @@
 
 import Foundation
 
+import Stored
+
 enum Subs {
 
   static let policyString: String = "https://appstea.com/legal/privacy-policy/"

@@ -117,9 +117,16 @@ platform :ios do
 end
 
 lane :update_l10n do
-  babelish = 'babelish csv2strings'
-  system(babelish)
+  system('babelish csv2strings')
 
+  system('rm -rf ../UISubs/Sources/UISubs/Resources/Localizations')
+  system('mkdir ../UISubs/Sources/UISubs/Resources/Localizations')
+  system('rsync -av --exclude=\'InfoPlist.strings\' ../Localizations/ ../UISubs/Sources/UISubs/Resources/Localizations')
+
+  codegen()
+end
+
+lane :codegen do
   swiftgen_l10n = 'swiftgen config run --config ../SwiftGen/.swiftgen.yml'
   system(swiftgen_l10n)
 end

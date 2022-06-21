@@ -7,11 +7,14 @@
 
 import UIKit
 
+import UIBase
+import UISubs
+
 public enum MainScreen { }
 
 public extension MainScreen {
 
-  final class ViewController: Base.ViewController {
+  final class ViewController: UIBase.ViewController {
 
     private let bannerView = BannerView()
 

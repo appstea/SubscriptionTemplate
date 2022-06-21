@@ -21,6 +21,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 
 
+### codegen
+
+```sh
+[bundle exec] fastlane codegen
+```
+
+
+
 ----
 
 

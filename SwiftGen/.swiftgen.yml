@@ -17,3 +17,24 @@ xcassets:
   outputs:
     - templatePath: assets.stencil
       output: ../Generated/Assets.generated.swift
+##############
+#
+### UISubs ###
+#
+##############
+strings:
+  inputs: "../UISubs/Sources/UISubs/Resources/Localizations/en.lproj"
+  outputs:
+    - templatePath: module.strings.stencil
+      output: ../UISubs/Sources/UISubs/Generated/UISubs.L10n.generated.swift
+      params:
+        enumName: UISubsLocalization
+        publicAccess: false
+xcassets:
+  inputs: "../UISubs/Sources/UISubs/Resources/Assets.xcassets"
+  outputs:
+    - templatePath: module.assets.stencil
+      output: ../UISubs/Sources/UISubs/Generated/UISubs.Assets.generated.swift
+      params:
+        enumName: UISubsAssets
+        publicAccess: false

@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Stored
+
 enum Analytics { }
 
 extension Analytics {

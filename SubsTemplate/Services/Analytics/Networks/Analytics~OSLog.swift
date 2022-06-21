@@ -24,6 +24,6 @@ extension Analytics {
 extension OSLog {
 
   /// Logs analytics events
-  static let analytics = OSLog(subsystem: Const.Bundle.current, category: "Analytics")
+  static let analytics = OSLog(subsystem: Bundle.main.bundleIdentifier ?? "Undefined", category: "Analytics")
   
 }

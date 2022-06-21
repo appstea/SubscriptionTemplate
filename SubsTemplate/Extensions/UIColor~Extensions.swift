@@ -9,8 +9,6 @@ import UIKit
 
 extension UIColor {
 
-  private typealias _RGBA = (r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat)
-
   func image() -> UIImage {
     defer { UIGraphicsEndImageContext() }
 

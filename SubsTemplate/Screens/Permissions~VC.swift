@@ -12,6 +12,11 @@ import PinLayout
 
 import StackCraft
 
+import Utils
+import Stored
+import UIBase
+import UICommon
+
 public enum Permissions {}
 
 extension Stored {
@@ -23,7 +28,7 @@ extension Stored {
 
 public extension Permissions {
 
-  final class ViewController: Base.ViewController {
+  final class ViewController: UIBase.ViewController {
 
     private enum Const {
       static let buttonSize = CGSize(width: isPad ? 400.ui : 285.ui, height: isPad ? 70 : 50)
@@ -38,7 +43,7 @@ public extension Permissions {
 
     // MARK: UI
 
-    private let bgView = Common.GradientView {
+    private let bgView = UICommon.GradientView {
       $0.direction = .down
       $0.colors = [CGFloat(0), CGFloat(0)]
         .map { Color.Onboarding.background.color.withAlphaComponent($0) }
@@ -48,32 +53,32 @@ public extension Permissions {
       $0.backgroundColor = .clear
     }
 
-    private lazy var imageView = Base.ImageView {
+    private lazy var imageView = UIBase.ImageView {
       $0.contentMode = .scaleAspectFit
       $0.image = Asset.Permissions.image.image
     }
-    private let titleLabel = Base.Label {
+    private let titleLabel = UIBase.Label {
       $0.text = L10n.Start.title
       $0.setDynamicFont(font: .systemFont(ofSize: isPad ? 30 : 20, weight: .medium),
                         maximumPointSize: isPad ? 60 : 40)
       $0.textColor = Color.Main.text.color
-      $0.textAlignment = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft ? .right : .center
+      $0.textAlignment = isRTL ? .right : .center
       $0.numberOfLines = 0
       $0.adjustsFontSizeToFitWidth = true
       $0.minimumScaleFactor = 0.8
     }
-    private let subtitleLabel = Base.Label {
+    private let subtitleLabel = UIBase.Label {
       $0.text = L10n.Start.subtitle
       $0.setDynamicFont(font: .systemFont(ofSize: isPad ? 24 : 16),
                         maximumPointSize: isPad ? 48 : 32)
       $0.textColor = Color.Main.text.color
-      $0.textAlignment = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft ? .right : .center
+      $0.textAlignment = isRTL ? .right : .center
       $0.numberOfLines = 0
       $0.adjustsFontSizeToFitWidth = true
       $0.minimumScaleFactor = 0.8
     }
-    private static func dotLabelInstance() -> DotLabel {
-      DotLabel {
+    private static func dotLabelInstance() -> UICommon.DotLabel {
+      UICommon.DotLabel {
         $0.dotColor = Color.DotLabel.dot.color
         $0.dotSize = Const.dotSize
         $0.dotPadding = Const.dotSpacing
@@ -82,7 +87,7 @@ public extension Permissions {
     private let dotLabel_0 = dotLabelInstance()
     private let dotLabel_1 = dotLabelInstance()
 
-    private let continueButton = Base.Button {
+    private let continueButton = UIBase.Button {
       $0.layer.cornerRadius = 12
       $0.backgroundColor = Color.Onboarding.continue.color
       $0.setTitleColor(.white, for: .normal)
@@ -186,7 +191,7 @@ private extension Permissions.ViewController {
           .withTextColor(Color.Main.text.color)
           .withParagraphStyle(NSMutableParagraphStyle {
             $0.lineSpacing = 5
-            $0.alignment = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft ? .right : .left
+            $0.alignment = isRTL ? .right : .left
           })
       }
   }

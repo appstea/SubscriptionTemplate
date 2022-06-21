@@ -13,6 +13,8 @@ import AdSupport
 
 import RevenueCat
 
+import Stored
+
 extension Subs {
 
   final class PurchasesManager: NSObject {

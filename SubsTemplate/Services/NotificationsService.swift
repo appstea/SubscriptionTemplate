@@ -8,6 +8,8 @@
 import Foundation
 import NotificationCenter
 
+import Stored
+
 extension Stored {
 
   @StorageKey("notifications.enabled", defaultValue: true)

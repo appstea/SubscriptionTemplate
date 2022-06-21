@@ -10,6 +10,8 @@ import Foundation
 import StoreKit
 import RevenueCat
 
+import Utils
+
 extension StoreProduct {
 
   /// $4.99

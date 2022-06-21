@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+import Utils
+import Stored
+
 extension Stored {
 
   @StorageKey("stored.session.index", defaultValue: 0)

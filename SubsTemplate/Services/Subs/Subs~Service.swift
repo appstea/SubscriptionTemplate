@@ -14,6 +14,8 @@ import RevenueCat
 
 import RevenueCat
 
+import Utils
+
 enum RestoreResponseType {
   case success
   case noProducts

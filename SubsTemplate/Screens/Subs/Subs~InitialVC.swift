@@ -13,6 +13,9 @@ import PinLayout
 import SwiftyAttributes
 import StackCraft
 
+import UIBase
+import UICommon
+
 extension Subs {
 
   final class InitialVC: ViewController {
@@ -36,17 +39,17 @@ extension Subs {
 
     // MARK: UI
 
-    private let contentView = Base.View {
+    private let contentView = UIBase.View {
       $0.backgroundColor = .clear
     }
 
-    private lazy var closeButton = Base.Button {
+    private lazy var closeButton = UIBase.Button {
       $0.setImage( Asset.Subs.cross.image, for: .normal)
     }.asAccessibilityElement(L10n.General.Button.close, traits: .button)
 
     private let vStackView = VStackView()
 
-    private lazy var bgView = Common.GradientView {
+    private lazy var bgView = UICommon.GradientView {
       $0.direction = .down
       $0.colors = [
         Color.Subs.background.color,
@@ -54,7 +57,7 @@ extension Subs {
       ]
     }
 
-    private lazy var imageView = Base.ImageView {
+    private lazy var imageView = UIBase.ImageView {
       $0.image = Asset.Subs.image.image
       $0.contentMode = .scaleAspectFit
     }
@@ -71,31 +74,31 @@ extension Subs {
 
     private var image: VStackView.Component { isPortrait ? portraitImage : landscapeImage }
 
-    private let titleLabel = Base.Label {
+    private let titleLabel = UIBase.Label {
       $0.textColor = Color.Subs.title.color
       $0.setDynamicFont(font: .systemFont(ofSize: 40.ui, weight: .bold))
       $0.numberOfLines = 1
       $0.adjustsFontSizeToFitWidth = true
       $0.minimumScaleFactor = 0.7
-      $0.textAlignment = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft ? .right : .left
+      $0.textAlignment = isRTL ? .right : .left
       $0.text = L10n.Subs.TwoButtons.title
     }
-    private let subtitleLabel = Base.Label {
+    private let subtitleLabel = UIBase.Label {
       $0.textColor = Color.Subs.infoTitle.color
       $0.setDynamicFont(font: .systemFont(ofSize: 17.ui, weight: .semibold))
       $0.numberOfLines = 1
-      $0.textAlignment = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft ? .right : .left
+      $0.textAlignment = isRTL ? .right : .left
       $0.text = L10n.Subs.TwoButtons.subtitle
     }
-    private let textLabel = Base.Label {
+    private let textLabel = UIBase.Label {
       $0.textColor = Color.Main.text.color
       $0.setDynamicFont(font: .systemFont(ofSize: 17.ui, weight: .regular))
       $0.numberOfLines = 0
-      $0.textAlignment = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft ? .right : .left
+      $0.textAlignment = isRTL ? .right : .left
       $0.verticalAlignment = .top
     }
 
-    private let trialButton = Base.Button {
+    private let trialButton = UIBase.Button {
       $0.setTitle(L10n.Subs.tryFreeAndSubscribe, for: .normal)
       $0.titleLabel?.adjustsFontSizeToFitWidth = true
       $0.titleLabel?.minimumScaleFactor = 0.75
@@ -110,7 +113,7 @@ extension Subs {
       $0.clipsToBounds = true
     }.asAccessibilityElement(traits: .button)
 
-    private let instantButton = Base.Button {
+    private let instantButton = UIBase.Button {
       $0.titleLabel?.numberOfLines = 2
       $0.setBackgroundImage(Color.Main.back.color.image(), for: .normal)
       $0.layer.borderWidth = 1
@@ -120,19 +123,19 @@ extension Subs {
     }.asAccessibilityElement(traits: .button)
 
     private let additionalButtonsContainer = UIView()
-    private let termsButton = Base.Button {
+    private let termsButton = UIBase.Button {
       let text = L10n.Subs.Button.terms
       let attributed = NSAttributedString(string: text, attributes: Const.additionalButtonsAttributes)
       $0.setAttributedTitle(attributed, for: .normal)
       $0.explicitIntrinsicContentSize = CGSize(width: text.size().width, height: UIView.noIntrinsicMetric)
     }.asAccessibilityElement(traits: .link)
-    private let privacyButton = Base.Button {
+    private let privacyButton = UIBase.Button {
       let text = L10n.Subs.Button.privacy
       let attributed = NSAttributedString(string: text, attributes: Const.additionalButtonsAttributes)
       $0.setAttributedTitle(attributed, for: .normal)
       $0.explicitIntrinsicContentSize = CGSize(width: text.size().width, height: UIView.noIntrinsicMetric)
     }.asAccessibilityElement(traits: .link)
-    private let restoreButton = Base.Button {
+    private let restoreButton = UIBase.Button {
       let text = L10n.Subs.Button.restore
       let attributed = NSAttributedString(string: text, attributes: Const.additionalButtonsAttributes)
       $0.setAttributedTitle(attributed, for: .normal)
@@ -193,7 +196,7 @@ extension Subs {
       else {
         bgView.pin.top().horizontally().height(280.ui + safeArea.top)
       }
-      _ = UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft
+      _ = isRTL
       ? closeButton.pin.start(32).size(16).top(safeArea.top + 16)
       : closeButton.pin.end(32).size(16).top(safeArea.top + 16)
       contentView.pin.top(safeArea).bottom(safeArea).hCenter().width(Const.contentWidth)

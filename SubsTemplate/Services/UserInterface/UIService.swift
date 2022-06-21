@@ -13,6 +13,9 @@ import AdSupport
 
 import Reachability
 
+import Stored
+import UIBase
+
 extension Stored {
 
   @StorageKey("stored.launch.index", defaultValue: 1)
