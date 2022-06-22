@@ -17,14 +17,14 @@ import Stored
 import UIBase
 import UICommon
 
-public enum Permissions {}
-
 extension Stored {
 
   @StorageKey("didPassPrepermission", defaultValue: false)
   fileprivate(set) static var didPassPrepermission: Bool
 
 }
+
+public enum Permissions {}
 
 public extension Permissions {
 
@@ -220,14 +220,6 @@ private extension Permissions.ViewController {
 
   func requestPermissions() async {
     _ = await NotificationsService.shared?.fetchStatus()
-    //        component.location.requestAccess(force: true) { [weak self] in
-    //            let block = {
-    //                DispatchQueue.main.async { [weak self] in
-    //                    self?.finishBlock?()
-    //                }
-    //            }
-    //            self?.component.services.notifications?.fetchStatus { _ in block() } ?? block()
-    //        }
   }
 
 }

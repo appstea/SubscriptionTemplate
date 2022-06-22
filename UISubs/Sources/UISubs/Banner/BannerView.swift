@@ -17,7 +17,6 @@ public final class BannerView: UIBase.View {
     static let bannerSize: CGSize = isPad ? CGSize(width: 728, height: 90) : CGSize(width: 320, height: 50)
   }
 
-
   private let lineView: UIBase.View = {
     let result = UIBase.View()
     result.backgroundColor = .black.withAlphaComponent(0.5)

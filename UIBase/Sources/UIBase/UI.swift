@@ -9,23 +9,38 @@ import Foundation
 
 public enum UI {
 
-  public typealias Widths = [UIUserInterfaceIdiom: CGFloat]
+  public struct Intent: Hashable {
+    public static let regular = Intent()
 
-  private static var _baseWidths = Widths()
-  private static var _scaleFactor: CGFloat?
+    let id: UUID
 
-  public static func setBaseWidths(_ widths: Widths) {
-    _baseWidths = widths
-    _scaleFactor = calculateScale()
+    public init() {
+      id = .init()
+    }
   }
 
-  public static func scaleFactor() -> CGFloat {
-    if let scale = _scaleFactor {
+  public typealias Widths = [UIUserInterfaceIdiom: CGFloat]
+  private typealias IntentWidths = [Intent: Widths]
+
+  private static var intentBaseWidths = IntentWidths()
+  private static var intentScaleFactor = [Intent: CGFloat]()
+
+  public static func baseWidths(for intent: Intent = .regular) -> Widths {
+    intentBaseWidths[intent] ?? [:]
+  }
+
+  public static func setBaseWidths(_ widths: Widths, for intent: Intent = .regular) {
+    intentBaseWidths[intent] = widths
+    intentScaleFactor[intent] = calculateScale(for: intent)
+  }
+
+  public static func scaleFactor(for intent: Intent = .regular) -> CGFloat {
+    if let scale = intentScaleFactor[intent] {
       return scale
     }
 
-    let scale = calculateScale()
-    _scaleFactor = scale
+    let scale = calculateScale(for: intent)
+    intentScaleFactor[intent] = scale
     return scale
   }
 
@@ -35,16 +50,16 @@ public enum UI {
 
 private extension UI {
 
-  static func calculateScale() -> CGFloat {
+  static func calculateScale(for intent: Intent) -> CGFloat {
     let size = UIScreen.main.bounds.size
     let width = min(size.width, size.height)
     let idiom = UIDevice.current.userInterfaceIdiom
     let result: CGFloat
     let baseWidth: CGFloat
-    let widths = _baseWidths
+    let intentWidths = intentBaseWidths[intent] ?? [:]
     switch idiom {
-    case .pad: baseWidth = widths[idiom] ?? 1536.0
-    case .phone: baseWidth = widths[idiom] ?? 640.0
+    case .pad: baseWidth = intentWidths[idiom] ?? 768.0
+    case .phone: baseWidth = intentWidths[idiom] ?? 375.0
     default: baseWidth = width
     }
     result = width / baseWidth
