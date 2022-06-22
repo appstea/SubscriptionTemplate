@@ -119,9 +119,9 @@ end
 lane :update_l10n do
   system('babelish csv2strings')
 
-  system('rm -rf ../UISubs/Sources/UISubs/Resources/Localizations')
-  system('mkdir ../UISubs/Sources/UISubs/Resources/Localizations')
-  system('rsync -av --exclude=\'InfoPlist.strings\' ../Localizations/ ../UISubs/Sources/UISubs/Resources/Localizations')
+  system('rm -rf ../SubsResources/Sources/SubsResources/Resources/Localizations')
+  system('mkdir ../SubsResources/Sources/SubsResources/Resources/Localizations')
+  system('rsync -av --exclude=\'InfoPlist.strings\' ../Localizations/ ../SubsResources/Sources/SubsResources/Resources/Localizations')
 
   codegen()
 end

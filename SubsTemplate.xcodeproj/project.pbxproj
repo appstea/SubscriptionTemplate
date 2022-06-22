@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C2D8C4B28624DC400715EB2 /* BannerConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D8C4A28624DC400715EB2 /* BannerConstructor.swift */; };
-		5C7DD817286222360091AACF /* UISubs in Frameworks */ = {isa = PBXBuildFile; productRef = 5C7DD816286222360091AACF /* UISubs */; };
+		5C42A8E52863982F0023232D /* NotificationCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 5C42A8E42863982F0023232D /* NotificationCraft */; };
+		5C5E5B6A28636C7800884DFF /* SubsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5E5B6928636C7800884DFF /* SubsCore */; };
+		5C5E5B6C28636D0A00884DFF /* SubsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5E5B6B28636D0A00884DFF /* SubsUI */; };
+		5C5E5B6F28637E6100884DFF /* AnalyticsCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5E5B6E28637E6100884DFF /* AnalyticsCraft */; };
+		5C7210B32863B45F00D26E16 /* NotificationCraftSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 5C7210B22863B45F00D26E16 /* NotificationCraftSystem */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
 		5C7DD82B28622D2C0091AACF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81C28622D2C0091AACF /* InfoPlist.strings */; };
 		5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEB428511C210054B427 /* AppDelegate.swift */; };
@@ -21,42 +24,19 @@
 		5C8DBED228511FC40054B427 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBED128511FC40054B427 /* FirebaseMessaging */; };
 		5C8DBED5285120CF0054B427 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBED4285120CF0054B427 /* RevenueCat */; };
 		5C8DBED82852078D0054B427 /* StackCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBED72852078D0054B427 /* StackCraft */; };
-		5C8DBEEF285215FA0054B427 /* Permissions~VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEEE285215FA0054B427 /* Permissions~VC.swift */; };
-		5C8DBEF1285217950054B427 /* Subs~VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEF0285217950054B427 /* Subs~VC.swift */; };
-		5C8DBEF428521C110054B427 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEF328521C110054B427 /* Common.swift */; };
 		5C8DBF002858F6910054B427 /* UIViewController~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEFF2858F6910054B427 /* UIViewController~Extensions.swift */; };
 		5C8DBF022858F7130054B427 /* UIView~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF012858F7130054B427 /* UIView~Extensions.swift */; };
-		5C8DBF052858FB000054B427 /* BranchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF042858FB000054B427 /* BranchService.swift */; };
-		5C8DBF072858FBDF0054B427 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF062858FBDF0054B427 /* FirebaseService.swift */; };
-		5C8DBF172858FC0D0054B427 /* Analytics~Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF092858FC0D0054B427 /* Analytics~Service.swift */; };
-		5C8DBF182858FC0D0054B427 /* Analytics~Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF0B2858FC0D0054B427 /* Analytics~Event.swift */; };
-		5C8DBF192858FC0D0054B427 /* Analytics~SubsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF0C2858FC0D0054B427 /* Analytics~SubsEvent.swift */; };
-		5C8DBF1D2858FC0D0054B427 /* Analytics~Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */; };
-		5C8DBF1F2858FC0D0054B427 /* Analytics~BranchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF132858FC0D0054B427 /* Analytics~BranchEvent.swift */; };
-		5C8DBF212858FC0D0054B427 /* Analytics~FIREvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF152858FC0D0054B427 /* Analytics~FIREvent.swift */; };
-		5C8DBF222858FC0D0054B427 /* Analytics~OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF162858FC0D0054B427 /* Analytics~OSLog.swift */; };
 		5C8DBF242858FF460054B427 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF232858FF460054B427 /* Globals.swift */; };
-		5C8DBF292859012E0054B427 /* NotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF282859012E0054B427 /* NotificationsService.swift */; };
-		5C8DBF2B285902720054B427 /* Subs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF2A285902720054B427 /* Subs.swift */; };
-		5C8DBF2D285902870054B427 /* Session~Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF2C285902870054B427 /* Session~Service.swift */; };
-		5C8DBF30285902FC0054B427 /* Subs~Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF2F285902FC0054B427 /* Subs~Service.swift */; };
-		5C8DBF41285A13540054B427 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF40285A13540054B427 /* HUD.swift */; };
-		5C8DBF43285A13C10054B427 /* Subs~PurchasesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF42285A13C10054B427 /* Subs~PurchasesManager.swift */; };
-		5C8DBF46285A166E0054B427 /* Subs~InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF45285A166E0054B427 /* Subs~InitialVC.swift */; };
 		5C8DBF48285A182A0054B427 /* UIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF47285A182A0054B427 /* UIService.swift */; };
 		5C8DBF52285B5A050054B427 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBF51285B5A050054B427 /* Reachability */; };
 		5C8DBF54285B5B9F0054B427 /* Equatable~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */; };
-		5C8DBF56285B7CE20054B427 /* Subs~Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF55285B7CE20054B427 /* Subs~Screen.swift */; };
 		5C8DBF5B285B8BC50054B427 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF59285B8BC50054B427 /* Assets.generated.swift */; };
 		5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */; };
 		5C8DBF8C285B91320054B427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */; };
 		5C8DBF90285B99DF0054B427 /* TimeInterval~Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8F285B99DF0054B427 /* TimeInterval~Extension.swift */; };
 		5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF96285BA7000054B427 /* CGSize~Extensions.swift */; };
-		5C8DBF9D285BAC040054B427 /* UIColor~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF9C285BAC040054B427 /* UIColor~Extensions.swift */; };
-		5C8DBF9F285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF9E285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift */; };
 		5C8DBFA2285BB5770054B427 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBFA1285BB5770054B427 /* PinLayout */; };
 		5C8DBFA5285BB65A0054B427 /* SwiftyAttributes in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBFA4285BB65A0054B427 /* SwiftyAttributes */; };
-		5C8DBFAE285CB3EE0054B427 /* Notification~System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBFAD285CB3EE0054B427 /* Notification~System.swift */; };
 		5CBA18132861DB7900E59348 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBA18122861DB7900E59348 /* Utils */; };
 		5CBA18192861E29A00E59348 /* Stored in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBA18182861E29A00E59348 /* Stored */; };
 		5CD035DD2861EBDD0092ECCC /* CallbacksCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD035DC2861EBDD0092ECCC /* CallbacksCraft */; };
@@ -66,7 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C2D8C4A28624DC400715EB2 /* BannerConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerConstructor.swift; sourceTree = "<group>"; };
+		5C31A26E28638F6D0000FCCF /* NotificationCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NotificationCraft; sourceTree = "<group>"; };
+		5C45EDE92863A7C00010357D /* SubsResources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SubsResources; sourceTree = "<group>"; };
+		5C5E5B6828636B8600884DFF /* SubsCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SubsCore; sourceTree = "<group>"; };
+		5C5E5B6D28637B7E00884DFF /* AnalyticsCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticsCraft; sourceTree = "<group>"; };
 		5C7DD81B28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5C7DD81D28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C7DD81E28622D2C0091AACF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -88,39 +71,17 @@
 		5C8DBEBD28511C240054B427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C8DBEC028511C240054B427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C8DBEC228511C240054B427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C8DBEEE285215FA0054B427 /* Permissions~VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permissions~VC.swift"; sourceTree = "<group>"; };
-		5C8DBEF0285217950054B427 /* Subs~VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~VC.swift"; sourceTree = "<group>"; };
-		5C8DBEF328521C110054B427 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		5C8DBEFF2858F6910054B427 /* UIViewController~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController~Extensions.swift"; sourceTree = "<group>"; };
 		5C8DBF012858F7130054B427 /* UIView~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView~Extensions.swift"; sourceTree = "<group>"; };
-		5C8DBF042858FB000054B427 /* BranchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchService.swift; sourceTree = "<group>"; };
-		5C8DBF062858FBDF0054B427 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
-		5C8DBF092858FC0D0054B427 /* Analytics~Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~Service.swift"; sourceTree = "<group>"; };
-		5C8DBF0B2858FC0D0054B427 /* Analytics~Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~Event.swift"; sourceTree = "<group>"; };
-		5C8DBF0C2858FC0D0054B427 /* Analytics~SubsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~SubsEvent.swift"; sourceTree = "<group>"; };
-		5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~Logger.swift"; sourceTree = "<group>"; };
-		5C8DBF132858FC0D0054B427 /* Analytics~BranchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~BranchEvent.swift"; sourceTree = "<group>"; };
-		5C8DBF152858FC0D0054B427 /* Analytics~FIREvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~FIREvent.swift"; sourceTree = "<group>"; };
-		5C8DBF162858FC0D0054B427 /* Analytics~OSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Analytics~OSLog.swift"; sourceTree = "<group>"; };
 		5C8DBF232858FF460054B427 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
-		5C8DBF282859012E0054B427 /* NotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsService.swift; sourceTree = "<group>"; };
-		5C8DBF2A285902720054B427 /* Subs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subs.swift; sourceTree = "<group>"; };
-		5C8DBF2C285902870054B427 /* Session~Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session~Service.swift"; sourceTree = "<group>"; };
-		5C8DBF2F285902FC0054B427 /* Subs~Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~Service.swift"; sourceTree = "<group>"; };
-		5C8DBF40285A13540054B427 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
-		5C8DBF42285A13C10054B427 /* Subs~PurchasesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~PurchasesManager.swift"; sourceTree = "<group>"; };
-		5C8DBF45285A166E0054B427 /* Subs~InitialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Subs~InitialVC.swift"; sourceTree = "<group>"; };
 		5C8DBF47285A182A0054B427 /* UIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIService.swift; sourceTree = "<group>"; };
 		5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Equatable~Extensions.swift"; sourceTree = "<group>"; };
-		5C8DBF55285B7CE20054B427 /* Subs~Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subs~Screen.swift"; sourceTree = "<group>"; };
 		5C8DBF59285B8BC50054B427 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
 		5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.generated.swift; sourceTree = "<group>"; };
 		5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C8DBF8F285B99DF0054B427 /* TimeInterval~Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval~Extension.swift"; sourceTree = "<group>"; };
 		5C8DBF96285BA7000054B427 /* CGSize~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize~Extensions.swift"; sourceTree = "<group>"; };
 		5C8DBF9C285BAC040054B427 /* UIColor~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor~Extensions.swift"; sourceTree = "<group>"; };
-		5C8DBF9E285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RevenueCat.StoreProduct~Extensions.swift"; sourceTree = "<group>"; };
-		5C8DBFAD285CB3EE0054B427 /* Notification~System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification~System.swift"; sourceTree = "<group>"; };
 		5CBA180C2860E38F00E59348 /* _PreviewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _PreviewUI.swift; sourceTree = "<group>"; };
 		5CBA180E2861DA3700E59348 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
 		5CBA18142861DD5E00E59348 /* TextCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TextCraft; sourceTree = "<group>"; };
@@ -129,7 +90,7 @@
 		5CBA181B2861E6F400E59348 /* CallbacksCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CallbacksCraft; sourceTree = "<group>"; };
 		5CD035E02861FAFE0092ECCC /* Asyncable */ = {isa = PBXFileReference; lastKnownFileType = text; path = Asyncable; sourceTree = SOURCE_ROOT; };
 		5CD035E12861FB8F0092ECCC /* UICommon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UICommon; sourceTree = "<group>"; };
-		5CD035E42861FE8A0092ECCC /* UISubs */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UISubs; sourceTree = "<group>"; };
+		5CD035E42861FE8A0092ECCC /* SubsUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SubsUI; sourceTree = "<group>"; };
 		5CF1EC3E28623B6400C23269 /* Cascade */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Cascade; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,16 +99,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7210B32863B45F00D26E16 /* NotificationCraftSystem in Frameworks */,
 				5CD035DF2861ECCB0092ECCC /* UIBase in Frameworks */,
+				5C5E5B6C28636D0A00884DFF /* SubsUI in Frameworks */,
 				5CBA18132861DB7900E59348 /* Utils in Frameworks */,
 				5CBA18192861E29A00E59348 /* Stored in Frameworks */,
 				5C8DBED228511FC40054B427 /* FirebaseMessaging in Frameworks */,
 				5C8DBF52285B5A050054B427 /* Reachability in Frameworks */,
-				5C7DD817286222360091AACF /* UISubs in Frameworks */,
 				5C8DBED5285120CF0054B427 /* RevenueCat in Frameworks */,
 				5C8DBECA28511D8B0054B427 /* Branch in Frameworks */,
+				5C5E5B6A28636C7800884DFF /* SubsCore in Frameworks */,
 				5C8DBED82852078D0054B427 /* StackCraft in Frameworks */,
+				5C5E5B6F28637E6100884DFF /* AnalyticsCraft in Frameworks */,
 				5CD035E32861FC730092ECCC /* UICommon in Frameworks */,
+				5C42A8E52863982F0023232D /* NotificationCraft in Frameworks */,
 				5C8DBFA5285BB65A0054B427 /* SwiftyAttributes in Frameworks */,
 				5C8DBFA2285BB5770054B427 /* PinLayout in Frameworks */,
 				5CFA5519286240FA00B71D76 /* Cascade in Frameworks */,
@@ -171,8 +136,12 @@
 		5C8DBEA828511C210054B427 = {
 			isa = PBXGroup;
 			children = (
+				5C31A26E28638F6D0000FCCF /* NotificationCraft */,
+				5C5E5B6D28637B7E00884DFF /* AnalyticsCraft */,
 				5CF1EC3E28623B6400C23269 /* Cascade */,
-				5CD035E42861FE8A0092ECCC /* UISubs */,
+				5C5E5B6828636B8600884DFF /* SubsCore */,
+				5C45EDE92863A7C00010357D /* SubsResources */,
+				5CD035E42861FE8A0092ECCC /* SubsUI */,
 				5CD035E12861FB8F0092ECCC /* UICommon */,
 				5CD035E02861FAFE0092ECCC /* Asyncable */,
 				5CBA181B2861E6F400E59348 /* CallbacksCraft */,
@@ -199,35 +168,16 @@
 			children = (
 				5C8DBF58285B8BC50054B427 /* Generated */,
 				5C8DBF3328591DD50054B427 /* Systems */,
-				5C8DBF032858FADD0054B427 /* Services */,
 				5C8DBEFE2858F6790054B427 /* Extensions */,
-				5C8DBEF228521C070054B427 /* Common */,
-				5C8DBEEC285215740054B427 /* Bootstrap */,
 				5C8DBEED285215850054B427 /* Resources */,
-				5C8DBEDE285212E80054B427 /* Screens */,
-				5C8DBEF928521EEA0054B427 /* Globals */,
+				5C8DBF232858FF460054B427 /* Globals.swift */,
+				5C8DBF47285A182A0054B427 /* UIService.swift */,
+				5C8DBEB428511C210054B427 /* AppDelegate.swift */,
+				5C8DBEB628511C210054B427 /* SceneDelegate.swift */,
+				5C8DBEB828511C210054B427 /* MainScreen~VC.swift */,
 				5CBA180C2860E38F00E59348 /* _PreviewUI.swift */,
 			);
 			path = SubsTemplate;
-			sourceTree = "<group>";
-		};
-		5C8DBEDE285212E80054B427 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBEB828511C210054B427 /* MainScreen~VC.swift */,
-				5C8DBEEE285215FA0054B427 /* Permissions~VC.swift */,
-				5C8DBF44285A16250054B427 /* Subs */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		5C8DBEEC285215740054B427 /* Bootstrap */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBEB428511C210054B427 /* AppDelegate.swift */,
-				5C8DBEB628511C210054B427 /* SceneDelegate.swift */,
-			);
-			path = Bootstrap;
 			sourceTree = "<group>";
 		};
 		5C8DBEED285215850054B427 /* Resources */ = {
@@ -242,26 +192,9 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5C8DBEF228521C070054B427 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBEF328521C110054B427 /* Common.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		5C8DBEF928521EEA0054B427 /* Globals */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF232858FF460054B427 /* Globals.swift */,
-			);
-			path = Globals;
-			sourceTree = "<group>";
-		};
 		5C8DBEFE2858F6790054B427 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DBF9E285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift */,
 				5C8DBF9C285BAC040054B427 /* UIColor~Extensions.swift */,
 				5C8DBF8F285B99DF0054B427 /* TimeInterval~Extension.swift */,
 				5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */,
@@ -272,78 +205,11 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5C8DBF032858FADD0054B427 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF082858FBF90054B427 /* Analytics */,
-				5C8DBF2E285902E60054B427 /* Subs */,
-				5C8DBF042858FB000054B427 /* BranchService.swift */,
-				5C8DBF47285A182A0054B427 /* UIService.swift */,
-				5C8DBF062858FBDF0054B427 /* FirebaseService.swift */,
-				5C8DBF2C285902870054B427 /* Session~Service.swift */,
-				5C8DBF282859012E0054B427 /* NotificationsService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		5C8DBF082858FBF90054B427 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF092858FC0D0054B427 /* Analytics~Service.swift */,
-				5C8DBF102858FC0D0054B427 /* Analytics~Logger.swift */,
-				5C8DBF0A2858FC0D0054B427 /* Events */,
-				5C8DBF122858FC0D0054B427 /* Networks */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		5C8DBF0A2858FC0D0054B427 /* Events */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF0B2858FC0D0054B427 /* Analytics~Event.swift */,
-				5C8DBF0C2858FC0D0054B427 /* Analytics~SubsEvent.swift */,
-			);
-			path = Events;
-			sourceTree = "<group>";
-		};
-		5C8DBF122858FC0D0054B427 /* Networks */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF132858FC0D0054B427 /* Analytics~BranchEvent.swift */,
-				5C8DBF152858FC0D0054B427 /* Analytics~FIREvent.swift */,
-				5C8DBF162858FC0D0054B427 /* Analytics~OSLog.swift */,
-			);
-			path = Networks;
-			sourceTree = "<group>";
-		};
-		5C8DBF2E285902E60054B427 /* Subs */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF2A285902720054B427 /* Subs.swift */,
-				5C8DBF2F285902FC0054B427 /* Subs~Service.swift */,
-				5C8DBF42285A13C10054B427 /* Subs~PurchasesManager.swift */,
-			);
-			path = Subs;
-			sourceTree = "<group>";
-		};
 		5C8DBF3328591DD50054B427 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DBF40285A13540054B427 /* HUD.swift */,
-				5C8DBFAD285CB3EE0054B427 /* Notification~System.swift */,
-				5C2D8C4A28624DC400715EB2 /* BannerConstructor.swift */,
 			);
 			path = Systems;
-			sourceTree = "<group>";
-		};
-		5C8DBF44285A16250054B427 /* Subs */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DBF55285B7CE20054B427 /* Subs~Screen.swift */,
-				5C8DBEF0285217950054B427 /* Subs~VC.swift */,
-				5C8DBF45285A166E0054B427 /* Subs~InitialVC.swift */,
-			);
-			path = Subs;
 			sourceTree = "<group>";
 		};
 		5C8DBF58285B8BC50054B427 /* Generated */ = {
@@ -393,8 +259,12 @@
 				5CD035DC2861EBDD0092ECCC /* CallbacksCraft */,
 				5CD035DE2861ECCB0092ECCC /* UIBase */,
 				5CD035E22861FC730092ECCC /* UICommon */,
-				5C7DD816286222360091AACF /* UISubs */,
 				5CFA5518286240FA00B71D76 /* Cascade */,
+				5C5E5B6928636C7800884DFF /* SubsCore */,
+				5C5E5B6B28636D0A00884DFF /* SubsUI */,
+				5C5E5B6E28637E6100884DFF /* AnalyticsCraft */,
+				5C42A8E42863982F0023232D /* NotificationCraft */,
+				5C7210B22863B45F00D26E16 /* NotificationCraftSystem */,
 			);
 			productName = SubsTemplate;
 			productReference = 5C8DBEB128511C210054B427 /* SubsTemplate.app */;
@@ -490,42 +360,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C8DBF072858FBDF0054B427 /* FirebaseService.swift in Sources */,
-				5C8DBF9F285BB0FD0054B427 /* RevenueCat.StoreProduct~Extensions.swift in Sources */,
-				5C8DBF30285902FC0054B427 /* Subs~Service.swift in Sources */,
 				5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */,
 				5C8DBEB928511C210054B427 /* MainScreen~VC.swift in Sources */,
-				5C8DBF2D285902870054B427 /* Session~Service.swift in Sources */,
-				5C2D8C4B28624DC400715EB2 /* BannerConstructor.swift in Sources */,
 				5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */,
-				5C8DBF1D2858FC0D0054B427 /* Analytics~Logger.swift in Sources */,
-				5C8DBEF428521C110054B427 /* Common.swift in Sources */,
-				5C8DBF46285A166E0054B427 /* Subs~InitialVC.swift in Sources */,
-				5C8DBF1F2858FC0D0054B427 /* Analytics~BranchEvent.swift in Sources */,
-				5C8DBF192858FC0D0054B427 /* Analytics~SubsEvent.swift in Sources */,
-				5C8DBF43285A13C10054B427 /* Subs~PurchasesManager.swift in Sources */,
-				5C8DBF2B285902720054B427 /* Subs.swift in Sources */,
 				5C8DBF48285A182A0054B427 /* UIService.swift in Sources */,
-				5C8DBFAE285CB3EE0054B427 /* Notification~System.swift in Sources */,
-				5C8DBF56285B7CE20054B427 /* Subs~Screen.swift in Sources */,
-				5C8DBF172858FC0D0054B427 /* Analytics~Service.swift in Sources */,
 				5C8DBF5B285B8BC50054B427 /* Assets.generated.swift in Sources */,
 				5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */,
 				5C8DBF90285B99DF0054B427 /* TimeInterval~Extension.swift in Sources */,
-				5C8DBEF1285217950054B427 /* Subs~VC.swift in Sources */,
 				5C8DBF54285B5B9F0054B427 /* Equatable~Extensions.swift in Sources */,
 				5C8DBF002858F6910054B427 /* UIViewController~Extensions.swift in Sources */,
 				5C8DBF242858FF460054B427 /* Globals.swift in Sources */,
-				5C8DBEEF285215FA0054B427 /* Permissions~VC.swift in Sources */,
-				5C8DBF052858FB000054B427 /* BranchService.swift in Sources */,
-				5C8DBF212858FC0D0054B427 /* Analytics~FIREvent.swift in Sources */,
 				5C8DBEB728511C210054B427 /* SceneDelegate.swift in Sources */,
-				5C8DBF292859012E0054B427 /* NotificationsService.swift in Sources */,
-				5C8DBF222858FC0D0054B427 /* Analytics~OSLog.swift in Sources */,
-				5C8DBF41285A13540054B427 /* HUD.swift in Sources */,
 				5C8DBF022858F7130054B427 /* UIView~Extensions.swift in Sources */,
-				5C8DBF182858FC0D0054B427 /* Analytics~Event.swift in Sources */,
-				5C8DBF9D285BAC040054B427 /* UIColor~Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,9 +775,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C7DD816286222360091AACF /* UISubs */ = {
+		5C42A8E42863982F0023232D /* NotificationCraft */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = UISubs;
+			productName = NotificationCraft;
+		};
+		5C5E5B6928636C7800884DFF /* SubsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SubsCore;
+		};
+		5C5E5B6B28636D0A00884DFF /* SubsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SubsUI;
+		};
+		5C5E5B6E28637E6100884DFF /* AnalyticsCraft */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AnalyticsCraft;
+		};
+		5C7210B22863B45F00D26E16 /* NotificationCraftSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NotificationCraftSystem;
 		};
 		5C8DBEC928511D8B0054B427 /* Branch */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -2,7 +2,6 @@
 //  DeinitObserver.swift
 //
 //  Created by dDomovoj on 9/13/21.
-//  Copyright © 2021 AppsTea. All rights reserved.
 //
 
 import Foundation

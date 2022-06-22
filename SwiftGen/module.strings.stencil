@@ -58,8 +58,6 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 {% set enumName %}{{param.enumName|default:"L10n"}}{% endset %}
 
-{{accessModifier}} typealias L10n = {{enumName}}
-
 {{accessModifier}} enum {{enumName}} {
   {% if tables.count > 1 or param.forceFileNameEnum %}
   {% for table in tables %}

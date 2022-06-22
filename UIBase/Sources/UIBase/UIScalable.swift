@@ -99,7 +99,8 @@ extension UIFont: UIScalable {
 
 extension Array where Element: UIScalable {
 
-  public var ui: [Element.UIValue] { return map { $0.ui } }
+  public var ui: [Element.UIValue] { map { $0.ui } }
+  public func ui(_ intent: UI.Intent) -> [Element.UIValue] { map { $0.ui(intent) } }
 
 }
 

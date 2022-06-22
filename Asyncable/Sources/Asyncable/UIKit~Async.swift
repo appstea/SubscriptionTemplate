@@ -4,6 +4,8 @@
 //  Created by dDomovoj on 6/21/22.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 extension UIView: IAsyncable { }
@@ -49,4 +51,4 @@ extension Async where Base: UIViewController {
 
 }
 
-
+#endif

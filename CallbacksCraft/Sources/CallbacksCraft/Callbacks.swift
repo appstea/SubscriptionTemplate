@@ -2,7 +2,6 @@
 //  Callbacks.swift
 //
 //  Created by dDomovoj on 12/21/21.
-//  Copyright © 2021 AppsTea. All rights reserved.
 //
 
 import Foundation
