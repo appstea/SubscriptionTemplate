@@ -34,6 +34,10 @@ final class NotificationsService: AppService {
     application.applicationIconBadgeNumber = 0
   }
 
+  func sceneDidBecomeActive(_ scene: UIScene) {
+    UIApplication.shared.applicationIconBadgeNumber = 0
+  }
+
   // MARK: - Public
 
   enum Status {

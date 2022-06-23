@@ -51,7 +51,7 @@ extension Analytics {
       return true
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
+    private func didBecomeActive() {
       if Stored.didPassPrepermission {
         Task { [weak self] in
           if let status = await NotificationsService.shared?.fetchStatus() {
@@ -61,9 +61,15 @@ extension Analytics {
       }
     }
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) { didBecomeActive() }
+    func sceneDidBecomeActive(_ scene: UIScene) { didBecomeActive() }
+
+    private func didEnterBackground() {
       didSendStartEventAtCurrentSession = false
     }
+
+    func applicationDidEnterBackground(_ application: UIApplication) { didEnterBackground() }
+    func sceneDidEnterBackground(_ scene: UIScene) { didEnterBackground() }
 
 //    func application(_ application: UIApplication,
 //                     willContinueUserActivityWithType userActivityType: String) -> Bool {

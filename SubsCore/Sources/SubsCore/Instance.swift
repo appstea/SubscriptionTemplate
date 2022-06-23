@@ -8,10 +8,20 @@ import UIKit
 
 import Cascade
 
-public class Instance: Cascade.AppDelegate {
+public class Scene: Cascade.SceneDelegate {
+
+  fileprivate weak var instance: Instance?
 
   @objc
-  override public func targets() -> [UIApplicationDelegate] {[
+  public override func targets() -> [UISceneDelegate] {
+    instance?.services.compactMap { $0 } ?? []
+  }
+
+}
+
+public class Instance: Cascade.AppDelegate {
+
+  fileprivate lazy var services: [AppService?] = [
     Analytics.Service.shared,
     SessionService.current,
     FirebaseService.shared,
@@ -19,7 +29,18 @@ public class Instance: Cascade.AppDelegate {
     BranchService.shared,
     Subs.Service.shared,
     NotificationsService.shared,
-  ].compactMap { $0 }}
+  ]
+
+  public private(set) lazy var scene: Scene = {
+    let result = Scene()
+    result.instance = self
+    return result
+  }()
+
+  @objc
+  public override func targets() -> [UIApplicationDelegate] {
+    services.compactMap { $0 }
+  }
 
   public var isPremium: Bool { Subs.Service.shared?.isPremium == true }
 

@@ -7,12 +7,20 @@
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+import Cascade
+
+final class SceneDelegate: Cascade.SceneDelegate & UIWindowSceneDelegate {
+
+  @objc
+  override func targets() -> [UISceneDelegate] {[
+    Subs.core.scene,
+    UIService.shared,
+  ].compactMap { $0 }}
 
   var window: UIWindow?
 
-  func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
-             options connectionOptions: UIScene.ConnectionOptions) {
+  override func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
+                      options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
 
     window = UIWindow(windowScene: windowScene)

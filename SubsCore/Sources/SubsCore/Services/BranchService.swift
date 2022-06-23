@@ -21,26 +21,31 @@ final class BranchService: AppService {
 
   // MARK: - Lifecycle
 
-  func setup(with launchOptions: LaunchOptions) {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: LaunchOptions? = nil) -> Bool {
     instance.initSession(launchOptions: launchOptions) { [weak self] params, _ in
       if let params = params as? [String: Any],
          let campaign = params[BRANCH_INIT_KEY_CAMPAIGN] as? String {
         self?.subs?.updateAttribute(.branch(.campaign(campaign)))
       }
     }
+    return true
   }
 
-  func appContinue(userActivity: NSUserActivity, restorationHandler: @escaping RestorationHandler) -> Bool {
+  func application(_ application: UIApplication, continue userActivity: NSUserActivity,
+                   restorationHandler: @escaping RestorationHandler) -> Bool {
     instance.continue(userActivity)
     return false
   }
 
-  func handle(url: URL, with options: OpenURLOptions) -> Bool {
+  func application(_ app: UIApplication, open url: URL, options: OpenURLOptions = [:]) -> Bool {
     instance.application(.shared, open: url, options: options)
     return false
   }
 
-  func appReadyFetchDataForRemoteNotification(with userInfo: UserInfo, fetchHandler: @escaping BackgroundFetchResultHandler) {
+  func application(_ application: UIApplication,
+                   didReceiveRemoteNotification userInfo: UserInfo,
+                   fetchCompletionHandler completionHandler: @escaping BackgroundFetchResultHandler) {
     instance.handlePushNotification(userInfo)
   }
 

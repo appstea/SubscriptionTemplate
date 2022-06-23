@@ -35,9 +35,14 @@ final class SessionService: AppService {
     super.init()
   }
 
-  func applicationDidBecomeActive(_ application: UIApplication) {
+  // MARK: - Lifecycle
+
+  private func didBecomeActive() {
     incrementSession()
   }
+
+  func applicationDidBecomeActive(_ application: UIApplication) { didBecomeActive() }
+  func sceneDidBecomeActive(_ scene: UIScene) { didBecomeActive() }
 
 }
 

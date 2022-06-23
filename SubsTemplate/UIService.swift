@@ -32,7 +32,6 @@ final class UIService: AppService {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: LaunchOptions? = nil) -> Bool {
     UI.setBaseWidths([.phone: 375, .pad: 768])
-
     return true
   }
 
