@@ -25,7 +25,7 @@ let package = Package(
             name: "AnalyticsCraft",
             dependencies: [],
             linkerSettings: [
-              .linkedFramework("OSLog"),
+//              .linkedFramework("OSLog"),
             ]
         ),
     ]

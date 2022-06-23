@@ -43,6 +43,7 @@
 		5CD035DF2861ECCB0092ECCC /* UIBase in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD035DE2861ECCB0092ECCC /* UIBase */; };
 		5CD035E32861FC730092ECCC /* UICommon in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD035E22861FC730092ECCC /* UICommon */; };
 		5CFA5519286240FA00B71D76 /* Cascade in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFA5518286240FA00B71D76 /* Cascade */; };
+		5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFDEC38286498FB00F894BF /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		5CD035E12861FB8F0092ECCC /* UICommon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UICommon; sourceTree = "<group>"; };
 		5CD035E42861FE8A0092ECCC /* SubsUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SubsUI; sourceTree = "<group>"; };
 		5CF1EC3E28623B6400C23269 /* Cascade */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Cascade; sourceTree = "<group>"; };
+		5CFDEC38286498FB00F894BF /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
 				5C7210B32863B45F00D26E16 /* NotificationCraftSystem in Frameworks */,
 				5CD035DF2861ECCB0092ECCC /* UIBase in Frameworks */,
 				5C5E5B6C28636D0A00884DFF /* SubsUI in Frameworks */,
@@ -224,6 +227,7 @@
 		5CBA18112861DB7900E59348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CFDEC38286498FB00F894BF /* OSLog.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

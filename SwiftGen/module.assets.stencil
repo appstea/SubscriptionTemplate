@@ -24,11 +24,6 @@
 {{accessModifier}} typealias Asset = {{enumName}}.Images
 {{accessModifier}} typealias Color = {{enumName}}.Colors
 
-{{accessModifier}} extension Bundle {
-    @objc
-    static var assets: Bundle { .module }
-}
-
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 

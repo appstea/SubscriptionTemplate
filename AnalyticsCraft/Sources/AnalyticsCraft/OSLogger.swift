@@ -5,6 +5,9 @@
 //
 
 import Foundation
+
+#if canImport(OSLog)
+
 import OSLog
 
 public struct OSLogger: IAnalyticsLogger {
@@ -26,3 +29,18 @@ internal extension OSLog {
 
 }
 
+#else
+
+public struct OSLogger: IAnalyticsLogger {
+
+  public init() {}
+
+  public func sendEventIfNeeded(_ event: IAnalyticsEvent) {
+    let name = event.name
+    let params = event.params?.description ?? "none"
+    NSLog("name: %{public}@ params: %{public}@", name, params)
+  }
+
+}
+
+#endif

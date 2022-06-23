@@ -15,11 +15,6 @@
 public typealias Asset = Assets.Images
 public typealias Color = Assets.Colors
 
-public extension Bundle {
-    @objc
-    static var assets: Bundle { .module }
-}
-
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 
