@@ -41,18 +41,21 @@ extension Subs {
     public var closeColor = Color.Subs.title.color
 
     public var image = Asset.Subs.image.image
-    public var title = L10n.Subs.TwoButtons.title
-    public var subtitle = L10n.Subs.TwoButtons.subtitle
-    public var text = L10n.Subs.TwoButtons.text
 
+    public var title = L10n.Subs.TwoButtons.title
     public var titleColor = Color.Subs.title.color
+
+    public var subtitle = L10n.Subs.TwoButtons.subtitle
     public var subtitleColor = Color.Subs.infoTitle.color
+
+    public var text = L10n.Subs.TwoButtons.text
     public var textColor = Color.Main.text.color
 
     public var trial = L10n.Subs.tryFreeAndSubscribe
     public var trialTextColor = UIColor.white
     public var trialBgColor = Color.Subs.continue.color
 
+    public var instantShouldShowSubtitle = true
     public var instantBgColor = Color.Main.back.color
     public var instantBorderColor = Color.Subs.continue.color
     public var instantTitleColor = Color.Subs.continue.color
@@ -124,18 +127,33 @@ extension Subs {
     }
 
     private func instantText(for product: StoreProduct?) -> NSAttributedString? {
-      guard let product = product else { return nil }
+      guard let product = product,
+            let period = product.subscriptionPeriod
+      else { return nil }
 
-      let result =
-      (((product.localizedPricePerPeriod() + "\n")
+      var shouldAddSubtitle = instantShouldShowSubtitle
+      if shouldAddSubtitle {
+        if period.unit == .month && period.value <= 1 {
+          shouldAddSubtitle = false
+        }
+        if period.unit.isAny(of: .day, .week) {
+          shouldAddSubtitle = false
+        }
+      }
+
+      let suffix = shouldAddSubtitle ? "\n" : ""
+      var result = (product.localizedPricePerPeriod() + suffix)
         .withFont(.systemFont(ofSize: isPad ? 24 : 18, weight: .semibold))
-        .withTextColor(instantTitleColor))
-       +
-       (L10n.Subs.TwoButtons.infoJust(product.localizedMonthlyPriceSlashMonth())
-        .withFont(.systemFont(ofSize: isPad ? 16 : 12, weight: .regular))
-        .withTextColor(instantSubtitleColor)
-       ))
-      .withParagraphStyle(NSMutableParagraphStyle { $0.alignment = .center })
+        .withTextColor(instantTitleColor)
+
+      if shouldAddSubtitle {
+        result += L10n.Subs.TwoButtons.infoJust(product.localizedMonthlyPriceSlashMonth())
+          .withFont(.systemFont(ofSize: isPad ? 16 : 12, weight: .regular))
+          .withTextColor(instantSubtitleColor)
+      }
+
+      result = result
+        .withParagraphStyle(NSMutableParagraphStyle { $0.alignment = .center })
 
       return result
     }
