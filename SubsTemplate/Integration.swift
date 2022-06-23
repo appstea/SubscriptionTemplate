@@ -7,12 +7,11 @@
 
 import Foundation
 
-import SubsCore
-import SubsUI
+import SubsCraftCore
 
 enum Subs {
 
-  static let core = Instance(
+  static let core = SubsCraftCore.Instance(
     config: .init(
       subs: .init(
         apiKey: "appl_PrQxhLfrujRwauAlGngBUArKhIK",

@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-import SubsUI
+import SubsCraftUI
 import NotificationCraftSystem
 
 public extension Config.UI {
@@ -95,7 +95,7 @@ private extension BannerBuilder {
   }
 
   func updateBannerIfNeeded(in bannerView: BannerView?) {
-    if SubsCore.Subs.Service.shared?.isPremium == true {
+    if SubsCraftCore.Subs.Service.shared?.isPremium == true {
       removeBanner(from: bannerView)
     }
     else {
@@ -107,7 +107,7 @@ private extension BannerBuilder {
   }
 
   func loadBanner(in bannerView: BannerView?) {
-    if SubsCore.Subs.Service.shared?.isPremium == true { return }
+    if SubsCraftCore.Subs.Service.shared?.isPremium == true { return }
 
 //    Ads.Service.shared?.getBanner(vc: self, loadedBlock: { [weak self] banner in
 //      self?.bannerView.setBanner(banner: banner)

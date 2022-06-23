@@ -1,6 +1,5 @@
 //
 //  Flowable.swift
-//  SubsTemplate
 //
 //  Created by dDomovoj on 6/16/22.
 //

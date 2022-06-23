@@ -10,7 +10,7 @@ import StoreKit
 import RevenueCat
 
 import Utils
-import SubsResources
+import SubsCraftResources
 
 extension StoreProduct {
 
@@ -104,7 +104,7 @@ fileprivate extension SKProduct {
   // MARK: - Utils
 
   func localizedPeriod(for unit: SKProduct.PeriodUnit) -> String {
-    typealias L10n = SubsResources.L10n.Subs.Period
+    typealias L10n = SubsCraftResources.L10n.Subs.Period
     switch unit {
     case .day: return L10n.day
     case .week: return L10n.week
@@ -116,7 +116,7 @@ fileprivate extension SKProduct {
 
   func localizedPeriod() -> String {
     subscriptionPeriod?.map {
-      typealias L10n = SubsResources.L10n.Subs.Period
+      typealias L10n = SubsCraftResources.L10n.Subs.Period
       switch $0.unit {
       case .day:
         if $0.numberOfUnits == 7 {

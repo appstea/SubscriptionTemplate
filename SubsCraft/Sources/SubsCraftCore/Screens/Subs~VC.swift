@@ -13,7 +13,7 @@ import SafariServices
 import RevenueCat
 
 import UIBase
-import SubsResources
+import SubsCraftResources
 
 extension Subs {
 

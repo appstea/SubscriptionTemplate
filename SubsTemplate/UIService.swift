@@ -7,8 +7,7 @@
 
 import UIKit
 
-import Stored
-import SubsCore
+import SubsCraftCore
 
 final class UIService: AppService {
 
@@ -38,30 +37,16 @@ final class UIService: AppService {
     Task { @MainActor in
       Subs.core.keyWindow = window
       self.window = window
-      await start(from: window)
+
+      if !Subs.core.didPassPermissions {
+        await Subs.core.showPermissions(from: window)
+        await Subs.core.showSubs(from: window)
+        await Subs.core.checkIDFAAccessIfNeeded()
+      }
+
+      window.rootViewController = MainScreen.ViewController()
+      window.makeKeyAndVisible()
     }
-  }
-
-}
-
-// MARK: - Private
-
-private extension UIService {
-
-  @MainActor
-  func start(from window: UIWindow) async {
-    if !Subs.core.didPassPermissions {
-      await Subs.core.showPermissions(from: window)
-      await Subs.core.showSubs(from: window)
-      await Subs.core.checkIDFAAccessIfNeeded()
-    }
-    await showMainScreen(from: window)
-  }
-
-  @MainActor
-  func showMainScreen(from window: UIWindow) async {
-    window.rootViewController = MainScreen.ViewController()
-    window.makeKeyAndVisible()
   }
 
 }

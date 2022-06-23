@@ -15,11 +15,11 @@ import StackCraft
 
 import UIBase
 import UICommon
-import SubsResources
+import SubsCraftResources
 
 public extension Config.UI {
 
-  typealias Subscription = SubsCore.Subs.ViewModel
+  typealias Subscription = SubsCraftCore.Subs.ViewModel
 
 }
 

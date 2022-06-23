@@ -1,6 +1,5 @@
 //
 //  Error.swift
-//  SubsTemplate
 //
 //  Created by dDomovoj on 6/14/22.
 //

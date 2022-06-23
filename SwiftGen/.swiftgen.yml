@@ -17,24 +17,24 @@ xcassets:
   outputs:
     - templatePath: assets.stencil
       output: ../Generated/Assets.generated.swift
-##############
-#
-### SubsResources ###
-#
-##############
+###########################
+#                         #
+### SubsCraft.Resources ###
+#                         #
+###########################
 strings:
-  inputs: "../SubsResources/Sources/SubsResources/Resources/Localizations/en.lproj"
+  inputs: "../SubsCraft/Sources/SubsCraftResources/Resources/Localizations/en.lproj"
   outputs:
     - templatePath: module.strings.stencil
-      output: ../SubsResources/Sources/SubsResources/Generated/L10n.generated.swift
+      output: ../SubsCraft/Sources/SubsCraftResources/Generated/L10n.generated.swift
       params:
         enumName: L10n
         publicAccess: true
 xcassets:
-  inputs: "../SubsResources/Sources/SubsResources/Resources/Assets.xcassets"
+  inputs: "../SubsCraft/Sources/SubsCraftResources/Resources/Assets.xcassets"
   outputs:
     - templatePath: module.assets.stencil
-      output: ../SubsResources/Sources/SubsResources/Generated/Assets.generated.swift
+      output: ../SubsCraft/Sources/SubsCraftResources/Generated/Assets.generated.swift
       params:
         enumName: Assets
         publicAccess: true

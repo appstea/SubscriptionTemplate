@@ -10,7 +10,7 @@ import PinLayout
 
 import UIBase
 import UICommon
-import SubsResources
+import SubsCraftResources
 
 public extension BannerView {
 

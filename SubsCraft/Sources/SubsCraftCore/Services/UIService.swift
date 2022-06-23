@@ -14,7 +14,7 @@ import Reachability
 
 import Stored
 import UIBase
-import SubsResources
+import SubsCraftResources
 
 extension Stored {
 

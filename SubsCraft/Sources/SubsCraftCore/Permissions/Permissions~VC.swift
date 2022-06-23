@@ -16,7 +16,7 @@ import Utils
 import Stored
 import UIBase
 import UICommon
-import SubsResources
+import SubsCraftResources
 
 extension Stored {
 
@@ -27,7 +27,7 @@ extension Stored {
 
 public extension Config.UI {
 
-  typealias Permissions = SubsCore.Permissions.ViewModel
+  typealias Permissions = SubsCraftCore.Permissions.ViewModel
 
 }
 

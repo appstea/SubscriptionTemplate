@@ -119,9 +119,9 @@ end
 lane :update_l10n do
   system('babelish csv2strings')
 
-  system('rm -rf ../SubsResources/Sources/SubsResources/Resources/Localizations')
-  system('mkdir ../SubsResources/Sources/SubsResources/Resources/Localizations')
-  system('rsync -av --exclude=\'InfoPlist.strings\' ../Localizations/ ../SubsResources/Sources/SubsResources/Resources/Localizations')
+  system('rm -rf ../SubsCraft/Sources/SubsCraftResources/Resources/Localizations')
+  system('mkdir ../SubsCraft/Sources/SubsCraftResources/Resources/Localizations')
+  system('rsync -av --exclude=\'InfoPlist.strings\' ../Localizations/ ../SubsCraft/Sources/SubsCraftResources/Resources/Localizations')
 
   codegen()
 end

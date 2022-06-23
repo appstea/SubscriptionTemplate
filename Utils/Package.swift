@@ -25,6 +25,10 @@ let package = Package(
         .target(
             name: "Utils",
             dependencies: [
+              
+            ],
+            linkerSettings: [
+              .linkedFramework("UIKit")
             ]
         ),
     ],
