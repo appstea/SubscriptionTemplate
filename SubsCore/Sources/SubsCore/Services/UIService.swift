@@ -25,7 +25,7 @@ extension Stored {
 
 final class UIService: AppService {
 
-  var window: UIWindow?
+  weak var window: UIWindow?
   var presenter: UIViewController? {
     window?.rootViewController?.topMostController
   }

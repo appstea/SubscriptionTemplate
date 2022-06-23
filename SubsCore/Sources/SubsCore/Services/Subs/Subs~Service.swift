@@ -55,11 +55,11 @@ public extension Config {
 
 // MARK: - Subs
 
-public extension Notification {
+extension Notification {
 
   enum Subs {
 
-    public enum Update: INotification { public typealias Data = Void }
+    enum Update: INotification { public typealias Data = Void }
 
   }
 
@@ -107,7 +107,6 @@ extension Subs {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: LaunchOptions? = nil) -> Bool {
-      _ = manager
       observeSessions()
       if let idfv = UIDevice.current.identifierForVendor {
         updateAttribute(.idfv(idfv.uuidString))
@@ -115,13 +114,15 @@ extension Subs {
       return true
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-      sync()
-    }
+    private func didBecomActive() { sync() }
+    func applicationDidBecomeActive(_ application: UIApplication) { didBecomActive() }
+    func sceneDidBecomeActive(_ scene: UIScene) { didBecomActive() }
 
-    func applicationDidEnterBackground(_ application: UIApplication) {
+    private func didEnterBackground() {
       manager.hideCurrentSubsScreen(animated: false)
     }
+    func applicationDidEnterBackground(_ application: UIApplication) { didEnterBackground() }
+    func sceneDidEnterBackground(_ scene: UIScene) { didEnterBackground() }
 
     func application(_ application: UIApplication,
                             didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

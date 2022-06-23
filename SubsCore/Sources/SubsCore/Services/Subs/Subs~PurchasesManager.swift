@@ -93,10 +93,14 @@ extension Subs {
 
     func subsScreen(source: Subs.Source, screen: Subs.Screen, intent: Subs.Intent,
                     completion: (() -> Void)? = nil) -> Subs.ViewController {
-      Subs.InitialVC(config: config, source: source, intent: intent, onClose: { vc in
+      let result = Subs.InitialVC(config: config, source: source, intent: intent, onClose: { vc in
         vc.dismiss(animated: true)
         completion?()
       })
+      if let vm = config.ui.subscription {
+        result.viewModel = vm
+      }
+      return result
     }
 
     func showSubsScreen(source: Subs.Source, screen: Subs.Screen, intent: Subs.Intent,

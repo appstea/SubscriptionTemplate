@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIBase
-
 import Stored
 import SubsCore
 
@@ -30,21 +28,15 @@ final class UIService: AppService {
   // MARK: - Lifecycle
 
   func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: LaunchOptions? = nil) -> Bool {
-    UI.setBaseWidths([.phone: 375, .pad: 768])
-    return true
-  }
-
-  func application(_ application: UIApplication,
                    supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-    isPad ? .all : .portrait
+    UIDevice.current.userInterfaceIdiom == .pad ? .all : .portrait
   }
 
   // MARK: - Public
 
   func start(from window: UIWindow) {
-    Task {
-      Subs.core.bind(window: window)
+    Task { @MainActor in
+      Subs.core.keyWindow = window
       self.window = window
       await start(from: window)
     }
@@ -58,30 +50,18 @@ private extension UIService {
 
   @MainActor
   func start(from window: UIWindow) async {
-    if Stored.didPassPrepermission {
-      await showMainScreen(from: window)
+    if !Subs.core.didPassPermissions {
+      await Subs.core.showPermissions(from: window)
+      await Subs.core.showSubs(from: window)
+      await Subs.core.checkIDFAAccessIfNeeded()
     }
-    else {
-      await showOnboarding(from: window)
-    }
+    await showMainScreen(from: window)
   }
 
   @MainActor
   func showMainScreen(from window: UIWindow) async {
     window.rootViewController = MainScreen.ViewController()
     window.makeKeyAndVisible()
-  }
-
-  @MainActor
-  func showOnboarding(from window: UIWindow) async {
-    let vc = Permissions.ViewController()
-    window.rootViewController = vc
-    window.makeKeyAndVisible()
-
-    await vc.result()
-    await Subs.core.showSubs(from: window)
-    await Subs.core.checkIDFAAccessIfNeeded()
-    await showMainScreen(from: window)
   }
 
 }

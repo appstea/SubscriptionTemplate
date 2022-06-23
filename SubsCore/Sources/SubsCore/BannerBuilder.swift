@@ -1,5 +1,5 @@
 //
-//  BannerConstructor.swift
+//  BannerBuilder.swift
 //
 //  Created by dDomovoj on 6/21/22.
 //
@@ -10,9 +10,34 @@ import UIKit
 import SubsUI
 import NotificationCraftSystem
 
-public struct BannerConstructor {
+public extension Config.UI {
 
-  public struct ShowCtx {
+  struct Banner {
+
+    public typealias Default = BannerView.DefaultView.ViewModel
+    private let `default`: BannerView.DefaultView.ViewModel?
+    private let bgColor: UIColor?
+
+    public init(bgColor: UIColor? = nil, `default`: Default? = nil) {
+      self.bgColor = bgColor
+      self.default = `default`
+    }
+
+    func applyToBannerView(to bannerView: BannerView) {
+      if let vm = `default` {
+        bannerView.defaultView.viewModel = vm
+      }
+      if let bgColor = bgColor {
+        bannerView.backgroundColor = bgColor
+      }
+    }
+
+  }
+}
+
+struct BannerBuilder {
+
+  struct ShowCtx {
     let source: Subs.Source
     let intent: Subs.Intent
     let presenter: UIViewController
@@ -24,12 +49,16 @@ public struct BannerConstructor {
     }
   }
 
-  public let showContext: () -> (ShowCtx)
+  let config: Config.UI.Banner?
+  let showContext: () -> (ShowCtx?)
 
-  public func build() -> BannerView {
+  func build() -> BannerView {
     let result = BannerView()
+    config?.applyToBannerView(to: result)
+
     result.onClick = {
-      let ctx = showContext()
+      guard let ctx = showContext() else { return }
+
 //      Subs.Service.shared?.showSubscription(source: .bottomUpsell, intent: .normal, from: self)
       Subs.Service.shared?.showSubscription(source: ctx.source, intent: ctx.intent, from: ctx.presenter)
     }
@@ -41,17 +70,16 @@ public struct BannerConstructor {
 
   // MARK: - Init
 
-  public init(_ showCtxProvider: @escaping () -> (ShowCtx)) {
+  init(config: Config.UI.Banner?, showCtxProvider: @escaping () -> (ShowCtx?)) {
+    self.config = config
     showContext = showCtxProvider
   }
-
-  // MARK: - Private
 
 }
 
 // MARK: - Private
 
-private extension BannerConstructor {
+private extension BannerBuilder {
 
   func addObservers(to bannerView: BannerView) {
     [

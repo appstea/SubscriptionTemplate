@@ -7,6 +7,8 @@
 import UIKit
 
 import Cascade
+import Stored
+import SubsUI
 
 final public class Scene: Cascade.SceneDelegate {
 
@@ -43,18 +45,34 @@ final public class Instance: Cascade.AppDelegate {
   }
 
   public var isPremium: Bool { Subs.Service.shared?.isPremium == true }
+  public var keyWindow: UIWindow? {
+    get { UIService.shared?.window }
+    set { UIService.shared?.window = newValue }
+  }
+
+  public var didPassPermissions: Bool { Stored.didPassPrepermission }
+
+  private let config: Config
 
   // MARK: - Init
 
   public required init(config: Config) {
+    self.config = config
     Analytics.Service.shared = .init(config: config.analytics)
     Subs.Service.shared = .init(config: config)
   }
 
   // MARK: - Public
 
-  public func checkIDFAAccessIfNeeded() async {
-    await UIService.shared?.checkIDFAAccessIfNeeded()
+  @MainActor
+  public func showPermissions(from window: UIWindow) async {
+    let vc = Permissions.ViewController()
+    if let vm = config.ui.permissions {
+      vc.viewModel = vm
+    }
+    window.rootViewController = vc
+    window.makeKeyAndVisible()
+    await vc.result()
   }
 
   @MainActor
@@ -73,8 +91,16 @@ final public class Instance: Cascade.AppDelegate {
     await vc?.result()
   }
 
-  public func bind(window: UIWindow) {
-    UIService.shared?.window = window
+  public func checkIDFAAccessIfNeeded() async {
+    await UIService.shared?.checkIDFAAccessIfNeeded()
+  }
+
+  public func banner(source: Subs.Source, intent: Subs.Intent, presenter: UIViewController) -> BannerView {
+    BannerBuilder(config: config.ui.banner, showCtxProvider: { [weak presenter] in
+      guard let presenter = presenter else { return nil }
+
+      return .init(source: source, intent: intent, presenter: presenter)
+    }).build()
   }
 
 }

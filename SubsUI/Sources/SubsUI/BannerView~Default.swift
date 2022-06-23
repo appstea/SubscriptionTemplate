@@ -25,35 +25,57 @@ public extension BannerView {
       static let titleLeftOffset: CGFloat = 10
     }
 
+    public struct ViewModel {
+      public var title = L10n.DefaultBanner.title
+      public var titleColor = UIColor.black
+
+      public var upgradeTitle = L10n.DefaultBanner.Upgrade.title
+      public var upgradeTextColor = UIColor.black
+      public var upgradeBackgroundColor = Color.Banner.cta.color
+
+      public var icon = Asset.Banner.icon.image
+
+      public init() { }
+
+      fileprivate func apply(to view: DefaultView) {
+        view.titleLabel.text = title
+        view.titleLabel.textColor = titleColor
+
+        view.upgradeLabel.text = upgradeTitle
+        view.upgradeLabel.textColor = upgradeTextColor
+        view.ctaButton.backgroundColor = upgradeBackgroundColor
+
+        view.iconView.image = icon
+      }
+
+    }
+    public var viewModel = ViewModel() {
+      didSet { viewModel.apply(to: self) }
+    }
+
     // MARK: UI
 
-    private let titleLabel: UIBase.Label = {
+    fileprivate lazy var titleLabel: UIBase.Label = {
       let result = UIBase.Label()
-      result.text = L10n.DefaultBanner.title
       result.numberOfLines = 2
-      result.textColor = .black
       result.setDynamicFont(font: .systemFont(ofSize: Const.upgradeLabelFontSize, weight: .medium))
       result.adjustsFontSizeToFitWidth = true
       result.minimumScaleFactor = isPad ? 0.5 : 0.75
       return result
     }()
-    private let ctaButton: UIBase.View = {
+    fileprivate let ctaButton: UIBase.View = {
       let result = UIBase.View()
-      result.backgroundColor = Color.Banner.cta.color
       result.layer.cornerRadius = Const.upgradeViewHeight / 2
       return result
     }()
-    private let upgradeLabel: UIBase.Label = {
+    fileprivate lazy var upgradeLabel: UIBase.Label = {
       let result = UIBase.Label()
-      result.text = L10n.DefaultBanner.Upgrade.title
-      result.textColor = .black
       result.setContentCompressionResistancePriority(.required, for: .horizontal)
       result.dynamicFont = DynamicFont.medium(of: Const.upgradeLabelFontSize).maxSize(to: 22)
       return result
     }()
-    private let iconView: UIBase.ImageView = {
+    fileprivate lazy var iconView: UIBase.ImageView = {
       let result = UIBase.ImageView()
-      result.image = Asset.Banner.icon.image
       return result
     }()
 
@@ -68,6 +90,7 @@ public extension BannerView {
         titleLabel
       ].forEach { addSubview($0) }
       ctaButton.addSubview(upgradeLabel)
+      viewModel.apply(to: self)
     }
 
     public override func layoutSubviews() {

@@ -26,7 +26,7 @@ public final class BannerView: UIBase.View {
   }()
   private var banner: UIView?
   private let ctaButton = UIBase.Button()
-  private lazy var defaultView = BannerView.DefaultView()
+  public private(set) lazy var defaultView = BannerView.DefaultView()
 
   public var onClick: (() -> Void)?
   public let onMoveToSuperview = Callbacks()

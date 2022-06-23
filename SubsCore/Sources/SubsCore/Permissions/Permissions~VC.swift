@@ -18,16 +18,80 @@ import UIBase
 import UICommon
 import SubsResources
 
-public extension Stored {
+extension Stored {
 
   @StorageKey("subscription.didPassPrepermission", defaultValue: false)
   fileprivate(set) static var didPassPrepermission: Bool
 
 }
 
+public extension Config.UI {
+
+  typealias Permissions = SubsCore.Permissions.ViewModel
+
+}
+
+
 public enum Permissions {}
 
-public extension Permissions {
+extension Permissions {
+
+  public struct ViewModel {
+    public var bgColors = [
+      Color.Onboarding.background.color.withAlphaComponent(0),
+      Color.Onboarding.background.color.withAlphaComponent(0),
+    ]
+    public var image = Asset.Permissions.image.image
+    public var imageSize = (isPad && isPortrait)
+    ? CGSize(width: 525.ui(.subs), height: 263.ui(.subs))
+    : CGSize(width: 375.ui(.subs), height: 188.ui(.subs))
+
+    public var textColor = Color.Main.text.color
+    public var dotColor = Color.DotLabel.dot.color
+    public var ctaTextColor = UIColor.white
+    public var ctaBgColor = Color.Onboarding.continue.color
+
+    public var title = L10n.Start.title
+    public var subtitle = L10n.Start.subtitle
+    public var features = [
+      L10n.Start.Feature.first,
+      L10n.Start.Feature.second,
+    ]
+    public var cta = L10n.Start.Button.continue
+
+    public init() {}
+
+    fileprivate func apply(to view: ViewController) {
+      view.bgView.colors = bgColors
+      view.imageView.image = image
+
+      view.titleLabel.text = title
+      view.titleLabel.textColor = textColor
+
+      view.subtitleLabel.text = subtitle
+      view.subtitleLabel.textColor = textColor
+
+      zip(features, [view.dotLabel_0, view.dotLabel_1])
+        .forEach { text, label in
+          label.dotColor = dotColor
+          label.text = text
+            .withFont(DynamicFont.regular(of: isPad ? 24 : 16)
+              .maxSize(to: isPad ? 40 : 28)
+              .asFont())
+            .withTextColor(Color.Main.text.color)
+            .withParagraphStyle(NSMutableParagraphStyle {
+              $0.lineSpacing = 5
+              $0.alignment = isRTL ? .right : .left
+            })
+        }
+
+      view.ctaButton.setTitle(cta, for: .normal)
+      view.ctaButton.setTitleColor(ctaTextColor, for: .normal)
+      view.ctaButton.backgroundColor = ctaBgColor
+
+      view.reloadUI()
+    }
+  }
 
   final class ViewController: UIBase.ViewController {
 
@@ -38,41 +102,38 @@ public extension Permissions {
       static var contentWidth: CGFloat { (isPad && isLandscape) ? 0.6 : 0.8 }
     }
 
+    var viewModel = ViewModel() {
+      didSet { viewModel.apply(to: self) }
+    }
+
     private var passContinuation: CheckedContinuation<Void, Never>?
 
     override public var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
 
     // MARK: UI
 
-    private let bgView = UICommon.GradientView {
+    fileprivate let bgView = UICommon.GradientView {
       $0.direction = .down
-      $0.colors = [CGFloat(0), CGFloat(0)]
-        .map { Color.Onboarding.background.color.withAlphaComponent($0) }
     }
 
-    private let stackView = VStackView {
+    fileprivate let stackView = VStackView {
       $0.backgroundColor = .clear
     }
 
-    private lazy var imageView = UIBase.ImageView {
+    fileprivate let imageView = UIBase.ImageView {
       $0.contentMode = .scaleAspectFit
-      $0.image = Asset.Permissions.image.image
     }
-    private let titleLabel = UIBase.Label {
-      $0.text = L10n.Start.title
+    fileprivate let titleLabel = UIBase.Label {
       $0.setDynamicFont(font: .systemFont(ofSize: isPad ? 30 : 20, weight: .medium),
                         maximumPointSize: isPad ? 60 : 40)
-      $0.textColor = Color.Main.text.color
       $0.textAlignment = isRTL ? .right : .center
       $0.numberOfLines = 0
       $0.adjustsFontSizeToFitWidth = true
       $0.minimumScaleFactor = 0.8
     }
-    private let subtitleLabel = UIBase.Label {
-      $0.text = L10n.Start.subtitle
+    fileprivate let subtitleLabel = UIBase.Label {
       $0.setDynamicFont(font: .systemFont(ofSize: isPad ? 24 : 16),
                         maximumPointSize: isPad ? 48 : 32)
-      $0.textColor = Color.Main.text.color
       $0.textAlignment = isRTL ? .right : .center
       $0.numberOfLines = 0
       $0.adjustsFontSizeToFitWidth = true
@@ -80,45 +141,41 @@ public extension Permissions {
     }
     private static func dotLabelInstance() -> UICommon.DotLabel {
       UICommon.DotLabel {
-        $0.dotColor = Color.DotLabel.dot.color
         $0.dotSize = Const.dotSize
         $0.dotPadding = Const.dotSpacing
       }
     }
-    private let dotLabel_0 = dotLabelInstance()
-    private let dotLabel_1 = dotLabelInstance()
+    fileprivate let dotLabel_0 = dotLabelInstance()
+    fileprivate let dotLabel_1 = dotLabelInstance()
 
-    private let continueButton = UIBase.Button {
+    fileprivate let ctaButton = UIBase.Button {
       $0.layer.cornerRadius = 12
-      $0.backgroundColor = Color.Onboarding.continue.color
-      $0.setTitleColor(.white, for: .normal)
-      $0.setTitle(L10n.Start.Button.continue, for: .normal)
       $0.titleLabel?.font = .systemFont(ofSize: isPad ? 30 : 20, weight: .medium)
     }.asAccessibilityElement()
 
     // MARK: - Lifecycle
 
-    public override func loadView() {
+    override func loadView() {
       super.loadView()
       view.backgroundColor = Color.Main.back.color
       view.addSubviews(bgView, stackView)
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
       super.viewDidLoad()
-      updateTexts()
+      viewModel.apply(to: self)
       view.setNeedsLayout()
-      continueButton.addAction { [weak self] _ in self?.onContinue() }
+      ctaButton.addAction { [weak self] _ in self?.onContinue() }
       //        reload(for: onboarding)
     }
 
-    public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
       super.traitCollectionDidChange(previousTraitCollection)
-      updateTexts()
+      viewModel.apply(to: self)
       view.setNeedsLayout()
     }
 
-    public override func viewDidLayoutSubviews() {
+    override func viewDidLayoutSubviews() {
       super.viewDidLayoutSubviews()
 
       let safeArea = view.pin.safeArea
@@ -132,42 +189,12 @@ public extension Permissions {
       }
       stackView.pin.hCenter().width(contentWidth).vertically(safeArea)
 
-      stackView.reload {
-        (isPad && isPortrait) ? 190.fixed : 95.fixed
-        imageView.vComponent
-          .size((isPad && isPortrait)
-//                ? CGSize(width: 441.ui(.subs), height: 301.ui(.subs))
-                ? CGSize(width: 525.ui(.subs), height: 263.ui(.subs))
-//                : CGSize(width: 315.ui(.subs), height: 215.ui(.subs)))
-                : CGSize(width: 375.ui(.subs), height: 188.ui(.subs)))
-          .alignment(.center)
-        isPad ? 110.fixed : 83.fixed
-        titleLabel.vComponent.maxHeight(40.ui(.subs))
-        isPad ? 20.floating : 20.fixed
-        subtitleLabel.vComponent.maxHeight(30.ui(.subs))
-        isPad ? 16.floating : 16.fixed
-//        dotLabel_0.vComponent.maxHeight(120.ui(.subs))
-//        10.floating
-        if isPad {
-          dotLabel_1.vComponent.maxHeight(120.ui(.subs))
-            .width(.fixed(Const.buttonSize.width))
-            .alignment(.center)
-        }
-        else {
-          dotLabel_1.vComponent.maxHeight(120.ui(.subs))
-        }
-        isPad ? 160.floating : 20.floating
-        continueButton.vComponent
-          .size(Const.buttonSize)
-          .alignment(.center)
-        60.fixed
-      }
+      reloadUI()
     }
-
 
     // MARK: - Public
 
-    public func result() async {
+    func result() async {
       await withCheckedContinuation { [weak self] c in
         self?.passContinuation = c
       }
@@ -187,21 +214,35 @@ public extension Permissions {
 
 // MARK: - Private
 
-private extension Permissions.ViewController {
+fileprivate extension Permissions.ViewController {
 
-  func updateTexts() {
-    zip([L10n.Start.Feature.first, L10n.Start.Feature.second], [dotLabel_0, dotLabel_1])
-      .forEach { text, label in
-        label.text = text
-          .withFont(DynamicFont.regular(of: isPad ? 24 : 16)
-            .maxSize(to: isPad ? 40 : 28)
-            .asFont())
-          .withTextColor(Color.Main.text.color)
-          .withParagraphStyle(NSMutableParagraphStyle {
-            $0.lineSpacing = 5
-            $0.alignment = isRTL ? .right : .left
-          })
+  func reloadUI() {
+    stackView.reload {
+      (isPad && isPortrait) ? 190.fixed : 95.fixed
+      imageView.vComponent
+        .size(viewModel.imageSize)
+        .alignment(.center)
+      isPad ? 110.fixed : 83.fixed
+      titleLabel.vComponent.maxHeight(40.ui(.subs))
+      isPad ? 20.floating : 20.fixed
+      subtitleLabel.vComponent.maxHeight(30.ui(.subs))
+      isPad ? 16.floating : 16.fixed
+//        dotLabel_0.vComponent.maxHeight(120.ui(.subs))
+//        10.floating
+      if isPad {
+        dotLabel_1.vComponent.maxHeight(120.ui(.subs))
+          .width(.fixed(Const.buttonSize.width))
+          .alignment(.center)
       }
+      else {
+        dotLabel_1.vComponent.maxHeight(120.ui(.subs))
+      }
+      isPad ? 160.floating : 20.floating
+      ctaButton.vComponent
+        .size(Const.buttonSize)
+        .alignment(.center)
+      60.fixed
+    }
   }
 
 }

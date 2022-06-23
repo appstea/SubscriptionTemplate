@@ -26,18 +26,18 @@ public struct Config {
 public extension Config {
 
   struct UI {
-    let permissionsImage: UIImage?
-    let subscriptionImage: UIImage?
-    let defaultBannerIcon: UIImage?
+    let permissions: Permissions?
+    let subscription: Subscription?
+    let banner: Banner?
 
     public init(
-      permissionsImage: UIImage? = nil,
-      subscriptionImage: UIImage? = nil,
-      defaultBannerIcon: UIImage? = nil
+      permissions: Permissions? = nil,
+      subscription: Subscription? = nil,
+      banner: Banner? = nil
     ) {
-      self.permissionsImage = permissionsImage
-      self.subscriptionImage = subscriptionImage
-      self.defaultBannerIcon = defaultBannerIcon
+      self.permissions = permissions
+      self.subscription = subscription
+      self.banner = banner
     }
   }
 

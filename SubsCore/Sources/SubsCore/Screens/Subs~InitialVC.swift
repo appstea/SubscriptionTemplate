@@ -17,7 +17,130 @@ import UIBase
 import UICommon
 import SubsResources
 
+public extension Config.UI {
+
+  typealias Subscription = SubsCore.Subs.ViewModel
+
+}
+
 extension Subs {
+
+  public struct ViewModel {
+
+    private static let additionalAttributes: [SwiftyAttributes.Attribute] = [
+      .font(UIFont.systemFont(ofSize: isPad ? 16 : 13)),
+      .textColor(Color.Subs.dopButton.color),
+      .underlineStyle(.single)
+    ]
+
+    public var fadeColors: [UIColor] = [
+      Color.Subs.background.color,
+      Color.Subs.background.color.withAlphaComponent(0),
+    ]
+    public var bgColor = Color.Main.back.color
+    public var closeColor = Color.Subs.title.color
+
+    public var image = Asset.Subs.image.image
+    public var title = L10n.Subs.TwoButtons.title
+    public var subtitle = L10n.Subs.TwoButtons.subtitle
+    public var text = L10n.Subs.TwoButtons.text
+
+    public var titleColor = Color.Subs.title.color
+    public var subtitleColor = Color.Subs.infoTitle.color
+    public var textColor = Color.Main.text.color
+
+    public var trial = L10n.Subs.tryFreeAndSubscribe
+    public var trialTextColor = UIColor.white
+    public var trialBgColor = Color.Subs.continue.color
+
+    public var instantBgColor = Color.Main.back.color
+    public var instantBorderColor = Color.Subs.continue.color
+    public var instantTitleColor = Color.Subs.continue.color
+    public var instantSubtitleColor = Color.Subs.title.color
+
+    public var terms = L10n.Subs.Button.terms.withAttributes(Self.additionalAttributes)
+    public var policy = L10n.Subs.Button.privacy.withAttributes(Self.additionalAttributes)
+    public var restore = L10n.Subs.Button.restore.withAttributes(Self.additionalAttributes)
+
+    public init() { }
+
+    fileprivate func apply(to view: InitialVC) {
+      defer { view.view.setNeedsLayout() }
+
+      view.view.backgroundColor = bgColor
+      view.closeButton.tintColor = closeColor
+      view.bgView.colors = fadeColors
+      view.imageView.image = image
+
+      view.titleLabel.text = title
+      view.subtitleLabel.text = subtitle
+
+      view.titleLabel.textColor = titleColor
+      view.subtitleLabel.textColor = subtitleColor
+      view.textLabel.textColor = textColor
+
+      view.trialButton.setTitle(trial, for: .normal)
+      view.trialButton.setBackgroundImage(trialBgColor.image(), for: .normal)
+      view.trialButton.setTitleColor(trialTextColor, for: .normal)
+
+      view.instantButton.setBackgroundImage(instantBgColor.image(), for: .normal)
+      view.instantButton.layer.borderColor = instantBorderColor.cgColor
+
+      zip(
+        [view.termsButton, view.privacyButton, view.restoreButton],
+        [terms, policy, restore]
+      ).forEach { button, text in
+        button.setAttributedTitle(text, for: .normal)
+        button.explicitIntrinsicContentSize = CGSize(width: text.string.size().width, height: UIView.noIntrinsicMetric)
+      }
+
+      view.textLabel.attributedText = textWithTrial(for: view.trialProduct)
+      view.instantButton.setAttributedTitle(instantText(for: view.instantProduct), for: .normal)
+    }
+
+    private func textWithTrial(for product: StoreProduct?) -> NSAttributedString {
+      guard let product = product else {
+        return NSAttributedString(string: text, swiftyAttributes: [])
+      }
+
+      let price = product.localizedPricePerPeriod()
+      let trialCount = product.trialCount()
+      var result: NSMutableAttributedString
+
+      if trialCount == 7 {
+        result = L10n.Subs.TwoButtons.textFormat7(trialCount, price)
+          .withFont(.systemFont(ofSize: 17.ui(.subs), weight: .light))
+      }
+      else {
+        result = L10n.Subs.TwoButtons.textFormat(trialCount, price)
+          .withFont(.systemFont(ofSize: 17.ui(.subs), weight: .light))
+      }
+
+      let priceRange = (result.string as NSString).range(of: price)
+      if priceRange.location != NSNotFound && priceRange.length > 0 {
+        result.addAttributes([.font(.systemFont(ofSize: 17.ui(.subs), weight: .bold))], range: priceRange)
+      }
+      return result
+    }
+
+    private func instantText(for product: StoreProduct?) -> NSAttributedString? {
+      guard let product = product else { return nil }
+
+      let result =
+      (((product.localizedPricePerPeriod() + "\n")
+        .withFont(.systemFont(ofSize: isPad ? 24 : 18, weight: .semibold))
+        .withTextColor(instantTitleColor))
+       +
+       (L10n.Subs.TwoButtons.infoJust(product.localizedMonthlyPriceSlashMonth())
+        .withFont(.systemFont(ofSize: isPad ? 16 : 12, weight: .regular))
+        .withTextColor(instantSubtitleColor)
+       ))
+      .withParagraphStyle(NSMutableParagraphStyle { $0.alignment = .center })
+
+      return result
+    }
+
+  }
 
   final class InitialVC: ViewController {
 
@@ -27,16 +150,14 @@ extension Subs {
       static let imageWidth = contentWidth + 50.ui(.subs)
       static let additionalButtonsHeight = CGFloat(50)
       static let ctaButtonSize = CGSize(width: isPad ? 400 : 285.ui(.subs), height: isPad ? 70 : 50)
-
-      static let additionalButtonsAttributes: [NSAttributedString.Key: Any] = [
-        .font: UIFont.systemFont(ofSize: isPad ? 16 : 13),
-        .foregroundColor: Color.Subs.dopButton.color,
-        .underlineStyle: NSNumber(value: NSUnderlineStyle.single.rawValue),
-      ]
     }
 
-    private var trialProduct: StoreProduct?
-    private var instantProduct: StoreProduct?
+    fileprivate var trialProduct: StoreProduct?
+    fileprivate var instantProduct: StoreProduct?
+
+    var viewModel = ViewModel() {
+      didSet { viewModel.apply(to: self) }
+    }
 
     // MARK: UI
 
@@ -44,24 +165,14 @@ extension Subs {
       $0.backgroundColor = .clear
     }
 
-    private lazy var closeButton = UIBase.Button {
-      $0.setImage(Asset.Subs.cross.image, for: .normal)
+    fileprivate lazy var closeButton = UIBase.Button {
+      $0.setImage(Asset.Subs.cross.image.withRenderingMode(.alwaysTemplate), for: .normal)
     }.asAccessibilityElement(L10n.General.Button.close, traits: .button)
 
     private let vStackView = VStackView()
 
-    private lazy var bgView = UICommon.GradientView {
-      $0.direction = .down
-      $0.colors = [
-        Color.Subs.background.color,
-        Color.Subs.background.color.withAlphaComponent(0),
-      ]
-    }
-
-    private lazy var imageView = UIBase.ImageView {
-      $0.image = Asset.Subs.image.image
-      $0.contentMode = .scaleAspectFit
-    }
+    fileprivate let bgView = UICommon.GradientView { $0.direction = .down }
+    fileprivate let imageView = UIBase.ImageView { $0.contentMode = .scaleAspectFit }
 
     private lazy var portraitImage = imageView
       .vComponent
@@ -75,32 +186,26 @@ extension Subs {
 
     private var image: VStackView.Component { isPortrait ? portraitImage : landscapeImage }
 
-    private let titleLabel = UIBase.Label {
-      $0.textColor = Color.Subs.title.color
+    fileprivate let titleLabel = UIBase.Label {
       $0.setDynamicFont(font: .systemFont(ofSize: 40.ui(.subs), weight: .bold))
       $0.numberOfLines = 1
       $0.adjustsFontSizeToFitWidth = true
       $0.minimumScaleFactor = 0.7
       $0.textAlignment = isRTL ? .right : .left
-      $0.text = L10n.Subs.TwoButtons.title
     }
-    private let subtitleLabel = UIBase.Label {
-      $0.textColor = Color.Subs.infoTitle.color
+    fileprivate let subtitleLabel = UIBase.Label {
       $0.setDynamicFont(font: .systemFont(ofSize: 17.ui(.subs), weight: .semibold))
       $0.numberOfLines = 1
       $0.textAlignment = isRTL ? .right : .left
-      $0.text = L10n.Subs.TwoButtons.subtitle
     }
-    private let textLabel = UIBase.Label {
-      $0.textColor = Color.Main.text.color
+    fileprivate let textLabel = UIBase.Label {
       $0.setDynamicFont(font: .systemFont(ofSize: 17.ui(.subs), weight: .regular))
       $0.numberOfLines = 0
       $0.textAlignment = isRTL ? .right : .left
       $0.verticalAlignment = .top
     }
 
-    private let trialButton = UIBase.Button {
-      $0.setTitle(L10n.Subs.tryFreeAndSubscribe, for: .normal)
+    fileprivate let trialButton = UIBase.Button {
       $0.titleLabel?.adjustsFontSizeToFitWidth = true
       $0.titleLabel?.minimumScaleFactor = 0.75
       $0.titleLabel?.numberOfLines = 2
@@ -110,53 +215,27 @@ extension Subs {
       $0.titleLabel?.setDynamicFont(font: .systemFont(ofSize: isPad ? 22 : 17, weight: .bold),
                                     maximumPointSize: isPad ? 26 : 20)
       $0.layer.cornerRadius = 13
-      $0.setBackgroundImage(Color.Subs.continue.color.image(), for: .normal)
       $0.clipsToBounds = true
     }.asAccessibilityElement(traits: .button)
 
-    private let instantButton = UIBase.Button {
+    fileprivate let instantButton = UIBase.Button {
       $0.titleLabel?.numberOfLines = 2
-      $0.setBackgroundImage(Color.Main.back.color.image(), for: .normal)
       $0.layer.borderWidth = 1
-      $0.layer.borderColor = Color.Subs.continue.color.cgColor
       $0.layer.cornerRadius = 13
       $0.clipsToBounds = true
     }.asAccessibilityElement(traits: .button)
 
     private let additionalButtonsContainer = UIView()
-    private let termsButton = UIBase.Button {
-      let text = L10n.Subs.Button.terms
-      let attributed = NSAttributedString(string: text, attributes: Const.additionalButtonsAttributes)
-      $0.setAttributedTitle(attributed, for: .normal)
-      $0.explicitIntrinsicContentSize = CGSize(width: text.size().width, height: UIView.noIntrinsicMetric)
-    }.asAccessibilityElement(traits: .link)
-    private let privacyButton = UIBase.Button {
-      let text = L10n.Subs.Button.privacy
-      let attributed = NSAttributedString(string: text, attributes: Const.additionalButtonsAttributes)
-      $0.setAttributedTitle(attributed, for: .normal)
-      $0.explicitIntrinsicContentSize = CGSize(width: text.size().width, height: UIView.noIntrinsicMetric)
-    }.asAccessibilityElement(traits: .link)
-    private let restoreButton = UIBase.Button {
-      let text = L10n.Subs.Button.restore
-      let attributed = NSAttributedString(string: text, attributes: Const.additionalButtonsAttributes)
-      $0.setAttributedTitle(attributed, for: .normal)
-      $0.explicitIntrinsicContentSize = CGSize(width: text.size().width, height: UIView.noIntrinsicMetric)
-    }.asAccessibilityElement(traits: .button)
+    fileprivate let termsButton = UIBase.Button().asAccessibilityElement(traits: .link)
+    fileprivate let privacyButton = UIBase.Button().asAccessibilityElement(traits: .link)
+    fileprivate let restoreButton = UIBase.Button().asAccessibilityElement(traits: .button)
 
     // MARK: - Lifecycle
 
     override func loadView() {
       super.loadView()
-      view.backgroundColor = Color.Main.back.color
-      //      if imageType == .house {
-      //        view.addSubviews(bgView)
-      //      }
       view.addSubviews(contentView, closeButton)
 
-      //      if imageType == .additional {
-      //        titleLabel.text = L10n.Subs.AdditionalOffer.title
-      //        subtitleLabel.text = L10n.Subs.AdditionalOffer.subtitle
-      //      }
       contentView.addSubviews(imageView, vStackView, textLabel, additionalButtonsContainer)
       additionalButtonsContainer.addSubviews(termsButton, privacyButton, restoreButton)
     }
@@ -174,18 +253,18 @@ extension Subs {
       restoreButton.addAction { [weak self] _ in self?.restorePurchases() }
 
       updateProducts()
-      reloadData()
+      viewModel.apply(to: self)
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
       super.traitCollectionDidChange(previousTraitCollection)
-      reloadData()
+      viewModel.apply(to: self)
     }
 
     override func didUpdateSubsStatus() {
       guard updateProducts() else { return }
 
-      reloadData()
+      viewModel.apply(to: self)
     }
 
     override func viewDidLayoutSubviews() {
@@ -245,61 +324,6 @@ private extension Subs.InitialVC {
     }
 
     return changed
-  }
-
-  func reloadData() {
-    defer { view.setNeedsLayout() }
-
-    if let product = trialProduct {
-      let price = product.localizedPricePerPeriod()
-      let trialCount = product.trialCount()
-      var text: NSMutableAttributedString
-
-      if trialCount == 7 {
-        text = L10n.Subs.TwoButtons
-          .textFormat7(trialCount, price)
-          .withFont(.systemFont(ofSize: 17.ui(.subs), weight: .light))
-      }
-      else {
-        text = L10n.Subs.TwoButtons
-          .textFormat(trialCount, price)
-          .withFont(.systemFont(ofSize: 17.ui(.subs), weight: .light))
-      }
-
-//      let additionalText = L10n.Subs.AdditionalOffer
-//        .textFormat(price)
-//        .withFont(.systemFont(ofSize: 17.ui(.subs), weight: .light))
-
-      let priceRange = (text.string as NSString).range(of: price)
-//      let additionalPriceRange = (additionalText.string as NSString).range(of: price)
-
-      if priceRange.location != NSNotFound && priceRange.length > 0 {
-//        additionalText.addAttributes([.font(.systemFont(ofSize: 17.ui(.subs), weight: .bold))], range: additionalPriceRange)
-        text.addAttributes([.font(.systemFont(ofSize: 17.ui(.subs), weight: .bold))], range: priceRange)
-      }
-//      textLabel.attributedText = (imageType == .additional ? additionalText : text)
-      textLabel.attributedText = text // (imageType == .additional ? additionalText : text)
-    }
-    else {
-      textLabel.text = L10n.Subs.TwoButtons.text
-    }
-
-    if let product = instantProduct {
-      let text =
-      (((product.localizedPricePerPeriod() + "\n")
-        .withFont(.systemFont(ofSize: isPad ? 24 : 18, weight: .semibold))
-        .withTextColor(Color.Subs.continue.color))
-       +
-       (L10n.Subs.TwoButtons.infoJust(product.localizedMonthlyPriceSlashMonth())
-        .withFont(.systemFont(ofSize: isPad ? 16 : 12, weight: .regular))
-        .withTextColor(Color.Subs.title.color)
-       ))
-      .withParagraphStyle(NSMutableParagraphStyle { $0.alignment = .center })
-      instantButton.setAttributedTitle(text, for: .normal)
-    }
-    else {
-      instantButton.setTitle(nil, for: .normal)
-    }
   }
 
   func reloadUI() {

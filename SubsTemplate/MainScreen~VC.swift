@@ -16,9 +16,7 @@ public extension MainScreen {
 
   final class ViewController: UIBase.ViewController {
 
-    private lazy var bannerView = BannerConstructor {
-      .init(source: .bottomUpsell, intent: .normal, presenter: self)
-    }.build()
+    private lazy var bannerView = Subs.core.banner(source: .bottomUpsell, intent: .normal, presenter: self)
 
     // MARK: - Lifecycle
 

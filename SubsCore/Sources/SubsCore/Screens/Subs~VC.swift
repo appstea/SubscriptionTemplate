@@ -18,11 +18,11 @@ import SubsResources
 extension Subs {
 
   @objc(SubsViewController)
-  class ViewController: UIBase.ViewController {
+  open class ViewController: UIBase.ViewController {
 
-    let config: Config
-    let source: Source
-    let intent: Intent
+    public let config: Config
+    public let source: Source
+    public let intent: Intent
 
     private var onClose: ((UIViewController) -> Void)?
     private var continuation: CheckedContinuation<Void, Never>?
@@ -34,7 +34,7 @@ extension Subs {
 
     // MARK: - Init
 
-    init(config: Config, source: Source, intent: Intent, onClose: ((UIViewController) -> Void)? = nil) {
+    public init(config: Config, source: Source, intent: Intent, onClose: ((UIViewController) -> Void)? = nil) {
       self.config = config
       self.source = source
       self.intent = intent
@@ -42,13 +42,13 @@ extension Subs {
       super.init(nibName: nil, bundle: nil)
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: - Lifecycle
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
       super.viewDidLoad()
       Notification.Subs.Update
         .observe { [weak self] in self?.didUpdateSubsStatus() }
@@ -56,24 +56,24 @@ extension Subs {
       analytics?.sendSubsEvent(.upsellShown(intent: intent, source: source))
     }
 
-    func didUpdateSubsStatus() { }
+    open func didUpdateSubsStatus() { }
 
     // MARK: - Public
 
     @MainActor
-    func result() async {
+    open func result() async {
       await withCheckedContinuation { c in
         continuation = c
       }
     }
 
-    func close() {
+    open func close() {
       onClose?(self)
       continuation?.resume(returning: ())
       continuation = nil
     }
 
-    func purchase(_ product: StoreProduct?) {
+    public func purchase(_ product: StoreProduct?) {
       if let product = product {
         analytics?.sendSubsEvent(
           .productSelected(intent: intent, source: source, productId: product.productIdentifier))
@@ -92,7 +92,7 @@ extension Subs {
       }
     }
 
-    func showTerms() {
+    public func showTerms() {
       guard let url = NSURL(string: config.subs.urls.terms) else { return }
 
       let safariVC = SFSafariViewController(url: url as URL)
@@ -100,7 +100,7 @@ extension Subs {
       present(safariVC, animated: true)
     }
 
-    func showPolicy() {
+    public func showPolicy() {
       guard let url = NSURL(string: config.subs.urls.policy) else { return }
 
       let safariVC = SFSafariViewController(url: url as URL)
@@ -108,7 +108,7 @@ extension Subs {
       present(safariVC, animated: true)
     }
 
-    func restorePurchases() {
+    public func restorePurchases() {
       subs?.restore { [weak self] success in
         switch success {
         case .success:
@@ -128,7 +128,7 @@ extension Subs {
 
 extension Subs.ViewController: SFSafariViewControllerDelegate {
 
-  func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+  public func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
     controller.dismiss(animated: true)
   }
 
