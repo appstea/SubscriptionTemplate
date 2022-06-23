@@ -28,8 +28,15 @@ public final class Transmitter {
   }
 
   public func send(_ event: IAnalyticsEvent) {
-    loggers.forEach {
-      $0.sendEventIfNeeded(event)
+    if Thread.isMainThread {
+      loggers.forEach {
+        $0.sendEventIfNeeded(event)
+      }
+    }
+    else {
+      DispatchQueue.main.async { [weak self] in
+        self?.send(event)
+      }
     }
   }
 

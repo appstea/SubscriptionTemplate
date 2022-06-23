@@ -42,8 +42,7 @@ public extension MainScreen {
       super.viewDidLayoutSubviews()
 
       let safeArea = view.pin.safeArea
-      let isPremium = SubsCore.Subs.Service.shared?.isPremium == true
-      if !isPremium {
+      if !Subs.core.isPremium {
         bannerView.pin.start().end()
           .bottom(safeArea.bottom)
           .sizeToFit(.width)

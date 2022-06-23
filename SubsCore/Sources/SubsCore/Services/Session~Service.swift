@@ -49,7 +49,7 @@ private extension SessionService {
     if Stored.didPassPrepermission {
       if Stored.sessionIdx == 0 {
         Stored.sessionIdx += 1
-        NSLog("SESSION idx: " + currentSessionIdx.description)
+//        NSLog("SESSION idx: " + currentSessionIdx.description)
         Notification.Session.Change.post(currentSessionIdx)
       }
     }

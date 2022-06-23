@@ -16,61 +16,39 @@ protocol IFIRAnalyticsEvent: IAnalyticsEvent {
 
 }
 
-// MARK: - Subs
+fileprivate extension String {
 
-extension Analytics.Event.Subs: IFIRAnalyticsEvent {
-
-  var firName: String? {
-    switch self {
-    case .upsellShown: return "Upsell_Shown"
-    case .productSelected: return "Product_Selected"
-    }
-  }
-
-  var firParams: [String: Any]? {
-    switch self {
-    case .upsellShown(let intent, let source):
-      return ["Screen_ID": intent.value,
-              "Source": source.value,]
-    case .productSelected(let intent, let source, let productId):
-      return ["Screen_ID": intent.value,
-              "Source": source.value,
-              "Product_ID": productId,]
-    }
+  var firebaseKey: String {
+    capitalized
+      .components(separatedBy: " ")
+      .joined(separator: "_")
   }
 
 }
+
+extension IFIRAnalyticsEvent {
+
+  var firName: String? { name.firebaseKey }
+
+  var firParams: [String: Any]? {
+    guard let params = params, !params.isEmpty else { return nil }
+
+    var result = [String: Any](minimumCapacity: params.count)
+    params.forEach { key, value in
+      result[key.firebaseKey] = value
+    }
+    return result
+  }
+
+}
+
+// MARK: - Subs
+
+extension Analytics.Event.Subs: IFIRAnalyticsEvent { }
 
 // MARK: - General
 
-extension Analytics.Event: IFIRAnalyticsEvent {
-
-  var firName: String? {
-    switch self {
-    case .sessionDetails: return "Session_Details"
-    case .orientationUsed: return "Orientation_Used"
-    }
-  }
-
-  var firParams: [String: Any]? {
-    switch self {
-    case .sessionDetails(let notification):
-      let value: String
-      switch notification {
-      case .allowed: value = "Yes"
-      case .denied: value = "No"
-      case .silent: value = "Quiet"
-      case .custom: value = "Custom"
-      }
-      return [
-        "Permission_Notifications": value,
-      ]
-    case .orientationUsed(let orientation):
-      return ["Orientation": orientation.value]
-    }
-  }
-
-}
+extension Analytics.Event: IFIRAnalyticsEvent { }
 
 // MARK: - Logger
 

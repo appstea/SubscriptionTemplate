@@ -21,6 +21,8 @@ public class Instance: Cascade.AppDelegate {
     NotificationsService.shared,
   ].compactMap { $0 }}
 
+  public var isPremium: Bool { Subs.Service.shared?.isPremium == true }
+
   // MARK: - Public
 
   public func checkIDFAAccessIfNeeded() async {

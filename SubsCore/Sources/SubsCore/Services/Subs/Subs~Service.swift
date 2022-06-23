@@ -35,7 +35,7 @@ public extension Notification {
 
 }
 
-public extension Subs {
+extension Subs {
 
   final class Service: AppService {
 
@@ -57,7 +57,7 @@ public extension Subs {
       }
       case branch(Branch)
 
-      //      case onboarding(Onboarding)
+//      case onboarding(Onboarding)
     }
 
     private lazy var manager = PurchasesManager()
@@ -186,22 +186,22 @@ public extension Subs {
 private extension Subs.Service {
 
   func observeSessions() {
-    //    Notification.Session.Change
-    //      .observe { [weak self] session in
-    //        guard let self = self,
-    //              !self.isPremium,
-    //              session > 0
-    //        else { return }
-    //
-    //        if session % $0.subsShowSessionInterval == 0 && session != 1 {
-    //          self.showSubscription(source: .sessionStart, intent: .onStart)
-    //
-    //        }
-    //        else if (session == $0.offerShowSessionInterval || ((session - $0.offerShowSessionInterval)  % $0.offerShowSessionRepeat == 0)) && session != 1 {
-    //          self.showSubscription(source: .bottomUpsell, intent: .additionInstant, session: session)
-    //        }
-    //    }
-    //    .bind(to: self)
+//    Notification.Session.Change
+//      .observe { [weak self] session in
+//        guard let self = self,
+//              !self.isPremium,
+//              session > 0
+//        else { return }
+//
+//        if session % $0.subsShowSessionInterval == 0 && session != 1 {
+//          self.showSubscription(source: .sessionStart, intent: .onStart)
+//
+//        }
+//        else if (session == $0.offerShowSessionInterval || ((session - $0.offerShowSessionInterval)  % $0.offerShowSessionRepeat == 0)) && session != 1 {
+//          self.showSubscription(source: .bottomUpsell, intent: .additionInstant, session: session)
+//        }
+//      }
+//      .bind(to: self)
   }
 
   func _showSubsScreen(source: Subs.Source, screen: Subs.Screen? = nil, intent: Subs.Intent, context: Subs.Context,

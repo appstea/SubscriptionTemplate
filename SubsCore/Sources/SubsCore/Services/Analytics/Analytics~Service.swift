@@ -52,39 +52,38 @@ extension Analytics {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-//      if Stored.didPassPrepermission {
-//        component.services.notifications?.fetchStatus { [weak self] in
-//          guard let self = self else { return }
-//
-//          let status = self.component.location.authorizationStatus
-//          self.sendEvent(.sessionDetails(notificationStatus: $0, location: status))
-//        }
-//      }
+      if Stored.didPassPrepermission {
+        Task { [weak self] in
+          if let status = await NotificationsService.shared?.fetchStatus() {
+            self?.sendEvent(.sessionDetails(notificationStatus: status))
+          }
+        }
+      }
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
       didSendStartEventAtCurrentSession = false
     }
 
-    func application(_ application: UIApplication,
-                     willContinueUserActivityWithType userActivityType: String) -> Bool {
+//    func application(_ application: UIApplication,
+//                     willContinueUserActivityWithType userActivityType: String) -> Bool {
 //      sendStartAnalyticsIfNeeded(Analytics.Event.Start(.userActivityType(userActivityType)))
-      return false
-    }
-
-    func application(_ application: UIApplication,
-                     continue userActivity: NSUserActivity,
-                     restorationHandler: @escaping RestorationHandler) -> Bool {
+//      false
+//    }
+//
+//    func application(_ application: UIApplication,
+//                     continue userActivity: NSUserActivity,
+//                     restorationHandler: @escaping RestorationHandler) -> Bool {
 //      sendStartAnalyticsIfNeeded(Analytics.Event.Start(.userActivity(userActivity)))
-      return false
-    }
-
-    func application(_ app: UIApplication, open url: URL,
-                     options: OpenURLOptions = [:]) -> Bool {
+//      false
+//    }
+//
+//    func application(_ app: UIApplication, open url: URL,
+//                     options: OpenURLOptions = [:]) -> Bool {
 //      sendStartAnalyticsIfNeeded(Analytics.Event.Start(.init(url: url, options: options)))
-      return false
-    }
-
+//      false
+//    }
+//
 //    func appDidReceive(_ notification: Astrarium.Notification) {
 //      // TODO: include only on start notifications
 //      switch notification {

@@ -25,23 +25,23 @@ extension Analytics {
 
     case sessionDetails(notificationStatus: NotificationsService.Status)
 
-    enum Orientation: IAnalyticsValue {
-      case portrait
-      case landscape
-
-      var value: String {
-        switch self {
-        case .portrait: return "Portrait"
-        case .landscape: return "Landscape"
-        }
-      }
-    }
-    case orientationUsed(Orientation)
+//    enum Orientation: IAnalyticsValue {
+//      case portrait
+//      case landscape
+//
+//      var value: String {
+//        switch self {
+//        case .portrait: return "Portrait"
+//        case .landscape: return "Landscape"
+//        }
+//      }
+//    }
+//    case orientationUsed(Orientation)
 
     var name: String {
       switch self {
       case .sessionDetails: return "Session Details"
-      case .orientationUsed: return "Orientation Used"
+//      case .orientationUsed: return "Orientation Used"
       }
     }
 
@@ -58,8 +58,8 @@ extension Analytics {
         return [
           "Permission Notifications": value,
         ]
-      case .orientationUsed(let orientation):
-        return ["Orientation": orientation.value]
+//      case .orientationUsed(let orientation):
+//        return ["Orientation": orientation.value]
       }
     }
 

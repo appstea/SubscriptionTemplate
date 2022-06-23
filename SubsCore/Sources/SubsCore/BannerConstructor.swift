@@ -47,7 +47,13 @@ public struct BannerConstructor {
 
   // MARK: - Private
 
-  private func addObservers(to bannerView: BannerView) {
+}
+
+// MARK: - Private
+
+private extension BannerConstructor {
+
+  func addObservers(to bannerView: BannerView) {
     [
       Notification.Subs.Update.observe { [weak bannerView] in self.updateBannerIfNeeded(in: bannerView) },
       Notification.System.DidBecomeActive.observe { [weak bannerView] in self.loadBanner(in: bannerView) },
@@ -60,7 +66,7 @@ public struct BannerConstructor {
     }.bindLifetime(to: bannerView)
   }
 
-  private func updateBannerIfNeeded(in bannerView: BannerView?) {
+  func updateBannerIfNeeded(in bannerView: BannerView?) {
     if SubsCore.Subs.Service.shared?.isPremium == true {
       removeBanner(from: bannerView)
     }
@@ -72,7 +78,7 @@ public struct BannerConstructor {
     bannerView?.superview?.layoutIfNeeded()
   }
 
-  private func loadBanner(in bannerView: BannerView?) {
+  func loadBanner(in bannerView: BannerView?) {
     if SubsCore.Subs.Service.shared?.isPremium == true { return }
 
 //    Ads.Service.shared?.getBanner(vc: self, loadedBlock: { [weak self] banner in
@@ -87,7 +93,7 @@ public struct BannerConstructor {
 //    })
   }
 
-  private func removeBanner(from bannerView: BannerView?) {
+  func removeBanner(from bannerView: BannerView?) {
     bannerView?.removeBanner()
   }
 
