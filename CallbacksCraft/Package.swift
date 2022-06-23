@@ -26,5 +26,6 @@ let package = Package(
             name: "CallbacksCraft",
             dependencies: []
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

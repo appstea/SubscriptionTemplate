@@ -8,7 +8,6 @@
 import UIKit
 
 import UIBase
-import SubsUI
 import SubsCore
 
 public enum MainScreen { }
@@ -17,7 +16,7 @@ public extension MainScreen {
 
   final class ViewController: UIBase.ViewController {
 
-    private lazy var bannerView = BannerConstructor.init {
+    private lazy var bannerView = BannerConstructor {
       .init(source: .bottomUpsell, intent: .normal, presenter: self)
     }.build()
 

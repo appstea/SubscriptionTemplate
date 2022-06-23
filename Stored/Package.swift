@@ -26,5 +26,6 @@ let package = Package(
             name: "Stored",
             dependencies: []
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

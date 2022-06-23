@@ -18,16 +18,6 @@ extension Stored {
 
 }
 
- // TODO: config
-
-extension Subs {
-
-  static let policyString: String = "https://appstea.com/legal/privacy-policy/"
-  static let termsString: String = "https://appstea.com/legal/terms-of-use/"
-  static let appString: String = "https://apps.apple.com/us/app/id1533228338"
-
-}
-
 // MARK: - Intent
 
 public extension Subs {

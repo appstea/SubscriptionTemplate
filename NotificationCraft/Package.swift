@@ -41,5 +41,6 @@ let package = Package(
             linkerSettings: [
             ]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

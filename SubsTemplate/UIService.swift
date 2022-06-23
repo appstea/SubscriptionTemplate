@@ -44,7 +44,6 @@ final class UIService: AppService {
 
   func start(from window: UIWindow) {
     Task {
-       // TODO: Refactor
       Subs.core.bind(window: window)
       self.window = window
       await start(from: window)

@@ -26,5 +26,6 @@ let package = Package(
               .linkedFramework("UIKit"),
             ]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

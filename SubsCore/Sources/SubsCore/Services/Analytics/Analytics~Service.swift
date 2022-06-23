@@ -12,16 +12,36 @@ import AnalyticsCraft
 
 enum Analytics { }
 
+public extension Config {
+
+  struct Analytics {
+    let isOSLogEnabled: Bool
+    let isFirebaseEnabled: Bool
+    let isBranchEnabled: Bool
+
+    public init(isOSLogEnabled: Bool? = nil, isFirebaseEnabled: Bool? = nil, isBranchEnabled: Bool? = nil) {
+      self.isOSLogEnabled = isOSLogEnabled ?? true
+      self.isFirebaseEnabled = isFirebaseEnabled ?? true
+      self.isBranchEnabled = isBranchEnabled ?? true
+    }
+
+  }
+}
+
 extension Analytics {
 
   struct LoggersProvider: IAnalyticsLoggersProvider {
 
-    func loggers() -> [IAnalyticsLogger?] {[
-       // TODO: Refactor: move to config
-      (isDebug || isAdHoc) ? OSLogger() : nil,
+    let config: Config.Analytics
 
-      FirebaseService.shared.map { _ in FIRLogger() },
-      BranchService.shared.map { _ in BranchLogger() },
+    init(config: Config.Analytics) {
+      self.config = config
+    }
+
+    func loggers() -> [IAnalyticsLogger?] {[
+      config.isOSLogEnabled ? OSLogger() : nil,
+      config.isFirebaseEnabled ? FirebaseService.shared.map { _ in FIRLogger() } : nil,
+      config.isBranchEnabled ? BranchService.shared.map { _ in BranchLogger() } : nil,
     ]}
 
   }
@@ -35,11 +55,13 @@ extension Analytics {
 //      .subtracting(.default)
     private var didSendStartEventAtCurrentSession = false
 
-    private let transmitter = Transmitter(provider: Analytics.LoggersProvider())
+    private let transmitter: Transmitter
 
-    static let shared: Analytics.Service? = Analytics.Service()
-    private override init() {
-      super.init()
+    // MARK: - Init
+
+    static var shared: Analytics.Service?
+    init(config: Config.Analytics) {
+      transmitter = Transmitter(provider: Analytics.LoggersProvider(config: config))
     }
 
     // MARK: - UIApplicationDelegate

@@ -23,6 +23,36 @@ public enum RestoreResponseType {
   case error
 }
 
+public extension Config {
+
+  struct Subs {
+    let apiKey: String
+    let offering: String
+    let isDebug: Bool
+
+    public struct URLs {
+      let policy: String
+      let terms: String
+//      let store: String
+
+      public init(policy: String, terms: String) {//} store: String) {
+        self.policy = policy
+        self.terms = terms
+//        self.store = store
+      }
+    }
+    let urls: URLs
+
+    public init(apiKey: String, offering: String, isDebug: Bool, urls: URLs) {
+      self.apiKey = apiKey
+      self.offering = offering
+      self.isDebug = isDebug
+      self.urls = urls
+    }
+  }
+
+}
+
 // MARK: - Subs
 
 public extension Notification {
@@ -60,20 +90,17 @@ extension Subs {
 //      case onboarding(Onboarding)
     }
 
-    private lazy var manager = PurchasesManager()
+    private let manager: PurchasesManager
     //
-    public var isPremium: Bool { manager.isPremium }
-
-#if DEBUG
-    public var isDebugPremium: Bool {
+    var isPremium: Bool { manager.isPremium }
+    var isDebugPremium: Bool {
       get { manager.debugPremium }
       set { manager.debugPremium = newValue }
     }
-#endif
 
-    public static let shared: Subs.Service? = Subs.Service()
-    override private init() {
-      super.init()
+    static var shared: Subs.Service?
+    init(config: Config) {
+      manager = .init(config: config)
     }
 
     // MARK: - Lifecycle

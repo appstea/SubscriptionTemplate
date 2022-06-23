@@ -22,8 +22,7 @@ extension Subs {
     typealias SubsCompletion = () -> Void
 
     struct RCSetup {
-      let apiKey: String
-      let entitlement: String
+//      let apiKey: String
       let offering: String
 
 //      Внутри него packages:
@@ -37,17 +36,14 @@ extension Subs {
       static let syncDelay = DispatchTimeInterval.seconds(1)
     }
 
-#if DEBUG
     var debugPremium = false
-#endif
 
     var hasProducts: Bool { !products.isEmpty }
     var isPremium: Bool {
-#if DEBUG
-      return debugPremium || premium
-#else
+      if isDebug {
+        return debugPremium || premium
+      }
       return premium
-#endif
     }
 
     private var isLoadingProducts: Bool = false
@@ -72,20 +68,21 @@ extension Subs {
       }
     }
 
-    // TODO: Should be set in settings
-    private let rcSetup = RCSetup(
-      apiKey: "appl_PrQxhLfrujRwauAlGngBUArKhIK",
-      entitlement: "com.appstea.proto.unlock",
-      offering: "com.appstea.proto.first"
-    )
+    private let config: Config
+    private let isDebug: Bool
+    private let rcSetup: RCSetup
 
     // MARK: - Init
 
-    override init() {
+    init(config: Config) {
+      self.config = config
+      isDebug = config.subs.isDebug
+      rcSetup = .init(offering: config.subs.offering)
       super.init()
+
       Purchases.logLevel = isDebug ? .debug : .warn
       Purchases.automaticAppleSearchAdsAttributionCollection = true
-      Purchases.configure(withAPIKey: rcSetup.apiKey)
+      Purchases.configure(withAPIKey: config.subs.apiKey)
       Purchases.shared.delegate = self
       SKPaymentQueue.default().add(transactionsObserver)
       syncIfNeeded()
@@ -96,7 +93,7 @@ extension Subs {
 
     func subsScreen(source: Subs.Source, screen: Subs.Screen, intent: Subs.Intent,
                     completion: (() -> Void)? = nil) -> Subs.ViewController {
-      Subs.InitialVC(source: source, intent: intent, onClose: { vc in
+      Subs.InitialVC(config: config, source: source, intent: intent, onClose: { vc in
         vc.dismiss(animated: true)
         completion?()
       })

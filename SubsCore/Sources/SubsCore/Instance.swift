@@ -8,7 +8,7 @@ import UIKit
 
 import Cascade
 
-public class Scene: Cascade.SceneDelegate {
+final public class Scene: Cascade.SceneDelegate {
 
   fileprivate weak var instance: Instance?
 
@@ -19,7 +19,7 @@ public class Scene: Cascade.SceneDelegate {
 
 }
 
-public class Instance: Cascade.AppDelegate {
+final public class Instance: Cascade.AppDelegate {
 
   fileprivate lazy var services: [AppService?] = [
     Analytics.Service.shared,
@@ -43,6 +43,13 @@ public class Instance: Cascade.AppDelegate {
   }
 
   public var isPremium: Bool { Subs.Service.shared?.isPremium == true }
+
+  // MARK: - Init
+
+  public required init(config: Config) {
+    Analytics.Service.shared = .init(config: config.analytics)
+    Subs.Service.shared = .init(config: config)
+  }
 
   // MARK: - Public
 

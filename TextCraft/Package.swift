@@ -30,5 +30,6 @@ let package = Package(
               .linkedFramework("CoreText"),
             ]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

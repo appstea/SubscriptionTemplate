@@ -61,5 +61,6 @@ let package = Package(
               .linkedFramework("SafariServices"),
             ]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

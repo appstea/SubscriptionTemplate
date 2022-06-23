@@ -20,6 +20,7 @@ extension Subs {
   @objc(SubsViewController)
   class ViewController: UIBase.ViewController {
 
+    let config: Config
     let source: Source
     let intent: Intent
 
@@ -33,7 +34,8 @@ extension Subs {
 
     // MARK: - Init
 
-    init(source: Source, intent: Intent, onClose: ((UIViewController) -> Void)? = nil) {
+    init(config: Config, source: Source, intent: Intent, onClose: ((UIViewController) -> Void)? = nil) {
+      self.config = config
       self.source = source
       self.intent = intent
       self.onClose = onClose
@@ -91,7 +93,7 @@ extension Subs {
     }
 
     func showTerms() {
-      guard let url = NSURL(string: Subs.termsString) else { return }
+      guard let url = NSURL(string: config.subs.urls.terms) else { return }
 
       let safariVC = SFSafariViewController(url: url as URL)
       safariVC.delegate = self
@@ -99,7 +101,7 @@ extension Subs {
     }
 
     func showPolicy() {
-      guard let url = NSURL(string: Subs.policyString) else { return }
+      guard let url = NSURL(string: config.subs.urls.policy) else { return }
 
       let safariVC = SFSafariViewController(url: url as URL)
       safariVC.delegate = self

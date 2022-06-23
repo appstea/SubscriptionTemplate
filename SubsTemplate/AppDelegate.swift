@@ -8,13 +8,6 @@
 import UIKit
 
 import Cascade
-import SubsCore
-
-enum Subs {
-
-   static let core = SubsCore.Instance()
-
-}
 
 @main
 final class AppDelegate: Cascade.AppDelegate {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C42A8E52863982F0023232D /* NotificationCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 5C42A8E42863982F0023232D /* NotificationCraft */; };
+		5C55FACD2864A96400F0B41C /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FACC2864A96400F0B41C /* Integration.swift */; };
 		5C5E5B6A28636C7800884DFF /* SubsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5E5B6928636C7800884DFF /* SubsCore */; };
 		5C5E5B6C28636D0A00884DFF /* SubsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5E5B6B28636D0A00884DFF /* SubsUI */; };
 		5C5E5B6F28637E6100884DFF /* AnalyticsCraft in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5E5B6E28637E6100884DFF /* AnalyticsCraft */; };
@@ -29,12 +30,9 @@
 		5C8DBF242858FF460054B427 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF232858FF460054B427 /* Globals.swift */; };
 		5C8DBF48285A182A0054B427 /* UIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF47285A182A0054B427 /* UIService.swift */; };
 		5C8DBF52285B5A050054B427 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBF51285B5A050054B427 /* Reachability */; };
-		5C8DBF54285B5B9F0054B427 /* Equatable~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */; };
 		5C8DBF5B285B8BC50054B427 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF59285B8BC50054B427 /* Assets.generated.swift */; };
 		5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */; };
 		5C8DBF8C285B91320054B427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */; };
-		5C8DBF90285B99DF0054B427 /* TimeInterval~Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8F285B99DF0054B427 /* TimeInterval~Extension.swift */; };
-		5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF96285BA7000054B427 /* CGSize~Extensions.swift */; };
 		5C8DBFA2285BB5770054B427 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBFA1285BB5770054B427 /* PinLayout */; };
 		5C8DBFA5285BB65A0054B427 /* SwiftyAttributes in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBFA4285BB65A0054B427 /* SwiftyAttributes */; };
 		5CBA18132861DB7900E59348 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBA18122861DB7900E59348 /* Utils */; };
@@ -49,6 +47,7 @@
 /* Begin PBXFileReference section */
 		5C31A26E28638F6D0000FCCF /* NotificationCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NotificationCraft; sourceTree = "<group>"; };
 		5C45EDE92863A7C00010357D /* SubsResources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SubsResources; sourceTree = "<group>"; };
+		5C55FACC2864A96400F0B41C /* Integration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
 		5C5E5B6828636B8600884DFF /* SubsCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SubsCore; sourceTree = "<group>"; };
 		5C5E5B6D28637B7E00884DFF /* AnalyticsCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticsCraft; sourceTree = "<group>"; };
 		5C7DD81B28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -76,14 +75,9 @@
 		5C8DBF012858F7130054B427 /* UIView~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView~Extensions.swift"; sourceTree = "<group>"; };
 		5C8DBF232858FF460054B427 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		5C8DBF47285A182A0054B427 /* UIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIService.swift; sourceTree = "<group>"; };
-		5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Equatable~Extensions.swift"; sourceTree = "<group>"; };
 		5C8DBF59285B8BC50054B427 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
 		5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.generated.swift; sourceTree = "<group>"; };
 		5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5C8DBF8F285B99DF0054B427 /* TimeInterval~Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval~Extension.swift"; sourceTree = "<group>"; };
-		5C8DBF96285BA7000054B427 /* CGSize~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize~Extensions.swift"; sourceTree = "<group>"; };
-		5C8DBF9C285BAC040054B427 /* UIColor~Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor~Extensions.swift"; sourceTree = "<group>"; };
-		5CBA180C2860E38F00E59348 /* _PreviewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _PreviewUI.swift; sourceTree = "<group>"; };
 		5CBA180E2861DA3700E59348 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
 		5CBA18142861DD5E00E59348 /* TextCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TextCraft; sourceTree = "<group>"; };
 		5CBA18172861E24E00E59348 /* Stored */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Stored; sourceTree = "<group>"; };
@@ -170,15 +164,14 @@
 			isa = PBXGroup;
 			children = (
 				5C8DBF58285B8BC50054B427 /* Generated */,
-				5C8DBF3328591DD50054B427 /* Systems */,
 				5C8DBEFE2858F6790054B427 /* Extensions */,
 				5C8DBEED285215850054B427 /* Resources */,
 				5C8DBF232858FF460054B427 /* Globals.swift */,
 				5C8DBF47285A182A0054B427 /* UIService.swift */,
 				5C8DBEB428511C210054B427 /* AppDelegate.swift */,
+				5C55FACC2864A96400F0B41C /* Integration.swift */,
 				5C8DBEB628511C210054B427 /* SceneDelegate.swift */,
 				5C8DBEB828511C210054B427 /* MainScreen~VC.swift */,
-				5CBA180C2860E38F00E59348 /* _PreviewUI.swift */,
 			);
 			path = SubsTemplate;
 			sourceTree = "<group>";
@@ -198,21 +191,10 @@
 		5C8DBEFE2858F6790054B427 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DBF9C285BAC040054B427 /* UIColor~Extensions.swift */,
-				5C8DBF8F285B99DF0054B427 /* TimeInterval~Extension.swift */,
-				5C8DBF53285B5B9F0054B427 /* Equatable~Extensions.swift */,
 				5C8DBEFF2858F6910054B427 /* UIViewController~Extensions.swift */,
-				5C8DBF96285BA7000054B427 /* CGSize~Extensions.swift */,
 				5C8DBF012858F7130054B427 /* UIView~Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		5C8DBF3328591DD50054B427 /* Systems */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Systems;
 			sourceTree = "<group>";
 		};
 		5C8DBF58285B8BC50054B427 /* Generated */ = {
@@ -364,15 +346,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C8DBF97285BA7000054B427 /* CGSize~Extensions.swift in Sources */,
 				5C8DBEB928511C210054B427 /* MainScreen~VC.swift in Sources */,
 				5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */,
 				5C8DBF48285A182A0054B427 /* UIService.swift in Sources */,
 				5C8DBF5B285B8BC50054B427 /* Assets.generated.swift in Sources */,
 				5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */,
-				5C8DBF90285B99DF0054B427 /* TimeInterval~Extension.swift in Sources */,
-				5C8DBF54285B5B9F0054B427 /* Equatable~Extensions.swift in Sources */,
 				5C8DBF002858F6910054B427 /* UIViewController~Extensions.swift in Sources */,
+				5C55FACD2864A96400F0B41C /* Integration.swift in Sources */,
 				5C8DBF242858FF460054B427 /* Globals.swift in Sources */,
 				5C8DBEB728511C210054B427 /* SceneDelegate.swift in Sources */,
 				5C8DBF022858F7130054B427 /* UIView~Extensions.swift in Sources */,
