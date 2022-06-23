@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "analyticscraft",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/AnalyticsCraft.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6c4f7abc3bb584f7bf9e38129c3bce50c94eedde"
+      }
+    },
+    {
       "identity" : "boringssl-swiftpm",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/boringssl-SwiftPM.git",
@@ -19,12 +28,30 @@
       }
     },
     {
+      "identity" : "callbackscraft",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/CallbacksCraft.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "354a4c13d4fd715a8de4d3b569b3c2ff5b31350b"
+      }
+    },
+    {
+      "identity" : "cascade",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/Cascade.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "55744cd06e3434c7bb308d2f27109185980892d4"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
       "state" : {
-        "revision" : "2eb177effe7baf1f13ad0c5f4eb8c71a98429fb5",
-        "version" : "9.1.0"
+        "revision" : "e8828e8efc813817b3c2cbfde8e965f7a7a26641",
+        "version" : "9.2.0"
       }
     },
     {
@@ -77,8 +104,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/BranchMetrics/ios-branch-deep-linking-attribution",
       "state" : {
-        "revision" : "723657c0c0f396e1255ee19568ad0cf0f6f60902",
-        "version" : "1.42.0"
+        "revision" : "e4d55e6fd155daa1a6ec108472167425e34d8380",
+        "version" : "1.43.0"
       }
     },
     {
@@ -97,6 +124,15 @@
       "state" : {
         "revision" : "819d0a2173aff699fb8c364b6fb906f7cdb1a692",
         "version" : "2.30909.0"
+      }
+    },
+    {
+      "identity" : "notificationcraft",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/NotificationCraft.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3c11663bc5389b73218e48b6a69c77fdbec9a057"
       }
     },
     {
@@ -122,8 +158,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "13750c23355190ac78b60790a7c61efd6a1bdd19",
-        "version" : "4.5.2"
+        "revision" : "9d092a1c79b04c43f02a3ac8541bd8ab31a4fa60",
+        "version" : "4.6.1"
       }
     },
     {
@@ -138,10 +174,28 @@
     {
       "identity" : "stackcraft",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/dDomovoj/StackCraft",
+      "location" : "https://github.com/dDomovoj/StackCraft.git",
       "state" : {
         "revision" : "94d3361189743b70f57ce47ab308437bbb593ffe",
         "version" : "0.3.3"
+      }
+    },
+    {
+      "identity" : "stored",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/Stored.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "dda49be8201871972256a33e88d4f2e36f52abbf"
+      }
+    },
+    {
+      "identity" : "subscraft",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/appstea/SubsCraft.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8d0629053fcbb83238291c23a3b078a81cad9e0d"
       }
     },
     {
@@ -160,6 +214,42 @@
       "state" : {
         "branch" : "master",
         "revision" : "295b17ef68811f423ed4b281d902df12d4d33963"
+      }
+    },
+    {
+      "identity" : "textcraft",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/TextCraft.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "939ae4b903bd1ba52b8a484238fe36dfbeea843b"
+      }
+    },
+    {
+      "identity" : "uibase",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/UIBase.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e8cf51860af4fe066ffec73ff7df279ab6f1f616"
+      }
+    },
+    {
+      "identity" : "uicommon",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/UICommon.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "24942fb5d673fd0b80dcafa1afac29015193ade0"
+      }
+    },
+    {
+      "identity" : "utils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/Utils.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "cfc9c0a5a40362639e6015e2fd2879131daf9a63"
       }
     }
   ],

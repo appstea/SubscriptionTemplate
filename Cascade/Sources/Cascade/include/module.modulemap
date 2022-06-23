@@ -1,4 +1,0 @@
-module Cascade {
-  header "CascadeAppDelegate.h"
-  header "CascadeSceneDelegate.h"
-}

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C22C4E22864F2E50092D1FA /* SubsCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E12864F2E50092D1FA /* SubsCraftCore */; };
+		5C22C4E42864F2E50092D1FA /* SubsCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E32864F2E50092D1FA /* SubsCraftResources */; };
+		5C22C4E62864F2E50092D1FA /* SubsCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E52864F2E50092D1FA /* SubsCraftUI */; };
+		5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E82864F4770092D1FA /* PinLayout */; };
 		5C55FACD2864A96400F0B41C /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FACC2864A96400F0B41C /* Integration.swift */; };
-		5C60D8562864E18A003939B1 /* SubsCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C60D8552864E18A003939B1 /* SubsCraftCore */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
 		5C7DD82B28622D2C0091AACF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81C28622D2C0091AACF /* InfoPlist.strings */; };
 		5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEB428511C210054B427 /* AppDelegate.swift */; };
@@ -22,18 +25,11 @@
 		5C8DBF5B285B8BC50054B427 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF59285B8BC50054B427 /* Assets.generated.swift */; };
 		5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */; };
 		5C8DBF8C285B91320054B427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */; };
-		5C8DBFA2285BB5770054B427 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8DBFA1285BB5770054B427 /* PinLayout */; };
-		5CBA18132861DB7900E59348 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBA18122861DB7900E59348 /* Utils */; };
-		5CD035DF2861ECCB0092ECCC /* UIBase in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD035DE2861ECCB0092ECCC /* UIBase */; };
-		5CFA5519286240FA00B71D76 /* Cascade in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFA5518286240FA00B71D76 /* Cascade */; };
 		5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFDEC38286498FB00F894BF /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C31A26E28638F6D0000FCCF /* NotificationCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NotificationCraft; sourceTree = "<group>"; };
 		5C55FACC2864A96400F0B41C /* Integration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
-		5C5E5B6828636B8600884DFF /* SubsCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SubsCraft; sourceTree = "<group>"; };
-		5C5E5B6D28637B7E00884DFF /* AnalyticsCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticsCraft; sourceTree = "<group>"; };
 		5C7DD81B28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5C7DD81D28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C7DD81E28622D2C0091AACF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -61,14 +57,6 @@
 		5C8DBF59285B8BC50054B427 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
 		5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.generated.swift; sourceTree = "<group>"; };
 		5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5CBA180E2861DA3700E59348 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
-		5CBA18142861DD5E00E59348 /* TextCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TextCraft; sourceTree = "<group>"; };
-		5CBA18172861E24E00E59348 /* Stored */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Stored; sourceTree = "<group>"; };
-		5CBA181A2861E67400E59348 /* UIBase */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIBase; sourceTree = "<group>"; };
-		5CBA181B2861E6F400E59348 /* CallbacksCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CallbacksCraft; sourceTree = "<group>"; };
-		5CD035E02861FAFE0092ECCC /* Asyncable */ = {isa = PBXFileReference; lastKnownFileType = text; path = Asyncable; sourceTree = SOURCE_ROOT; };
-		5CD035E12861FB8F0092ECCC /* UICommon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UICommon; sourceTree = "<group>"; };
-		5CF1EC3E28623B6400C23269 /* Cascade */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Cascade; sourceTree = "<group>"; };
 		5CFDEC38286498FB00F894BF /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -77,12 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C22C4E42864F2E50092D1FA /* SubsCraftResources in Frameworks */,
+				5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */,
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
-				5CD035DF2861ECCB0092ECCC /* UIBase in Frameworks */,
-				5CBA18132861DB7900E59348 /* Utils in Frameworks */,
-				5C60D8562864E18A003939B1 /* SubsCraftCore in Frameworks */,
-				5C8DBFA2285BB5770054B427 /* PinLayout in Frameworks */,
-				5CFA5519286240FA00B71D76 /* Cascade in Frameworks */,
+				5C22C4E62864F2E50092D1FA /* SubsCraftUI in Frameworks */,
+				5C22C4E22864F2E50092D1FA /* SubsCraftCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,17 +88,6 @@
 		5C8DBEA828511C210054B427 = {
 			isa = PBXGroup;
 			children = (
-				5C5E5B6828636B8600884DFF /* SubsCraft */,
-				5CD035E12861FB8F0092ECCC /* UICommon */,
-				5CBA181A2861E67400E59348 /* UIBase */,
-				5C31A26E28638F6D0000FCCF /* NotificationCraft */,
-				5C5E5B6D28637B7E00884DFF /* AnalyticsCraft */,
-				5CF1EC3E28623B6400C23269 /* Cascade */,
-				5CD035E02861FAFE0092ECCC /* Asyncable */,
-				5CBA18172861E24E00E59348 /* Stored */,
-				5CBA181B2861E6F400E59348 /* CallbacksCraft */,
-				5CBA18142861DD5E00E59348 /* TextCraft */,
-				5CBA180E2861DA3700E59348 /* Utils */,
 				5C8DBEB328511C210054B427 /* SubsTemplate */,
 				5C8DBEB228511C210054B427 /* Products */,
 				5CBA18112861DB7900E59348 /* Frameworks */,
@@ -197,11 +173,10 @@
 			);
 			name = SubsTemplate;
 			packageProductDependencies = (
-				5C8DBFA1285BB5770054B427 /* PinLayout */,
-				5CBA18122861DB7900E59348 /* Utils */,
-				5CD035DE2861ECCB0092ECCC /* UIBase */,
-				5CFA5518286240FA00B71D76 /* Cascade */,
-				5C60D8552864E18A003939B1 /* SubsCraftCore */,
+				5C22C4E12864F2E50092D1FA /* SubsCraftCore */,
+				5C22C4E32864F2E50092D1FA /* SubsCraftResources */,
+				5C22C4E52864F2E50092D1FA /* SubsCraftUI */,
+				5C22C4E82864F4770092D1FA /* PinLayout */,
 			);
 			productName = SubsTemplate;
 			productReference = 5C8DBEB128511C210054B427 /* SubsTemplate.app */;
@@ -239,7 +214,8 @@
 			);
 			mainGroup = 5C8DBEA828511C210054B427;
 			packageReferences = (
-				5C8DBFA0285BB5770054B427 /* XCRemoteSwiftPackageReference "PinLayout" */,
+				5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */,
+				5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = 5C8DBEB228511C210054B427 /* Products */;
 			projectDirPath = "";
@@ -476,7 +452,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -507,7 +483,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -596,7 +572,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -644,7 +620,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5C8DBFA0285BB5770054B427 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+		5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appstea/SubsCraft.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/layoutBox/PinLayout";
 			requirement = {
@@ -655,26 +639,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C60D8552864E18A003939B1 /* SubsCraftCore */ = {
+		5C22C4E12864F2E50092D1FA /* SubsCraftCore */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
 			productName = SubsCraftCore;
 		};
-		5C8DBFA1285BB5770054B427 /* PinLayout */ = {
+		5C22C4E32864F2E50092D1FA /* SubsCraftResources */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5C8DBFA0285BB5770054B427 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			package = 5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
+			productName = SubsCraftResources;
+		};
+		5C22C4E52864F2E50092D1FA /* SubsCraftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
+			productName = SubsCraftUI;
+		};
+		5C22C4E82864F4770092D1FA /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
-		};
-		5CBA18122861DB7900E59348 /* Utils */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Utils;
-		};
-		5CD035DE2861ECCB0092ECCC /* UIBase */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UIBase;
-		};
-		5CFA5518286240FA00B71D76 /* Cascade */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Cascade;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
