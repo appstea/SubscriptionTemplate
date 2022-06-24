@@ -149,8 +149,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/promises.git",
       "state" : {
-        "revision" : "46c1e6b5ac09d8f82c991061c659f67e573d425d",
-        "version" : "2.1.0"
+        "revision" : "3e4e743631e86c8c70dbc6efdc7beaa6e90fd3bb",
+        "version" : "2.1.1"
       }
     },
     {
@@ -195,7 +195,7 @@
       "location" : "https://github.com/appstea/SubsCraft.git",
       "state" : {
         "branch" : "master",
-        "revision" : "43efa4a1b590f88cc9f020f22ed5f2174cb3a23b"
+        "revision" : "6493977849a28ac8259acc7b8a5dcb6f768052f8"
       }
     },
     {

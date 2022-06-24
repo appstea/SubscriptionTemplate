@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C22C4E22864F2E50092D1FA /* SubsCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E12864F2E50092D1FA /* SubsCraftCore */; };
 		5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E82864F4770092D1FA /* PinLayout */; };
+		5C22C4EC2865EF120092D1FA /* SubsCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4EB2865EF120092D1FA /* SubsCraftCore */; };
 		5C55FACD2864A96400F0B41C /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FACC2864A96400F0B41C /* Integration.swift */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
 		5C7DD82B28622D2C0091AACF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81C28622D2C0091AACF /* InfoPlist.strings */; };
@@ -65,7 +65,7 @@
 			files = (
 				5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */,
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
-				5C22C4E22864F2E50092D1FA /* SubsCraftCore in Frameworks */,
+				5C22C4EC2865EF120092D1FA /* SubsCraftCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,8 +169,8 @@
 			);
 			name = SubsTemplate;
 			packageProductDependencies = (
-				5C22C4E12864F2E50092D1FA /* SubsCraftCore */,
 				5C22C4E82864F4770092D1FA /* PinLayout */,
+				5C22C4EB2865EF120092D1FA /* SubsCraftCore */,
 			);
 			productName = SubsTemplate;
 			productReference = 5C8DBEB128511C210054B427 /* SubsTemplate.app */;
@@ -208,8 +208,8 @@
 			);
 			mainGroup = 5C8DBEA828511C210054B427;
 			packageReferences = (
-				5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */,
 				5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */,
+				5C22C4EA2865EF120092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */,
 			);
 			productRefGroup = 5C8DBEB228511C210054B427 /* Products */;
 			projectDirPath = "";
@@ -614,14 +614,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/appstea/SubsCraft.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/layoutBox/PinLayout";
@@ -630,18 +622,26 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		5C22C4EA2865EF120092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appstea/SubsCraft.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C22C4E12864F2E50092D1FA /* SubsCraftCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
-			productName = SubsCraftCore;
-		};
 		5C22C4E82864F4770092D1FA /* PinLayout */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
+		};
+		5C22C4EB2865EF120092D1FA /* SubsCraftCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C22C4EA2865EF120092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
+			productName = SubsCraftCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
