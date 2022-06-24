@@ -51,17 +51,17 @@ platform :ios do
 
   lane :adhoc do
     build("AdHoc", "ad-hoc", "AdHoc", false)
-
-    firebase_app_distribution(
-      app: $fir_app_id,
-      ipa_path: $ipa_path,
-      groups: "QA",
-      release_notes: $release_notes,
-    )
-
-    build_number = formatted_build_number($project_name, $scheme)
-    message = notification_build_message("AdHoc 🏠", build_number, $release_notes, $fir_distribuition_builds_url)
-    notify_tg(message, $tg_chat_id, $tg_bot_token)
+    #
+    # firebase_app_distribution(
+    #   app: $fir_app_id,
+    #   ipa_path: $ipa_path,
+    #   groups: "QA",
+    #   release_notes: $release_notes,
+    # )
+    # 
+    # build_number = formatted_build_number($project_name, $scheme)
+    # message = notification_build_message("AdHoc 🏠", build_number, $release_notes, $fir_distribuition_builds_url)
+    # notify_tg(message, $tg_chat_id, $tg_bot_token)
   end
 
   lane :update_profiles do
@@ -98,7 +98,7 @@ platform :ios do
       output_directory: archives_folder,
       clean: true,
       include_bitcode: true,
-      use_system_scm: false,
+      use_system_scm: true,
       export_xcargs: "-allowProvisioningUpdates",
       export_options: {
           provisioningProfiles: profiles(profileType),

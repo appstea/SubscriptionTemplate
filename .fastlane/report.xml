@@ -5,12 +5,37 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00124">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000433">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: import_from_git" time="1.517744">
+      <testcase classname="fastlane.lanes" name="1: import_from_git" time="1.628016">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: is_ci" time="0.000394">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: is_ci" time="0.000379">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: git --no-pager show -s --format='%B    by %cn %cE'" time="0.01865">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: update_app_identifier" time="0.003374">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: gym" time="229.284653">
         
       </testcase>
     
