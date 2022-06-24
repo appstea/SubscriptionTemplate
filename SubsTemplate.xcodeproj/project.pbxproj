@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5C22C4E22864F2E50092D1FA /* SubsCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E12864F2E50092D1FA /* SubsCraftCore */; };
-		5C22C4E42864F2E50092D1FA /* SubsCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E32864F2E50092D1FA /* SubsCraftResources */; };
-		5C22C4E62864F2E50092D1FA /* SubsCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E52864F2E50092D1FA /* SubsCraftUI */; };
 		5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E82864F4770092D1FA /* PinLayout */; };
 		5C55FACD2864A96400F0B41C /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FACC2864A96400F0B41C /* Integration.swift */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
@@ -65,10 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C22C4E42864F2E50092D1FA /* SubsCraftResources in Frameworks */,
 				5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */,
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
-				5C22C4E62864F2E50092D1FA /* SubsCraftUI in Frameworks */,
 				5C22C4E22864F2E50092D1FA /* SubsCraftCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,8 +170,6 @@
 			name = SubsTemplate;
 			packageProductDependencies = (
 				5C22C4E12864F2E50092D1FA /* SubsCraftCore */,
-				5C22C4E32864F2E50092D1FA /* SubsCraftResources */,
-				5C22C4E52864F2E50092D1FA /* SubsCraftUI */,
 				5C22C4E82864F4770092D1FA /* PinLayout */,
 			);
 			productName = SubsTemplate;
@@ -325,7 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUILD_NUMBER = 2;
+				BUILD_NUMBER = 1;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -389,7 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUILD_NUMBER = 2;
+				BUILD_NUMBER = 1;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -452,7 +446,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -483,7 +477,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -509,7 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUILD_NUMBER = 2;
+				BUILD_NUMBER = 1;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -572,7 +566,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = $BUILD_NUMBER;
 				DEVELOPMENT_TEAM = VZDA4522ZH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
@@ -643,16 +637,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
 			productName = SubsCraftCore;
-		};
-		5C22C4E32864F2E50092D1FA /* SubsCraftResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
-			productName = SubsCraftResources;
-		};
-		5C22C4E52864F2E50092D1FA /* SubsCraftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5C22C4E02864F2E50092D1FA /* XCRemoteSwiftPackageReference "SubsCraft" */;
-			productName = SubsCraftUI;
 		};
 		5C22C4E82864F4770092D1FA /* PinLayout */ = {
 			isa = XCSwiftPackageProductDependency;
