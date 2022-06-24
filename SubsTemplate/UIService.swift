@@ -41,7 +41,7 @@ final class UIService: AppService {
       if !Subs.core.didPassPermissions {
         await Subs.core.showPermissions(from: window)
         await Subs.core.showSubs(from: window)
-        await Subs.core.checkIDFAAccessIfNeeded()
+        await Subs.core.checkATT()
       }
 
       window.rootViewController = MainScreen.ViewController()

@@ -5,8 +5,6 @@
 //  Created by dDomovoj on 6/23/22.
 //
 
-import Foundation
-
 import SubsCraftCore
 
 enum Subs {
