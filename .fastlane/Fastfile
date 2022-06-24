@@ -98,7 +98,7 @@ platform :ios do
       output_directory: archives_folder,
       clean: true,
       include_bitcode: true,
-      use_system_scm: true,
+      use_system_scm: false,
       export_xcargs: "-allowProvisioningUpdates",
       export_options: {
           provisioningProfiles: profiles(profileType),
