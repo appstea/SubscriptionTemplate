@@ -13,7 +13,7 @@ final class SceneDelegate: Cascade.SceneDelegate & UIWindowSceneDelegate {
 
   @objc
   override func targets() -> [UISceneDelegate] {[
-    Subs.core.scene,
+    Paywall.core.scene,
     UIService.shared,
   ].compactMap { $0 }}
 

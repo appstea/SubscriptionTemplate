@@ -1,0 +1,8 @@
+"CFBundleDisplayName"                          = "מזג אוויר ואקלים";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "קבל/י נתונים על מזג האוויר הנוכחי והתראות עבור יעדים חדשים במהלך נסיעות.";
+"NSLocationAlwaysUsageDescription"             = "קבל/י נתונים על מזג האוויר הנוכחי והתראות עבור יעדים חדשים במהלך נסיעות.";
+"NSLocationUsageDescription"                   = "קבל/י נתונים על מזג האוויר הנוכחי במיקום הספציפי שבו את/ה נמצא/ת.";
+"NSLocationWhenInUseUsageDescription"          = "קבל/י נתונים על מזג האוויר הנוכחי במיקום הספציפי שבו את/ה נמצא/ת.";
+"NSSiriUsageDescription"                       = "קיצורי דרך";
+"NSCalendarsUsageDescription"                  = "האפליקציה זקוקה לגישה אל לוח השנה שלך כדי לספק לך פרסומות בהתאמה אישית";
+"NSUserTrackingUsageDescription"               = "ברצוננו להבין איך התקנת את האפליקציה.";

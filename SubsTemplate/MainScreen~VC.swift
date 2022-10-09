@@ -10,7 +10,7 @@ import UIKit
 import PinLayout
 
 import UIBase
-import SubsCraftCore
+import PaywallCraftCore
 
 public enum MainScreen { }
 
@@ -18,7 +18,7 @@ public extension MainScreen {
 
   final class ViewController: UIBase.ViewController {
 
-    private lazy var bannerView = Subs.core.banner(source: .bottomUpsell, screen: .initial, presenter: self)
+    private lazy var bannerView = Paywall.core.upsell(source: .bottomUpsell, screen: .initial, presenter: self)
 
     // MARK: - Lifecycle
 
@@ -41,7 +41,7 @@ public extension MainScreen {
       super.viewDidLayoutSubviews()
 
       let safeArea = view.pin.safeArea
-      if !Subs.core.isPremium {
+      if !Paywall.core.isPremium {
         bannerView.pin.start().end()
           .bottom(safeArea.bottom)
           .sizeToFit(.width)

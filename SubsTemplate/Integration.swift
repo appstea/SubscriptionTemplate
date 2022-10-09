@@ -5,13 +5,13 @@
 //  Created by dDomovoj on 6/23/22.
 //
 
-import SubsCraftCore
+import PaywallCraftCore
 
-enum Subs {
+enum Paywall {
 
-  static let core = SubsCraftCore.Instance(
+  static let core = PaywallCraftCore.Instance(
     config: .init(
-      subs: .init(
+      paywall: .init(
         apiKey: "appl_PrQxhLfrujRwauAlGngBUArKhIK",
         offering: "com.appstea.proto.first",
         isDebug: isDebug,
@@ -28,17 +28,17 @@ enum Subs {
       ),
       ui: .init(
         permissions: .custom(),
-        subscription: .custom(),
-        banner: .custom()
+        paywall: .custom(),
+        upsell: .custom()
       )
     )
   )
 
 }
 
-// MARK: - Banner.Custom
+// MARK: - Upsell.Custom
 
-fileprivate extension Config.UI.Banner {
+fileprivate extension Config.UI.Upsell {
 
   static func custom() -> Self? {
     nil
@@ -62,9 +62,9 @@ fileprivate extension Config.UI.Permissions {
 
 }
 
-// MARK: - Subscription.Custom
+// MARK: - Paywall.Custom
 
-fileprivate extension Config.UI.Subscription {
+fileprivate extension Config.UI.Paywall {
 
   static func custom() -> Self? {
     nil

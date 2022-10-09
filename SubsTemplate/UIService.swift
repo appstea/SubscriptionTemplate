@@ -7,7 +7,7 @@
 
 import UIKit
 
-import SubsCraftCore
+import PaywallCraftCore
 
 final class UIService: AppService {
 
@@ -35,13 +35,13 @@ final class UIService: AppService {
 
   func start(from window: UIWindow) {
     Task { @MainActor in
-      Subs.core.keyWindow = window
+      Paywall.core.keyWindow = window
       self.window = window
 
-      if !Subs.core.didPassPermissions {
-        await Subs.core.showPermissions(from: window)
-        await Subs.core.showSubs(from: window)
-        await Subs.core.checkATT()
+      if !Paywall.core.didPassPermissions {
+        await Paywall.core.showPermissions(from: window)
+        await Paywall.core.showPaywall(from: window)
+        await Paywall.core.checkATT()
       }
 
       window.rootViewController = MainScreen.ViewController()
