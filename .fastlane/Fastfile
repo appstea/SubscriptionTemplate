@@ -19,7 +19,7 @@ platform :ios do
 
   before_all do 
     if is_ci 
-      xcversion(version: "13.3.1")
+      xcversion(version: "14.0.0")
     end
     $tg_bot_token = "1025580642:AAGW-ykbVYJDIrl1ktLaI9u6k3_pafOUNn8"
     $tg_chat_id = "-446147639"
