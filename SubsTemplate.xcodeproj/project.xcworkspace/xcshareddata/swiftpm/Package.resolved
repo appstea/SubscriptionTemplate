@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/gtm-session-fetcher.git",
       "state" : {
-        "revision" : "d4289da23e978f37c344ea6a386e5546e2466294",
-        "version" : "2.1.0"
+        "revision" : "b32617f389716af5082df5f6efa89135c87578a8",
+        "version" : "2.2.0"
       }
     },
     {
@@ -141,7 +141,16 @@
       "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f97724d08dc94b195fc6252d51d0a66c6587af8a"
+        "revision" : "3bb872a22061ed227d2bfe591625c6d0befafe2e"
+      }
+    },
+    {
+      "identity" : "permissionskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dDomovoj/PermissionsKit",
+      "state" : {
+        "revision" : "409deeb9be1b599a3fc6f67641e0c0b3f0baf849",
+        "version" : "9.0.2"
       }
     },
     {
@@ -167,8 +176,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "bd5fcfcbe0b578545e7b06b539739b692eb8251b",
-        "version" : "4.13.4"
+        "revision" : "32b7cf53131298d10c432a0e6a1ec43e6c5f2c3a",
+        "version" : "4.14.0"
       }
     },
     {

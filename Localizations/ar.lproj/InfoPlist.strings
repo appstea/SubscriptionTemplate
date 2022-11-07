@@ -1,8 +1,68 @@
-"CFBundleDisplayName"                          = "الطقس والمناخ";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "تعرف على حالة الطقس المحلي واحصل على إشعارات بخصوص الوجهات الجديدة التي تسافر إليها.";
-"NSLocationAlwaysUsageDescription"             = "تعرف على حالة الطقس المحلي واحصل على إشعارات بخصوص الوجهات الجديدة التي تسافر إليها.";
-"NSLocationUsageDescription"                   = "تعرف على حالة الطقس المحلي لموقعك المحدد.";
-"NSLocationWhenInUseUsageDescription"          = "تعرف على حالة الطقس المحلي لموقعك المحدد.";
-"NSSiriUsageDescription"                       = "الاختصارات";
-"NSCalendarsUsageDescription"                  = "يحتاج التطبيق إلى التقويم على جهازك لتوفير تجربة إعلانات شخصية ومخصصة لك";
-"NSUserTrackingUsageDescription"               = "نود أن نعرف كيف قمت بتثبيت هذا التطبيق.";
+"CFBundleDisplayName"                                = "الطقس والمناخ";
+
+/* not used */
+"NFCReaderUsageDescription"                          = "";
+
+/* not used */
+"NSAppleMusicUsageDescription"                       = "";
+
+/* not used */
+"NSBluetoothAlwaysUsageDescription"                  = "";
+"NSCalendarsUsageDescription"                        = "يحتاج التطبيق إلى التقويم على جهازك لتوفير تجربة إعلانات شخصية ومخصصة لك";
+
+/* not used */
+"NSCameraUsageDescription"                           = "";
+
+/* not used */
+"NSContactsUsageDescription"                         = "";
+
+/* not used */
+"NSFaceIDUsageDescription"                           = "";
+
+/* not used */
+"NSGKFriendListUsageDescription"                     = "";
+
+/* not used */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "";
+
+/* not used */
+"NSHealthShareUsageDescription"                      = "";
+
+/* not used */
+"NSHealthUpdateUsageDescription"                     = "";
+
+/* not used */
+"NSHomeKitUsageDescription"                          = "";
+
+/* not used */
+"NSIdentityUsageDescription"                         = "";
+
+/* not used */
+"NSLocalNetworkUsageDescription"                     = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription"       = "تعرف على حالة الطقس المحلي واحصل على إشعارات بخصوص الوجهات الجديدة التي تسافر إليها.";
+"NSLocationAlwaysUsageDescription"                   = "تعرف على حالة الطقس المحلي واحصل على إشعارات بخصوص الوجهات الجديدة التي تسافر إليها.";
+"NSLocationUsageDescription"                         = "تعرف على حالة الطقس المحلي لموقعك المحدد.";
+"NSLocationWhenInUseUsageDescription"                = "تعرف على حالة الطقس المحلي لموقعك المحدد.";
+
+/* not used */
+"NSMicrophoneUsageDescription"                       = "";
+"NSMotionUsageDescription"                           = "";
+
+/* not used */
+"NSNearbyInteractionUsageDescription"                = "";
+"NSPhotoLibraryAddUsageDescription"                  = "";
+"NSPhotoLibraryUsageDescription"                     = "";
+
+/* not used */
+"NSRemindersUsageDescription"                        = "";
+
+/* not used */
+"NSSensorKitUsageDescription"                        = "";
+"NSSiriUsageDescription"                             = "الاختصارات";
+
+/* not used */
+"NSSpeechRecognitionUsageDescription"                = "";
+"NSUserTrackingUsageDescription"                     = "نود أن نعرف كيف قمت بتثبيت هذا التطبيق.";
+
+/* not used */
+"NSVideoSubscriberAccountUsageDescription"           = "";

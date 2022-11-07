@@ -1,8 +1,68 @@
-"CFBundleDisplayName"                          = "Погода & Клімат";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "Отримуйте локальний прогноз і погодні попередження в тій місцевості, по якій ви подорожуєте";
-"NSLocationAlwaysUsageDescription"             = "Отримуйте локальний прогноз і погодні попередження в тій місцевості, по якій ви подорожуєте";
-"NSLocationUsageDescription"                   = "Місцевий прогноз без введення назв вручну";
-"NSLocationWhenInUseUsageDescription"          = "Місцевий прогноз без введення назв вручну";
-"NSSiriUsageDescription"                       = "Ярлики";
-"NSCalendarsUsageDescription"                  = "Клімат потребує вашого календаря, щоб забезпечити персоналізовану рекламу, пристосовану до вас";
-"NSUserTrackingUsageDescription"               = "Ця інформація використовується тільки для надання релевантної реклами.";
+"CFBundleDisplayName"                                = "Погода & Клімат";
+
+/* not used */
+"NFCReaderUsageDescription"                          = "";
+
+/* not used */
+"NSAppleMusicUsageDescription"                       = "";
+
+/* not used */
+"NSBluetoothAlwaysUsageDescription"                  = "";
+"NSCalendarsUsageDescription"                        = "Клімат потребує вашого календаря, щоб забезпечити персоналізовану рекламу, пристосовану до вас";
+
+/* not used */
+"NSCameraUsageDescription"                           = "";
+
+/* not used */
+"NSContactsUsageDescription"                         = "";
+
+/* not used */
+"NSFaceIDUsageDescription"                           = "";
+
+/* not used */
+"NSGKFriendListUsageDescription"                     = "";
+
+/* not used */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "";
+
+/* not used */
+"NSHealthShareUsageDescription"                      = "";
+
+/* not used */
+"NSHealthUpdateUsageDescription"                     = "";
+
+/* not used */
+"NSHomeKitUsageDescription"                          = "";
+
+/* not used */
+"NSIdentityUsageDescription"                         = "";
+
+/* not used */
+"NSLocalNetworkUsageDescription"                     = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription"       = "Отримуйте локальний прогноз і погодні попередження в тій місцевості, по якій ви подорожуєте";
+"NSLocationAlwaysUsageDescription"                   = "Отримуйте локальний прогноз і погодні попередження в тій місцевості, по якій ви подорожуєте";
+"NSLocationUsageDescription"                         = "Місцевий прогноз без введення назв вручну";
+"NSLocationWhenInUseUsageDescription"                = "Місцевий прогноз без введення назв вручну";
+
+/* not used */
+"NSMicrophoneUsageDescription"                       = "";
+"NSMotionUsageDescription"                           = "";
+
+/* not used */
+"NSNearbyInteractionUsageDescription"                = "";
+"NSPhotoLibraryAddUsageDescription"                  = "";
+"NSPhotoLibraryUsageDescription"                     = "";
+
+/* not used */
+"NSRemindersUsageDescription"                        = "";
+
+/* not used */
+"NSSensorKitUsageDescription"                        = "";
+"NSSiriUsageDescription"                             = "Ярлики";
+
+/* not used */
+"NSSpeechRecognitionUsageDescription"                = "";
+"NSUserTrackingUsageDescription"                     = "Ця інформація використовується тільки для надання релевантної реклами.";
+
+/* not used */
+"NSVideoSubscriberAccountUsageDescription"           = "";

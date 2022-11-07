@@ -1,8 +1,68 @@
-"CFBundleDisplayName"                          = "Hava ve İklim";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "Seyahat ederken yeni yerler için yerel hava durumu ve uyarılar alın.";
-"NSLocationAlwaysUsageDescription"             = "Seyahat ederken yeni yerler için yerel hava durumu ve uyarılar alın.";
-"NSLocationUsageDescription"                   = "Belirli konumunuz için yerel hava durumunu alın.";
-"NSLocationWhenInUseUsageDescription"          = "Belirli konumunuz için yerel hava durumunu alın.";
-"NSSiriUsageDescription"                       = "Kısayollar";
-"NSCalendarsUsageDescription"                  = "Climate'ın size özel kişiselleştirilmiş reklam deneyimi sağlamak için takviminize ihtiyacı var";
-"NSUserTrackingUsageDescription"               = "Bu veriler yalnızca size ilgili reklamlar sunmak üzere kullanılacak. ";
+"CFBundleDisplayName"                                = "Hava ve İklim";
+
+/* not used */
+"NFCReaderUsageDescription"                          = "";
+
+/* not used */
+"NSAppleMusicUsageDescription"                       = "";
+
+/* not used */
+"NSBluetoothAlwaysUsageDescription"                  = "";
+"NSCalendarsUsageDescription"                        = "Climate'ın size özel kişiselleştirilmiş reklam deneyimi sağlamak için takviminize ihtiyacı var";
+
+/* not used */
+"NSCameraUsageDescription"                           = "";
+
+/* not used */
+"NSContactsUsageDescription"                         = "";
+
+/* not used */
+"NSFaceIDUsageDescription"                           = "";
+
+/* not used */
+"NSGKFriendListUsageDescription"                     = "";
+
+/* not used */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "";
+
+/* not used */
+"NSHealthShareUsageDescription"                      = "";
+
+/* not used */
+"NSHealthUpdateUsageDescription"                     = "";
+
+/* not used */
+"NSHomeKitUsageDescription"                          = "";
+
+/* not used */
+"NSIdentityUsageDescription"                         = "";
+
+/* not used */
+"NSLocalNetworkUsageDescription"                     = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription"       = "Seyahat ederken yeni yerler için yerel hava durumu ve uyarılar alın.";
+"NSLocationAlwaysUsageDescription"                   = "Seyahat ederken yeni yerler için yerel hava durumu ve uyarılar alın.";
+"NSLocationUsageDescription"                         = "Belirli konumunuz için yerel hava durumunu alın.";
+"NSLocationWhenInUseUsageDescription"                = "Belirli konumunuz için yerel hava durumunu alın.";
+
+/* not used */
+"NSMicrophoneUsageDescription"                       = "";
+"NSMotionUsageDescription"                           = "";
+
+/* not used */
+"NSNearbyInteractionUsageDescription"                = "";
+"NSPhotoLibraryAddUsageDescription"                  = "";
+"NSPhotoLibraryUsageDescription"                     = "";
+
+/* not used */
+"NSRemindersUsageDescription"                        = "";
+
+/* not used */
+"NSSensorKitUsageDescription"                        = "";
+"NSSiriUsageDescription"                             = "Kısayollar";
+
+/* not used */
+"NSSpeechRecognitionUsageDescription"                = "";
+"NSUserTrackingUsageDescription"                     = "Bu veriler yalnızca size ilgili reklamlar sunmak üzere kullanılacak. ";
+
+/* not used */
+"NSVideoSubscriberAccountUsageDescription"           = "";

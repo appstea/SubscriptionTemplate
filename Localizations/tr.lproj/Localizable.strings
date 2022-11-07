@@ -1,87 +1,93 @@
-"apple.login.signout"                  = "Çıkış Yap";
-"att.request.cta"                      = "Tamam, anladım";
-"att.request.description.first"        = "";
-"att.request.description.second"       = "";
-"att.request.note"                     = "";
-"att.request.title"                    = "";
-"check.internet.title"                 = "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin";
-"default_upsell.title"                 = "Premium\nReklam yok ve başka özellikler!";
-"default_upsell.upgrade.title"         = "YÜKSELT";
-"general.button.back"                  = "Geri";
-"general.button.close"                 = "Kapatmak";
-"general.button.done"                  = "Bitti";
-"general.button.ok"                    = "Tamam";
-"general.button.retry"                 = "Tekrar dene";
-"no_internet.subtitle"                 = "İnternet bağlantısı yok, daha sonra deneyin";
-"no_internet.title"                    = "Hay aksi";
-"no_mail_app.subtitle"                 = "Posta uygulamanız yok";
-"no_mail_app.title"                    = "Hay aksi";
+"apple.login.signout"                           = "Çıkış Yap";
+"att.request.cta"                               = "Tamam, anladım";
+"att.request.description.first"                 = "";
+"att.request.description.second"                = "";
+"att.request.note"                              = "";
+"att.request.title"                             = "";
+"check.internet.title"                          = "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin";
+"default_upsell.title"                          = "Premium\nReklam yok ve başka özellikler!";
+"default_upsell.upgrade.title"                  = "YÜKSELT";
+"general.button.back"                           = "Geri";
+"general.button.close"                          = "Kapatmak";
+"general.button.done"                           = "Bitti";
+"general.button.ok"                             = "Tamam";
+"general.button.retry"                          = "Tekrar dene";
+"no_internet.subtitle"                          = "İnternet bağlantısı yok, daha sonra deneyin";
+"no_internet.title"                             = "Hay aksi";
+"no_mail_app.subtitle"                          = "Posta uygulamanız yok";
+"no_mail_app.title"                             = "Hay aksi";
 
 /* Here is an offer for you: */
-"paywall.additional_offer.subtitle"    = "İşte size bir teklif:";
+"paywall.additional_offer.subtitle"             = "İşte size bir teklif:";
 
 /* You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then $6.99 per month. Get all the premium features. Don’t miss this limited time deal! */
-"paywall.additional_offer.text_format" = "Daha uzun bir deneme süresi (3 yerine 7 gün) ve her çeyrekte daha da az ödeme arasında seçim yapabilirsiniz. 7 gün ücretsiz deneyin, ardından %@. Tüm premium özellikleri edinin. Bu sınırlı süreli fırsatı kaçırmayın!";
+"paywall.additional_offer.text_format"          = "Daha uzun bir deneme süresi (3 yerine 7 gün) ve her çeyrekte daha da az ödeme arasında seçim yapabilirsiniz. 7 gün ücretsiz deneyin, ardından %@. Tüm premium özellikleri edinin. Bu sınırlı süreli fırsatı kaçırmayın!";
 
 /* Not convinced? */
-"paywall.additional_offer.title"       = "ikna olmadınız mı?";
-"paywall.button.no_internet"           = "";
-"paywall.button.privacy"               = "Gizlilik";
-"paywall.button.restore"               = "Geri yükle";
-"paywall.button.terms"                 = "Koşullar";
-"paywall.one_button.button.close"      = "veya sınırlı bir sürümle devam edin";
-"paywall.one_button.button.continue"   = "Devam et";
-"paywall.one_button.feature.first"     = "Uygulamanın tüm özelliklerinin keyfini çıkarın";
-"paywall.one_button.feature.second"    = "Reklamları kaldır";
-"paywall.one_button.price"             = "%@ / %@ karşılığında abone olun";
-"paywall.one_button.title"             = "Tüm özelliklere\nsınırsız erişim";
-"paywall.one_button.trial.actual"      = "Ardından %@ / %@";
-"paywall.one_button.trial.free"        = "%d günlük deneme";
-"paywall.period.day"                   = "gün";
-"paywall.period.month"                 = "ay";
-"paywall.period.quartal"               = "çeyrek";
-"paywall.period.week"                  = "hafta";
-"paywall.period.year"                  = "yıl";
+"paywall.additional_offer.title"                = "ikna olmadınız mı?";
+"paywall.button.no_internet"                    = "";
+"paywall.button.privacy"                        = "Gizlilik";
+"paywall.button.restore"                        = "Geri yükle";
+"paywall.button.terms"                          = "Koşullar";
+"paywall.one_button.button.close"               = "veya sınırlı bir sürümle devam edin";
+"paywall.one_button.button.continue"            = "Devam et";
+"paywall.one_button.feature.first"              = "Uygulamanın tüm özelliklerinin keyfini çıkarın";
+"paywall.one_button.feature.second"             = "Reklamları kaldır";
+"paywall.one_button.price"                      = "%@ / %@ karşılığında abone olun";
+"paywall.one_button.title"                      = "Tüm özelliklere\nsınırsız erişim";
+"paywall.one_button.trial.actual"               = "Ardından %@ / %@";
+"paywall.one_button.trial.free"                 = "%d günlük deneme";
+"paywall.period.day"                            = "gün";
+"paywall.period.month"                          = "ay";
+"paywall.period.quartal"                        = "çeyrek";
+"paywall.period.week"                           = "hafta";
+"paywall.period.year"                           = "yıl";
 
 /* $9.99 per quarter */
-"paywall.price_per_period"             = "%@ / %@";
+"paywall.price_per_period"                      = "%@ / %@";
 
 /* $3.33/month */
-"paywall.price_slash_period"           = "%@/%@";
+"paywall.price_slash_period"                    = "%@/%@";
 
 /* Try Free and Subscribe */
-"paywall.try_free_and_subscribe"       = "Ücretsiz Deneyin ve Abone Olun";
+"paywall.try_free_and_subscribe"                = "Ücretsiz Deneyin ve Abone Olun";
 
 /* That’s just $3.33/month */
-"paywall.two_buttons.info_just"        = "Sadece %@";
+"paywall.two_buttons.info_just"                 = "Sadece %@";
 
 /* Try For Free */
-"paywall.two_buttons.subtitle"         = "Ücretsiz Deneyin";
+"paywall.two_buttons.subtitle"                  = "Ücretsiz Deneyin";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime. */
-"paywall.two_buttons.text"             = "Ücretsiz olarak uygulamanın tüm özelliklerinin keyfini çıkarın ve tüm yeni özelliklerin kilidinin açılmasını sağlayın. Ücretsiz deneyin. Taahhüt yok. Dilediğiniz zaman iptal edebilirsiniz.";
+"paywall.two_buttons.text"                      = "Ücretsiz olarak uygulamanın tüm özelliklerinin keyfini çıkarın ve tüm yeni özelliklerin kilidinin açılmasını sağlayın. Ücretsiz deneyin. Taahhüt yok. Dilediğiniz zaman iptal edebilirsiniz.";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
-"paywall.two_buttons.text_format"      = "Ücretsiz olarak uygulamanın tüm özelliklerinin keyfini çıkarın ve tüm yeni özelliklerin kilidinin açılmasını sağlayın. %d gün ücretsiz deneyin, ardından %@. Taahhüt yok. Dilediğiniz zaman iptal edebilirsiniz.";
+"paywall.two_buttons.text_format"               = "Ücretsiz olarak uygulamanın tüm özelliklerinin keyfini çıkarın ve tüm yeni özelliklerin kilidinin açılmasını sağlayın. %d gün ücretsiz deneyin, ardından %@. Taahhüt yok. Dilediğiniz zaman iptal edebilirsiniz.";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
-"paywall.two_buttons.text_format7"     = "Ücretsiz olarak uygulamanın tüm özelliklerinin keyfini çıkarın ve tüm yeni özelliklerin kilidinin açılmasını sağlayın. %d gün ücretsiz deneyin, ardından %@. Taahhüt yok. Dilediğiniz zaman iptal edebilirsiniz.";
+"paywall.two_buttons.text_format7"              = "Ücretsiz olarak uygulamanın tüm özelliklerinin keyfini çıkarın ve tüm yeni özelliklerin kilidinin açılmasını sağlayın. %d gün ücretsiz deneyin, ardından %@. Taahhüt yok. Dilediğiniz zaman iptal edebilirsiniz.";
 
 /* Full Access */
-"paywall.two_buttons.title"            = "Tam Erişim";
-"settings.contact_us.subtitle"         = "Yorumlarınızı bekliyoruz";
-"settings.contact_us.title"            = "İletişim";
-"settings.help_support.section.title"  = "Yardım ve Destek";
-"settings.privacy.subtitle"            = "Ve diğer yasal metinler";
-"settings.privacy.title"               = "Gizlilik Politikası";
-"settings.rateapp.title"               = "Uygulamayı değerlendirin";
-"settings.restore_fail.subtitle"       = "Maalesef satın alma işleminiz yok gibi görünüyor";
-"settings.restore.subtitle"            = "Daha önce satın aldığınız öğeleri bulacağız";
-"settings.restore.title"               = "Satın Alınanları Geri Yükle";
-"settings.share_app.title"             = "Uygulamayı Paylaşın";
-"settings.share.subtitle"              = "Favori mesajlaşma uygulamanız yoluyla paylaşın";
-"start.button.continue"                = "Tamam, anladım";
-"start.feature.first"                  = "Uygulamanın en doğru yerel hava durumu verilerini almanızı sağlayabilmesi için konum";
-"start.feature.second"                 = "Önemli, tehlikeli ve rahatsız edici hava durumu değişikliklerinden haberdar olmak için bildirimler";
-"start.subtitle"                       = "Aşağıdakilere erişim izni verirseniz mümkün olur:";
-"start.title"                          = "En iyi hava durumu deneyimi";
+"paywall.two_buttons.title"                     = "Tam Erişim";
+"permissions.button.continue"                   = "Tamam, anladım";
+"permissions.feature.location.description"      = "Uygulamanın en doğru yerel hava durumu verilerini almanızı sağlayabilmesi için konum";
+"permissions.feature.location.title"            = "";
+"permissions.feature.notifications.description" = "Önemli, tehlikeli ve rahatsız edici hava durumu değişikliklerinden haberdar olmak için bildirimler";
+"permissions.feature.notifications.title"       = "";
+"permissions.feature.motion_data.title"         = "";
+"permissions.feature.motion_data.description"   = "";
+"permissions.feature.photos.title"              = "";
+"permissions.feature.photos.description"        = "";
+"permissions.subtitle"                          = "Aşağıdakilere erişim izni verirseniz mümkün olur:";
+"permissions.title"                             = "En iyi hava durumu deneyimi";
+"settings.contact_us.subtitle"                  = "Yorumlarınızı bekliyoruz";
+"settings.contact_us.title"                     = "İletişim";
+"settings.help_support.section.title"           = "Yardım ve Destek";
+"settings.privacy.subtitle"                     = "Ve diğer yasal metinler";
+"settings.privacy.title"                        = "Gizlilik Politikası";
+"settings.rateapp.title"                        = "Uygulamayı değerlendirin";
+"settings.restore_fail.subtitle"                = "Maalesef satın alma işleminiz yok gibi görünüyor";
+"settings.restore.subtitle"                     = "Daha önce satın aldığınız öğeleri bulacağız";
+"settings.restore.title"                        = "Satın Alınanları Geri Yükle";
+"settings.share_app.title"                      = "Uygulamayı Paylaşın";
+"settings.share.subtitle"                       = "Favori mesajlaşma uygulamanız yoluyla paylaşın";

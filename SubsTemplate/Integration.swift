@@ -54,10 +54,12 @@ fileprivate extension Config.UI.Upsell {
 fileprivate extension Config.UI.Permissions {
 
   static func custom() -> Self? {
-    nil
 //    var result = Self()
-//    result.dotColor = .red
+//    result.permissions = result.permissions.filter {
+//      $0.type.isAny(of: .photos)
+//    }
 //    return result
+    nil
   }
 
 }

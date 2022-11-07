@@ -1,8 +1,68 @@
-"CFBundleDisplayName"                          = "Погода & Климат";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "Получайте локальный прогноз и предупреждения для тех мест где вы бываете. ";
-"NSLocationAlwaysUsageDescription"             = "Получайте локальный прогноз и предупреждения для тех мест где вы бываете. ";
-"NSLocationUsageDescription"                   = "Местный прогноз без ввода названий вручную. ";
-"NSLocationWhenInUseUsageDescription"          = "Местный прогноз без ввода названий вручную. ";
-"NSSiriUsageDescription"                       = "Ярлыки";
-"NSCalendarsUsageDescription"                  = "Климату нужен ваш календарь, чтобы предоставить вам персонализированную рекламу";
-"NSUserTrackingUsageDescription"               = "Эта информация используется только для предоставления релевантной рекламы. ";
+"CFBundleDisplayName"                                = "Погода & Климат";
+
+/* not used */
+"NFCReaderUsageDescription"                          = "";
+
+/* not used */
+"NSAppleMusicUsageDescription"                       = "";
+
+/* not used */
+"NSBluetoothAlwaysUsageDescription"                  = "";
+"NSCalendarsUsageDescription"                        = "Климату нужен ваш календарь, чтобы предоставить вам персонализированную рекламу";
+
+/* not used */
+"NSCameraUsageDescription"                           = "";
+
+/* not used */
+"NSContactsUsageDescription"                         = "";
+
+/* not used */
+"NSFaceIDUsageDescription"                           = "";
+
+/* not used */
+"NSGKFriendListUsageDescription"                     = "";
+
+/* not used */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "";
+
+/* not used */
+"NSHealthShareUsageDescription"                      = "";
+
+/* not used */
+"NSHealthUpdateUsageDescription"                     = "";
+
+/* not used */
+"NSHomeKitUsageDescription"                          = "";
+
+/* not used */
+"NSIdentityUsageDescription"                         = "";
+
+/* not used */
+"NSLocalNetworkUsageDescription"                     = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription"       = "Получайте локальный прогноз и предупреждения для тех мест где вы бываете. ";
+"NSLocationAlwaysUsageDescription"                   = "Получайте локальный прогноз и предупреждения для тех мест где вы бываете. ";
+"NSLocationUsageDescription"                         = "Местный прогноз без ввода названий вручную. ";
+"NSLocationWhenInUseUsageDescription"                = "Местный прогноз без ввода названий вручную. ";
+
+/* not used */
+"NSMicrophoneUsageDescription"                       = "";
+"NSMotionUsageDescription"                           = "";
+
+/* not used */
+"NSNearbyInteractionUsageDescription"                = "";
+"NSPhotoLibraryAddUsageDescription"                  = "";
+"NSPhotoLibraryUsageDescription"                     = "";
+
+/* not used */
+"NSRemindersUsageDescription"                        = "";
+
+/* not used */
+"NSSensorKitUsageDescription"                        = "";
+"NSSiriUsageDescription"                             = "Ярлыки";
+
+/* not used */
+"NSSpeechRecognitionUsageDescription"                = "";
+"NSUserTrackingUsageDescription"                     = "Эта информация используется только для предоставления релевантной рекламы. ";
+
+/* not used */
+"NSVideoSubscriberAccountUsageDescription"           = "";

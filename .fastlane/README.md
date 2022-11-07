@@ -13,25 +13,6 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
-### update_l10n
-
-```sh
-[bundle exec] fastlane update_l10n
-```
-
-
-
-### codegen
-
-```sh
-[bundle exec] fastlane codegen
-```
-
-
-
-----
-
-
 ## iOS
 
 ### ios adhoc
@@ -46,6 +27,22 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ```sh
 [bundle exec] fastlane ios update_profiles
+```
+
+
+
+### ios update_l10n
+
+```sh
+[bundle exec] fastlane ios update_l10n
+```
+
+
+
+### ios codegen
+
+```sh
+[bundle exec] fastlane ios codegen
 ```
 
 

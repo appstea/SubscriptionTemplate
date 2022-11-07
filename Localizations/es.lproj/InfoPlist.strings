@@ -1,8 +1,68 @@
-"CFBundleDisplayName"                          = "Tiempo y Clima";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "La aplicación utiliza su ubicación en segundo plano para proporcionarle alertas e información meteorológica relevante mientras viaja y visita nuevos lugares.";
-"NSLocationAlwaysUsageDescription"             = "La aplicación utiliza su ubicación en segundo plano para proporcionarle alertas e información meteorológica relevante mientras viaja y visita nuevos lugares.";
-"NSLocationUsageDescription"                   = "Obtenga local previsión meteorológica para su ubicación específica";
-"NSLocationWhenInUseUsageDescription"          = "Obtenga local previsión meteorológica para su ubicación específica";
-"NSSiriUsageDescription"                       = "Atajos";
-"NSCalendarsUsageDescription"                  = "El Clima necesita su calendario para para proporcionarle una experiencia publicitaria personalizada";
-"NSUserTrackingUsageDescription"               = "Esta información se utilizará para ofrecerte solamente anuncios relevantes. ";
+"CFBundleDisplayName"                                = "Tiempo y Clima";
+
+/* not used */
+"NFCReaderUsageDescription"                          = "";
+
+/* not used */
+"NSAppleMusicUsageDescription"                       = "";
+
+/* not used */
+"NSBluetoothAlwaysUsageDescription"                  = "";
+"NSCalendarsUsageDescription"                        = "El Clima necesita su calendario para para proporcionarle una experiencia publicitaria personalizada";
+
+/* not used */
+"NSCameraUsageDescription"                           = "";
+
+/* not used */
+"NSContactsUsageDescription"                         = "";
+
+/* not used */
+"NSFaceIDUsageDescription"                           = "";
+
+/* not used */
+"NSGKFriendListUsageDescription"                     = "";
+
+/* not used */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "";
+
+/* not used */
+"NSHealthShareUsageDescription"                      = "";
+
+/* not used */
+"NSHealthUpdateUsageDescription"                     = "";
+
+/* not used */
+"NSHomeKitUsageDescription"                          = "";
+
+/* not used */
+"NSIdentityUsageDescription"                         = "";
+
+/* not used */
+"NSLocalNetworkUsageDescription"                     = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription"       = "La aplicación utiliza su ubicación en segundo plano para proporcionarle alertas e información meteorológica relevante mientras viaja y visita nuevos lugares.";
+"NSLocationAlwaysUsageDescription"                   = "La aplicación utiliza su ubicación en segundo plano para proporcionarle alertas e información meteorológica relevante mientras viaja y visita nuevos lugares.";
+"NSLocationUsageDescription"                         = "Obtenga local previsión meteorológica para su ubicación específica";
+"NSLocationWhenInUseUsageDescription"                = "Obtenga local previsión meteorológica para su ubicación específica";
+
+/* not used */
+"NSMicrophoneUsageDescription"                       = "";
+"NSMotionUsageDescription"                           = "";
+
+/* not used */
+"NSNearbyInteractionUsageDescription"                = "";
+"NSPhotoLibraryAddUsageDescription"                  = "";
+"NSPhotoLibraryUsageDescription"                     = "";
+
+/* not used */
+"NSRemindersUsageDescription"                        = "";
+
+/* not used */
+"NSSensorKitUsageDescription"                        = "";
+"NSSiriUsageDescription"                             = "Atajos";
+
+/* not used */
+"NSSpeechRecognitionUsageDescription"                = "";
+"NSUserTrackingUsageDescription"                     = "Esta información se utilizará para ofrecerte solamente anuncios relevantes. ";
+
+/* not used */
+"NSVideoSubscriberAccountUsageDescription"           = "";

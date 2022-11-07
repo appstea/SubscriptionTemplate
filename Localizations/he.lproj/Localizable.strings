@@ -1,87 +1,93 @@
-"apple.login.signout"                  = "יציאה";
-"att.request.cta"                      = "בסדר, הבנתי";
-"att.request.description.first"        = "";
-"att.request.description.second"       = "";
-"att.request.note"                     = "";
-"att.request.title"                    = "";
-"check.internet.title"                 = "בדוק/י את החיבור לאינטרנט ונסה/י שוב מאוחר יותר";
-"default_upsell.title"                 = "פרימיום\nבלי פרסומות ועם תכונות נוספות!";
-"default_upsell.upgrade.title"         = "שדרוג";
-"general.button.back"                  = "הקודם";
-"general.button.close"                 = "סגור";
-"general.button.done"                  = "סיום";
-"general.button.ok"                    = "אישור";
-"general.button.retry"                 = "ניסיון נוסף";
-"no_internet.subtitle"                 = "אין חיבור לאינטרנט, נסה/י מאוחר יותר";
-"no_internet.title"                    = "אופס";
-"no_mail_app.subtitle"                 = "אין לך אפליקציית דואר";
-"no_mail_app.title"                    = "אופס";
+"apple.login.signout"                           = "יציאה";
+"att.request.cta"                               = "בסדר, הבנתי";
+"att.request.description.first"                 = "";
+"att.request.description.second"                = "";
+"att.request.note"                              = "";
+"att.request.title"                             = "";
+"check.internet.title"                          = "בדוק/י את החיבור לאינטרנט ונסה/י שוב מאוחר יותר";
+"default_upsell.title"                          = "פרימיום\nבלי פרסומות ועם תכונות נוספות!";
+"default_upsell.upgrade.title"                  = "שדרוג";
+"general.button.back"                           = "הקודם";
+"general.button.close"                          = "סגור";
+"general.button.done"                           = "סיום";
+"general.button.ok"                             = "אישור";
+"general.button.retry"                          = "ניסיון נוסף";
+"no_internet.subtitle"                          = "אין חיבור לאינטרנט, נסה/י מאוחר יותר";
+"no_internet.title"                             = "אופס";
+"no_mail_app.subtitle"                          = "אין לך אפליקציית דואר";
+"no_mail_app.title"                             = "אופס";
 
 /* Here is an offer for you: */
-"paywall.additional_offer.subtitle"    = "הנה הצעה עבורך:";
+"paywall.additional_offer.subtitle"             = "הנה הצעה עבורך:";
 
 /* You can choose between a longer trial period (that’s 7 days instead of 3) and paying even less per quarter. Try 7 days free, then $6.99 per month. Get all the premium features. Don’t miss this limited time deal! */
-"paywall.additional_offer.text_format" = "ניתן לבחור בין תקופת ניסיון ארוכה יותר (שבעה ימים במקום שלושה) ולשלם אפילו פחות בכל רבעון. נסה/י שבעה ימים בחינם ואז שלם/י %@. תקבל/י את כל תכונות הפרימיום. לא כדאי לפספס את המבצע הזה – הוא לזמן מוגבל!";
+"paywall.additional_offer.text_format"          = "ניתן לבחור בין תקופת ניסיון ארוכה יותר (שבעה ימים במקום שלושה) ולשלם אפילו פחות בכל רבעון. נסה/י שבעה ימים בחינם ואז שלם/י %@. תקבל/י את כל תכונות הפרימיום. לא כדאי לפספס את המבצע הזה – הוא לזמן מוגבל!";
 
 /* Not convinced? */
-"paywall.additional_offer.title"       = "לא השתכנעת?";
-"paywall.button.no_internet"           = "";
-"paywall.button.privacy"               = "פרטיות";
-"paywall.button.restore"               = "שחזור";
-"paywall.button.terms"                 = "תנאים";
-"paywall.one_button.button.close"      = "או המשך/י עם גרסה מוגבלת";
-"paywall.one_button.button.continue"   = "המשך";
-"paywall.one_button.feature.first"     = "ליהנות מכל התכונות של האפליקציה";
-"paywall.one_button.feature.second"    = "הסרת פרסומות";
-"paywall.one_button.price"             = "הירשם/י למינוי במחיר של %@ לכל %@";
-"paywall.one_button.title"             = "גישה ללא הגבלה\nלכל התכונות";
-"paywall.one_button.trial.actual"      = "לאחר מכן במחיר של %@ לכל %@";
-"paywall.one_button.trial.free"        = "גרסת ניסיון ל-%d ימים";
-"paywall.period.day"                   = "יום";
-"paywall.period.month"                 = "חודש";
-"paywall.period.quartal"               = "רבעון";
-"paywall.period.week"                  = "שבוע";
-"paywall.period.year"                  = "שנה";
+"paywall.additional_offer.title"                = "לא השתכנעת?";
+"paywall.button.no_internet"                    = "";
+"paywall.button.privacy"                        = "פרטיות";
+"paywall.button.restore"                        = "שחזור";
+"paywall.button.terms"                          = "תנאים";
+"paywall.one_button.button.close"               = "או המשך/י עם גרסה מוגבלת";
+"paywall.one_button.button.continue"            = "המשך";
+"paywall.one_button.feature.first"              = "ליהנות מכל התכונות של האפליקציה";
+"paywall.one_button.feature.second"             = "הסרת פרסומות";
+"paywall.one_button.price"                      = "הירשם/י למינוי במחיר של %@ לכל %@";
+"paywall.one_button.title"                      = "גישה ללא הגבלה\nלכל התכונות";
+"paywall.one_button.trial.actual"               = "לאחר מכן במחיר של %@ לכל %@";
+"paywall.one_button.trial.free"                 = "גרסת ניסיון ל-%d ימים";
+"paywall.period.day"                            = "יום";
+"paywall.period.month"                          = "חודש";
+"paywall.period.quartal"                        = "רבעון";
+"paywall.period.week"                           = "שבוע";
+"paywall.period.year"                           = "שנה";
 
 /* $9.99 per quarter */
-"paywall.price_per_period"             = "%@ לכל %@";
+"paywall.price_per_period"                      = "%@ לכל %@";
 
 /* $3.33/month */
-"paywall.price_slash_period"           = "%@/%@";
+"paywall.price_slash_period"                    = "%@/%@";
 
 /* Try Free and Subscribe */
-"paywall.try_free_and_subscribe"       = "נסה/י בחינם והירשם/י";
+"paywall.try_free_and_subscribe"                = "נסה/י בחינם והירשם/י";
 
 /* That’s just $3.33/month */
-"paywall.two_buttons.info_just"        = "זה אומר בסה\"כ %@";
+"paywall.two_buttons.info_just"                 = "זה אומר בסה\"כ %@";
 
 /* Try For Free */
-"paywall.two_buttons.subtitle"         = "נסה/י בחינם";
+"paywall.two_buttons.subtitle"                  = "נסה/י בחינם";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime. */
-"paywall.two_buttons.text"             = "תוכל/י ליהנות מכל התכונות של האפליקציה ללא פרסומות, כולל כל התכונות החדשות – כולן זמינות לך. נסה/י בחינם. ללא התחייבות. ניתן לבטל בכל שלב.";
+"paywall.two_buttons.text"                      = "תוכל/י ליהנות מכל התכונות של האפליקציה ללא פרסומות, כולל כל התכונות החדשות – כולן זמינות לך. נסה/י בחינם. ללא התחייבות. ניתן לבטל בכל שלב.";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
-"paywall.two_buttons.text_format"      = "תוכל/י ליהנות מכל התכונות של האפליקציה ללא פרסומות, כולל כל התכונות החדשות – כולן זמינות לך. נסה/י %d ימים בחינם, ואז שלם/י %@. ללא התחייבות. ניתן לבטל בכל שלב.";
+"paywall.two_buttons.text_format"               = "תוכל/י ליהנות מכל התכונות של האפליקציה ללא פרסומות, כולל כל התכונות החדשות – כולן זמינות לך. נסה/י %d ימים בחינם, ואז שלם/י %@. ללא התחייבות. ניתן לבטל בכל שלב.";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try 3 days free, then $4.99 per month. No commitment. Cancel anytime. */
-"paywall.two_buttons.text_format7"     = "תוכל/י ליהנות מכל התכונות של האפליקציה ללא פרסומות, כולל כל התכונות החדשות – כולן זמינות לך. נסה/י %d ימים בחינם, ואז שלם/י %@. ללא התחייבות. ניתן לבטל בכל שלב.";
+"paywall.two_buttons.text_format7"              = "תוכל/י ליהנות מכל התכונות של האפליקציה ללא פרסומות, כולל כל התכונות החדשות – כולן זמינות לך. נסה/י %d ימים בחינם, ואז שלם/י %@. ללא התחייבות. ניתן לבטל בכל שלב.";
 
 /* Full Access */
-"paywall.two_buttons.title"            = "גישה מלאה";
-"settings.contact_us.subtitle"         = "נשמח לשמוע מה דעתך";
-"settings.contact_us.title"            = "יצירת קשר";
-"settings.help_support.section.title"  = "עזרה ותמיכה";
-"settings.privacy.subtitle"            = "וטקסטים משפטיים אחרים";
-"settings.privacy.title"               = "מדיניות פרטיות";
-"settings.rateapp.title"               = "דרג/י את האפליקציה";
-"settings.restore_fail.subtitle"       = "מצטערים, נראה שאין לך רכישות";
-"settings.restore.subtitle"            = "נמצא דברים שכבר קנית";
-"settings.restore.title"               = "שחזור רכישות";
-"settings.share_app.title"             = "שתף/י את האפליקציה";
-"settings.share.subtitle"              = "שתף/י באפליקציית ההודעות האהובה עליך";
-"start.button.continue"                = "בסדר, הבנתי";
-"start.feature.first"                  = "מיקום, כדי שהאפליקציה תוכל לספק לך את נתוני מזג האוויר המקומי המדויקים ביותר";
-"start.feature.second"                 = "עדכונים, כדי שתהיה/י מודע/ת לשינויים במזג האוויר שעשויים להיות מסוכנים או לשבש את שגרת יומך";
-"start.subtitle"                       = "יתאפשר אם תעניק/י גישה ל:";
-"start.title"                          = "האפליקציה הכי טובה בקטגוריה של מזג אוויר";
+"paywall.two_buttons.title"                     = "גישה מלאה";
+"permissions.button.continue"                   = "בסדר, הבנתי";
+"permissions.feature.location.description"      = "מיקום, כדי שהאפליקציה תוכל לספק לך את נתוני מזג האוויר המקומי המדויקים ביותר";
+"permissions.feature.location.title"            = "";
+"permissions.feature.notifications.description" = "עדכונים, כדי שתהיה/י מודע/ת לשינויים במזג האוויר שעשויים להיות מסוכנים או לשבש את שגרת יומך";
+"permissions.feature.notifications.title"       = "";
+"permissions.feature.motion_data.title"         = "";
+"permissions.feature.motion_data.description"   = "";
+"permissions.feature.photos.title"              = "";
+"permissions.feature.photos.description"        = "";
+"permissions.subtitle"                          = "יתאפשר אם תעניק/י גישה ל:";
+"permissions.title"                             = "האפליקציה הכי טובה בקטגוריה של מזג אוויר";
+"settings.contact_us.subtitle"                  = "נשמח לשמוע מה דעתך";
+"settings.contact_us.title"                     = "יצירת קשר";
+"settings.help_support.section.title"           = "עזרה ותמיכה";
+"settings.privacy.subtitle"                     = "וטקסטים משפטיים אחרים";
+"settings.privacy.title"                        = "מדיניות פרטיות";
+"settings.rateapp.title"                        = "דרג/י את האפליקציה";
+"settings.restore_fail.subtitle"                = "מצטערים, נראה שאין לך רכישות";
+"settings.restore.subtitle"                     = "נמצא דברים שכבר קנית";
+"settings.restore.title"                        = "שחזור רכישות";
+"settings.share_app.title"                      = "שתף/י את האפליקציה";
+"settings.share.subtitle"                       = "שתף/י באפליקציית ההודעות האהובה עליך";

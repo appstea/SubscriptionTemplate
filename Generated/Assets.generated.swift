@@ -30,47 +30,14 @@ public enum Assets {
   public static let accentColor = ColorAsset(name: "AccentColor")
   public enum Colors {
 
-    public enum Banner {
-      public static let background = ColorAsset(name: "Colors/Banner/background")
-      public static let cta = ColorAsset(name: "Colors/Banner/cta")
-    }
-    public enum DotLabel {
-      public static let dot = ColorAsset(name: "Colors/DotLabel/dot")
-    }
     public enum Main {
       public static let back = ColorAsset(name: "Colors/Main/back")
       public static let text = ColorAsset(name: "Colors/Main/text")
     }
-    public enum Onboarding {
-      public static let background = ColorAsset(name: "Colors/Onboarding/background")
-      public static let `continue` = ColorAsset(name: "Colors/Onboarding/continue")
-    }
-    public enum Subs {
-      public static let background = ColorAsset(name: "Colors/Subs/background")
-      public static let `continue` = ColorAsset(name: "Colors/Subs/continue")
-      public static let dopButton = ColorAsset(name: "Colors/Subs/dopButton")
-      public static let infoCloseButton = ColorAsset(name: "Colors/Subs/infoCloseButton")
-      public static let infoLabel = ColorAsset(name: "Colors/Subs/infoLabel")
-      public static let infoTitle = ColorAsset(name: "Colors/Subs/infoTitle")
-      public static let price = ColorAsset(name: "Colors/Subs/price")
-      public static let title = ColorAsset(name: "Colors/Subs/title")
-    }
   }
   public enum Images {
 
-    public enum Banner {
-      public static let `default` = ImageAsset(name: "Images/Banner/default")
-      public static let icon = ImageAsset(name: "Images/Banner/icon")
-    }
-    public enum Permissions {
-      public static let image = ImageAsset(name: "Images/Permissions/image")
-    }
-    public enum Subs {
-      public static let close = ImageAsset(name: "Images/Subs/close")
-      public static let cross = ImageAsset(name: "Images/Subs/cross")
-      public static let image = ImageAsset(name: "Images/Subs/image")
-      public static let star = ImageAsset(name: "Images/Subs/star")
-    }
+    public static let test = ImageAsset(name: "Images/test")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

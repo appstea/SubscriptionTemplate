@@ -1,8 +1,68 @@
-"CFBundleDisplayName"                          = "Apps&Subs";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "Get local weather and alerts for new destinations as you travel.";
-"NSLocationAlwaysUsageDescription"             = "Get local weather and alerts for new destinations as you travel.";
-"NSLocationUsageDescription"                   = "Get local weather for your specific location.";
-"NSLocationWhenInUseUsageDescription"          = "Get local weather for your specific location.";
-"NSSiriUsageDescription"                       = "Shortcuts";
-"NSCalendarsUsageDescription"                  = "Climate needs your calendar to provide personalised advertising experience tailored to you";
-"NSUserTrackingUsageDescription"               = "We woud like to undertstand how you installed this app.";
+"CFBundleDisplayName"                                = "Apps&Subs";
+
+/* not used */
+"NFCReaderUsageDescription"                          = "A message that tells the user why the app is requesting access to the device’s NFC hardware.";
+
+/* not used */
+"NSAppleMusicUsageDescription"                       = "A message that tells the user why the app is requesting access to the user’s media library.";
+
+/* not used */
+"NSBluetoothAlwaysUsageDescription"                  = "A message that tells the user why the app needs access to Bluetooth.";
+"NSCalendarsUsageDescription"                        = "Climate needs your calendar to provide personalised advertising experience tailored to you";
+
+/* not used */
+"NSCameraUsageDescription"                           = "A message that tells the user why the app is requesting access to the device’s camera.";
+
+/* not used */
+"NSContactsUsageDescription"                         = "A message that tells the user why the app is requesting access to the user’s contacts.";
+
+/* not used */
+"NSFaceIDUsageDescription"                           = "A message that tells the user why the app is requesting the ability to authenticate with Face ID.";
+
+/* not used */
+"NSGKFriendListUsageDescription"                     = "A message that tells the user why the app needs access to their Game Center friends list.";
+
+/* not used */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "A message to the user that explains why the app requested permission to read clinical records.";
+
+/* not used */
+"NSHealthShareUsageDescription"                      = "A message to the user that explains why the app requested permission to read samples from the HealthKit store.";
+
+/* not used */
+"NSHealthUpdateUsageDescription"                     = "A message to the user that explains why the app requested permission to save samples to the HealthKit store.";
+
+/* not used */
+"NSHomeKitUsageDescription"                          = "A message that tells the user why the app is requesting access to the user’s HomeKit configuration data.";
+
+/* not used */
+"NSIdentityUsageDescription"                         = "A message that tells the user why the app is requesting identity information.";
+
+/* not used */
+"NSLocalNetworkUsageDescription"                     = "A message that tells the user why the app is requesting access to the local network.";
+"NSLocationAlwaysAndWhenInUseUsageDescription"       = "Get local weather and alerts for new destinations as you travel.";
+"NSLocationAlwaysUsageDescription"                   = "Get local weather and alerts for new destinations as you travel.";
+"NSLocationUsageDescription"                         = "Get local weather for your specific location.";
+"NSLocationWhenInUseUsageDescription"                = "Get local weather for your specific location.";
+
+/* not used */
+"NSMicrophoneUsageDescription"                       = "A message that tells the user why the app is requesting access to the device’s microphone.";
+"NSMotionUsageDescription"                           = "A message that tells the user why the app is requesting access to the device’s motion data.";
+
+/* not used */
+"NSNearbyInteractionUsageDescription"                = "A request for user permission to begin an interaction session with nearby devices.";
+"NSPhotoLibraryAddUsageDescription"                  = "A message that tells the user why the app is requesting add-only access to the user’s photo library.";
+"NSPhotoLibraryUsageDescription"                     = "A message that tells the user why the app is requesting access to the user’s photo library.";
+
+/* not used */
+"NSRemindersUsageDescription"                        = "A message that tells the user why the app is requesting access to the user’s reminders.";
+
+/* not used */
+"NSSensorKitUsageDescription"                        = "A short description of the purpose of your app's research study.";
+"NSSiriUsageDescription"                             = "Shortcuts";
+
+/* not used */
+"NSSpeechRecognitionUsageDescription"                = "A message that tells the user why the app is requesting to send user data to Apple’s speech recognition servers.";
+"NSUserTrackingUsageDescription"                     = "We woud like to undertstand how you installed this app.";
+
+/* not used */
+"NSVideoSubscriberAccountUsageDescription"           = "A message that tells the user why the app is requesting access to the user’s TV provider account.";

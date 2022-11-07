@@ -1,8 +1,68 @@
-"CFBundleDisplayName"                          = "Météo et Climat";
-"NSLocationAlwaysAndWhenInUseUsageDescription" = "Recevez la météo locale et des alertes pendant vos voyages.";
-"NSLocationAlwaysUsageDescription"             = "Recevez la météo locale et des alertes pendant vos voyages.";
-"NSLocationUsageDescription"                   = "Recevez la météo locale pour votre emplacement spécifique.";
-"NSLocationWhenInUseUsageDescription"          = "Recevez la météo locale pour votre emplacement spécifique.";
-"NSSiriUsageDescription"                       = "Raccourcis";
-"NSCalendarsUsageDescription"                  = "Climate a besoin de votre calendrier pour vous offrir une expérience publicitaire personnalisée";
-"NSUserTrackingUsageDescription"               = "Ces données serviront uniquement à vous fournir des annonces pertinentes. ";
+"CFBundleDisplayName"                                = "Météo et Climat";
+
+/* not used */
+"NFCReaderUsageDescription"                          = "";
+
+/* not used */
+"NSAppleMusicUsageDescription"                       = "";
+
+/* not used */
+"NSBluetoothAlwaysUsageDescription"                  = "";
+"NSCalendarsUsageDescription"                        = "Climate a besoin de votre calendrier pour vous offrir une expérience publicitaire personnalisée";
+
+/* not used */
+"NSCameraUsageDescription"                           = "";
+
+/* not used */
+"NSContactsUsageDescription"                         = "";
+
+/* not used */
+"NSFaceIDUsageDescription"                           = "";
+
+/* not used */
+"NSGKFriendListUsageDescription"                     = "";
+
+/* not used */
+"NSHealthClinicalHealthRecordsShareUsageDescription" = "";
+
+/* not used */
+"NSHealthShareUsageDescription"                      = "";
+
+/* not used */
+"NSHealthUpdateUsageDescription"                     = "";
+
+/* not used */
+"NSHomeKitUsageDescription"                          = "";
+
+/* not used */
+"NSIdentityUsageDescription"                         = "";
+
+/* not used */
+"NSLocalNetworkUsageDescription"                     = "";
+"NSLocationAlwaysAndWhenInUseUsageDescription"       = "Recevez la météo locale et des alertes pendant vos voyages.";
+"NSLocationAlwaysUsageDescription"                   = "Recevez la météo locale et des alertes pendant vos voyages.";
+"NSLocationUsageDescription"                         = "Recevez la météo locale pour votre emplacement spécifique.";
+"NSLocationWhenInUseUsageDescription"                = "Recevez la météo locale pour votre emplacement spécifique.";
+
+/* not used */
+"NSMicrophoneUsageDescription"                       = "";
+"NSMotionUsageDescription"                           = "";
+
+/* not used */
+"NSNearbyInteractionUsageDescription"                = "";
+"NSPhotoLibraryAddUsageDescription"                  = "";
+"NSPhotoLibraryUsageDescription"                     = "";
+
+/* not used */
+"NSRemindersUsageDescription"                        = "";
+
+/* not used */
+"NSSensorKitUsageDescription"                        = "";
+"NSSiriUsageDescription"                             = "Raccourcis";
+
+/* not used */
+"NSSpeechRecognitionUsageDescription"                = "";
+"NSUserTrackingUsageDescription"                     = "Ces données serviront uniquement à vous fournir des annonces pertinentes. ";
+
+/* not used */
+"NSVideoSubscriberAccountUsageDescription"           = "";
