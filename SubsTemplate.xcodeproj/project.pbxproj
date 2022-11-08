@@ -10,9 +10,6 @@
 		5C085F8D29192F84009185DA /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C085F8C29192F84009185DA /* PaywallCraftCore */; };
 		5C085F8F29192F84009185DA /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 5C085F8E29192F84009185DA /* PaywallCraftResources */; };
 		5C085F9129192F84009185DA /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C085F9029192F84009185DA /* PaywallCraftUI */; };
-		5C17AC2229158A28009A3F9C /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C17AC2129158A28009A3F9C /* PaywallCraftCore */; };
-		5C17AC2429158A28009A3F9C /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 5C17AC2329158A28009A3F9C /* PaywallCraftResources */; };
-		5C17AC2629158A28009A3F9C /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C17AC2529158A28009A3F9C /* PaywallCraftUI */; };
 		5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E82864F4770092D1FA /* PinLayout */; };
 		5C55FACD2864A96400F0B41C /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FACC2864A96400F0B41C /* Integration.swift */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
@@ -58,9 +55,6 @@
 			files = (
 				5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */,
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
-				5C17AC2629158A28009A3F9C /* PaywallCraftUI in Frameworks */,
-				5C17AC2429158A28009A3F9C /* PaywallCraftResources in Frameworks */,
-				5C17AC2229158A28009A3F9C /* PaywallCraftCore in Frameworks */,
 				5C085F8F29192F84009185DA /* PaywallCraftResources in Frameworks */,
 				5C085F9129192F84009185DA /* PaywallCraftUI in Frameworks */,
 				5C085F8D29192F84009185DA /* PaywallCraftCore in Frameworks */,
@@ -168,9 +162,6 @@
 			name = SubsTemplate;
 			packageProductDependencies = (
 				5C22C4E82864F4770092D1FA /* PinLayout */,
-				5C17AC2129158A28009A3F9C /* PaywallCraftCore */,
-				5C17AC2329158A28009A3F9C /* PaywallCraftResources */,
-				5C17AC2529158A28009A3F9C /* PaywallCraftUI */,
 				5C085F8C29192F84009185DA /* PaywallCraftCore */,
 				5C085F8E29192F84009185DA /* PaywallCraftResources */,
 				5C085F9029192F84009185DA /* PaywallCraftUI */,
@@ -632,18 +623,6 @@
 		5C085F9029192F84009185DA /* PaywallCraftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5C085F8B29192F84009185DA /* XCRemoteSwiftPackageReference "PaywallCraft" */;
-			productName = PaywallCraftUI;
-		};
-		5C17AC2129158A28009A3F9C /* PaywallCraftCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PaywallCraftCore;
-		};
-		5C17AC2329158A28009A3F9C /* PaywallCraftResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = PaywallCraftResources;
-		};
-		5C17AC2529158A28009A3F9C /* PaywallCraftUI */ = {
-			isa = XCSwiftPackageProductDependency;
 			productName = PaywallCraftUI;
 		};
 		5C22C4E82864F4770092D1FA /* PinLayout */ = {
