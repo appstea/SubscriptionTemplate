@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleUtilities.git",
       "state" : {
-        "revision" : "68ea347bdb1a69e2d2ae2e25cd085b6ef92f64cb",
-        "version" : "7.9.0"
+        "revision" : "6db6edb48bdd9943426562c7f042a5492de5ba3d",
+        "version" : "7.10.0"
       }
     },
     {
@@ -141,7 +141,7 @@
       "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "master",
-        "revision" : "517b1a78d2e8ef382a137457b8dca1247c1088f2"
+        "revision" : "b0fe6129b4c44c24d5baeadf27138c7ccdc9cbf1"
       }
     },
     {
@@ -176,8 +176,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "32b7cf53131298d10c432a0e6a1ec43e6c5f2c3a",
-        "version" : "4.14.0"
+        "revision" : "19ef8ff3e3fb3c73d52a36b0db06b80d11b25853",
+        "version" : "4.14.2"
       }
     },
     {
