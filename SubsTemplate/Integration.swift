@@ -42,9 +42,14 @@ fileprivate extension Config.UI.Upsell {
 
   static func custom() -> Self? {
     nil
-//    var `default` = Config.UI.Banner.Default()
-//    `default`.title = "TexT"
-//    return Self(default: `default`)
+//    Self()
+//      .default {
+//        $0.updgradeCTA { $0.cornerRadius(8) }
+//          .background { $0.backgroundColor(.yellow) }
+//      }
+//      .background {
+//        $0.backgroundColor(.red)
+//      }
   }
 
 }

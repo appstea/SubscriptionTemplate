@@ -35,12 +35,12 @@ final class UIService: AppService {
 
   func start(from window: UIWindow) {
     Task { @MainActor in
-      Paywall.core.keyWindow = window
+      Paywall.core.assignKeyWindow(window)
       self.window = window
 
       if !Paywall.core.didPassPermissions {
-        await Paywall.core.showPermissions(from: window)
-        await Paywall.core.showPaywall(from: window)
+        await Paywall.core.showPermissions()
+        await Paywall.core.showOnboardingPaywall()
         await Paywall.core.checkATT()
       }
 
