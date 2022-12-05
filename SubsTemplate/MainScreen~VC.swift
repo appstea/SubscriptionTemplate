@@ -29,7 +29,8 @@ public extension MainScreen {
     private lazy var bannerView = Paywall.core.upsell(
       source: PaywallCraftCore.Paywall.Source.bottomUpsell,
       screen: PaywallCraftCore.Paywall.Screen.initial,
-      presenter: self
+      from: self,
+      onEvents: { [weak self] in print($0) }
     )
     
     private let ctaButton = UIBase.Button {
