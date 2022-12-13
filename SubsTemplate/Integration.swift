@@ -6,6 +6,9 @@
 //
 
 import PaywallCraftCore
+import PaywallCraftUI
+
+import UIKit
 
 enum Paywall {
 
@@ -43,9 +46,49 @@ fileprivate extension Config.UI.Upsell {
   static func custom() -> Self? {
     nil
 //    Self()
-//      .default {
-//        $0.updgradeCTA { $0.cornerRadius(8) }
-//          .background { $0.backgroundColor(.yellow) }
+//      .default { defaultUpsell in
+//        defaultUpsell
+//          .background { defaultUpsellBackground in
+//            defaultUpsellBackground
+//              .cornerRadius(0)
+//              .backgroundColor(.blue)
+//          }
+//          .icon { defaultUpsellIcon in
+//            defaultUpsellIcon
+//              .size(.value(CGSize(width: 32, height: 32)))
+//              .view { defaultUpsellIconView in
+//                defaultUpsellIconView
+//                  .backgroundColor(.clear)
+//                  .cornerRadius(16)
+//              }
+//          }
+//          .title { defaultUpsellTitle in
+//            defaultUpsellTitle.text(
+//              PaywallCraftUI.VM.Text("Ads free and premimu features")
+//                .font(.boldSystemFont(ofSize: 16))
+//                .textColor(.green)
+//            )
+//            .adjustsFontSize(.minScale(0.8))
+//            .numberOfLines(2)
+//          }
+//          .cta { cta in
+//            cta
+//              .height(30)
+//              .text { ctaText in
+//                ctaText
+//                  .string("Custom Text")
+//                  .textColor(.red)
+//                  .font(.systemFont(ofSize: 20))
+//              }
+//              .textPadding(UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 16))
+//              .background { ctaBackground in
+//                ctaBackground
+//                  .backgroundColor(.blue)
+//                  .cornerRadius(12)
+//              }
+//          }
+//          .contentPadding(UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0))
+//          .titlePadding(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10))
 //      }
 //      .background {
 //        $0.backgroundColor(.red)
