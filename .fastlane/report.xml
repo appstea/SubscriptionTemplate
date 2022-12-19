@@ -5,32 +5,42 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000976">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000451">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: import_from_git" time="2.107495">
+      <testcase classname="fastlane.lanes" name="1: import_from_git" time="1.918671">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: is_ci" time="0.000303">
+      <testcase classname="fastlane.lanes" name="2: is_ci" time="0.000243">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: is_ci" time="0.000157">
+      <testcase classname="fastlane.lanes" name="3: is_ci" time="0.000242">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git --no-pager show -s --format='%B    by %cn %cE'" time="0.018102">
+      <testcase classname="fastlane.lanes" name="4: git --no-pager show -s --format='%B    by %cn %cE'" time="0.020964">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: Switch to ios codegen lane" time="0.000682">
+      <testcase classname="fastlane.lanes" name="5: match" time="2.751601">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: match" time="2.665697">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: match" time="2.384643">
         
       </testcase>
     
