@@ -104,8 +104,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/BranchMetrics/ios-branch-deep-linking-attribution",
       "state" : {
-        "revision" : "e62c92c26b7d45c98052f3f163e07d9b5f572140",
-        "version" : "1.45.1"
+        "revision" : "94657d5a9cb8154749b3f12f512f5e1e0d100ba5",
+        "version" : "1.45.2"
       }
     },
     {
@@ -141,7 +141,7 @@
       "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "master",
-        "revision" : "30a22f68c4dbcaeabec0911df7906608ade59233"
+        "revision" : "5faaf9cc4ea24456b13df92d7b400605018ade1c"
       }
     },
     {
@@ -176,8 +176,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "ed027d201802d2b72f31dfd71d29a8745d40d76e",
-        "version" : "4.15.2"
+        "revision" : "4e4876385eb8a598e24cd04d3f6321824b369fe1",
+        "version" : "4.15.5"
       }
     },
     {
