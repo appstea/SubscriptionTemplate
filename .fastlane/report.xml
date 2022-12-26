@@ -5,42 +5,42 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000186">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000175">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: import_from_git" time="2.024092">
+      <testcase classname="fastlane.lanes" name="1: import_from_git" time="1.696044">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: is_ci" time="0.00012">
+      <testcase classname="fastlane.lanes" name="2: is_ci" time="0.000158">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: is_ci" time="8.4e-05">
+      <testcase classname="fastlane.lanes" name="3: is_ci" time="0.000102">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git --no-pager show -s --format='%B    by %cn %cE'" time="0.008756">
+      <testcase classname="fastlane.lanes" name="4: git --no-pager show -s --format='%B    by %cn %cE'" time="0.009642">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: match" time="3.11448">
+      <testcase classname="fastlane.lanes" name="5: match" time="2.238317">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: match" time="2.461221">
+      <testcase classname="fastlane.lanes" name="6: match" time="2.1384">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: match" time="2.36596">
+      <testcase classname="fastlane.lanes" name="7: match" time="2.325018">
         
       </testcase>
     

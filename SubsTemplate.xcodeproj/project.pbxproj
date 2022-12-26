@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		5C55FACC2864A96400F0B41C /* Integration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
+		5C6846692959A5D30096CDA3 /* PaywallCraft */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PaywallCraft; path = ../../Libraries/PaywallCraft; sourceTree = "<group>"; };
 		5C7DD81B28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5C7DD81D28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C8DBEB128511C210054B427 /* SubsTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubsTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +77,7 @@
 		5C8DBEA828511C210054B427 = {
 			isa = PBXGroup;
 			children = (
+				5C6846692959A5D30096CDA3 /* PaywallCraft */,
 				5C8DBEB328511C210054B427 /* SubsTemplate */,
 				5C8DBEB228511C210054B427 /* Products */,
 				5CBA18112861DB7900E59348 /* Frameworks */,

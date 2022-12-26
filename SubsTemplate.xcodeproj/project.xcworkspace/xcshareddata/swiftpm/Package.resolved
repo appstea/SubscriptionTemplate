@@ -136,15 +136,6 @@
       }
     },
     {
-      "identity" : "paywallcraft",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:appstea/PaywallCraft.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "5faaf9cc4ea24456b13df92d7b400605018ade1c"
-      }
-    },
-    {
       "identity" : "permissionskit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dDomovoj/PermissionsKit",
