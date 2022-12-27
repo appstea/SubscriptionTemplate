@@ -18,9 +18,6 @@ platform :ios do
   end
 
   before_all do 
-    if is_ci 
-      xcversion(version: "14.0.0")
-    end
     $tg_bot_token = "1025580642:AAGW-ykbVYJDIrl1ktLaI9u6k3_pafOUNn8"
     $tg_chat_id = "-446147639"
     # https://console.firebase.google.com/u/0/project/subscription-template/appdistribution/app/ios:com.appstea.proto/releases
