@@ -10,30 +10,32 @@ import PaywallCraftUI
 
 import UIKit
 
-enum Paywall {
+var PaywallCore: PaywallCraftCore.Instance { _Paywall.core }
 
-  static let core = PaywallCraftCore.Instance(
-    config: .init(
-      paywall: .init(
-        apiKey: "appl_PrQxhLfrujRwauAlGngBUArKhIK",
-        offering: "com.appstea.proto.first",
-        isDebug: isDebug,
-        urls: .init(
-          policy: "https://appstea.com/legal/privacy-policy/",
-          terms: "https://appstea.com/legal/terms-of-use/"
+private enum _Paywall {
+
+  static let core = PaywallCraftCore.Instance(config: config)
+  
+  static let config = PaywallCraftCore.Config(
+    paywall: .init(
+      apiKey: "appl_PrQxhLfrujRwauAlGngBUArKhIK",
+      offering: "com.appstea.proto.first",
+      isDebug: isDebug,
+      urls: .init(
+        policy: "https://appstea.com/legal/privacy-policy/",
+        terms: "https://appstea.com/legal/terms-of-use/"
 //          store: "https://apps.apple.com/us/app/id1533228338"
-        )
-      ),
-      analytics: .init(
-        isOSLogEnabled: isDebug || isAdHoc,
-        isFirebaseEnabled: true,
-        isBranchEnabled: true
-      ),
-      ui: .init(
-        permissions: .custom(),
-        paywall: .custom(),
-        upsell: .custom()
       )
+    ),
+    analytics: .init(
+      isOSLogEnabled: isDebug || isAdHoc,
+      isFirebaseEnabled: true,
+      isBranchEnabled: true
+    ),
+    ui: .init(
+      permissions: .custom(),
+      paywall: .custom(),
+      upsell: .custom()
     )
   )
 

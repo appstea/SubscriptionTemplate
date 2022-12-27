@@ -132,16 +132,16 @@
       "location" : "https://github.com/dDomovoj/NotificationCraft.git",
       "state" : {
         "branch" : "master",
-        "revision" : "1467f5c9a191fd0534df4825d325cf0bc0561d63"
+        "revision" : "99bb3f695c7b8ee5d723eac20f489b03ce0fc2ed"
       }
     },
     {
-      "identity" : "paywallcraft",
+      "identity" : "paywallcraftexternal",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:appstea/PaywallCraft.git",
+      "location" : "https://github.com/appstea/PaywallCraftExternal.git",
       "state" : {
         "branch" : "master",
-        "revision" : "5b91658011e080ff783fe3d7b1683b8aceea2641"
+        "revision" : "0b65ff38d54c83cfb8b4169e842e5864e19ab998"
       }
     },
     {
@@ -204,7 +204,7 @@
       "location" : "https://github.com/dDomovoj/Stored.git",
       "state" : {
         "branch" : "master",
-        "revision" : "dda49be8201871972256a33e88d4f2e36f52abbf"
+        "revision" : "622e15f33614e049eb767f474e3f1f99ef4d2834"
       }
     },
     {

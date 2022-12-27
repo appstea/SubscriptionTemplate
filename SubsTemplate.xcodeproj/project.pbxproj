@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C085F8D29192F84009185DA /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C085F8C29192F84009185DA /* PaywallCraftCore */; };
-		5C085F8F29192F84009185DA /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 5C085F8E29192F84009185DA /* PaywallCraftResources */; };
-		5C085F9129192F84009185DA /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C085F9029192F84009185DA /* PaywallCraftUI */; };
 		5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E82864F4770092D1FA /* PinLayout */; };
+		5C544263295B1FEC0044201F /* ComplexScreen~VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C544262295B1FEC0044201F /* ComplexScreen~VC.swift */; };
+		5C544266295B29EF0044201F /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C544265295B29EF0044201F /* PaywallCraftCore */; };
+		5C544268295B29EF0044201F /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 5C544267295B29EF0044201F /* PaywallCraftResources */; };
+		5C54426A295B29EF0044201F /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C544269295B29EF0044201F /* PaywallCraftUI */; };
 		5C55FACD2864A96400F0B41C /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FACC2864A96400F0B41C /* Integration.swift */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
 		5C7DD82B28622D2C0091AACF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81C28622D2C0091AACF /* InfoPlist.strings */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C544262295B1FEC0044201F /* ComplexScreen~VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComplexScreen~VC.swift"; sourceTree = "<group>"; };
 		5C55FACC2864A96400F0B41C /* Integration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
 		5C7DD81B28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5C7DD81D28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -55,9 +57,9 @@
 			files = (
 				5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */,
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
-				5C085F8F29192F84009185DA /* PaywallCraftResources in Frameworks */,
-				5C085F9129192F84009185DA /* PaywallCraftUI in Frameworks */,
-				5C085F8D29192F84009185DA /* PaywallCraftCore in Frameworks */,
+				5C54426A295B29EF0044201F /* PaywallCraftUI in Frameworks */,
+				5C544268295B29EF0044201F /* PaywallCraftResources in Frameworks */,
+				5C544266295B29EF0044201F /* PaywallCraftCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +104,7 @@
 				5C55FACC2864A96400F0B41C /* Integration.swift */,
 				5C8DBEB628511C210054B427 /* SceneDelegate.swift */,
 				5C8DBEB828511C210054B427 /* MainScreen~VC.swift */,
+				5C544262295B1FEC0044201F /* ComplexScreen~VC.swift */,
 			);
 			path = SubsTemplate;
 			sourceTree = "<group>";
@@ -162,9 +165,9 @@
 			name = SubsTemplate;
 			packageProductDependencies = (
 				5C22C4E82864F4770092D1FA /* PinLayout */,
-				5C085F8C29192F84009185DA /* PaywallCraftCore */,
-				5C085F8E29192F84009185DA /* PaywallCraftResources */,
-				5C085F9029192F84009185DA /* PaywallCraftUI */,
+				5C544265295B29EF0044201F /* PaywallCraftCore */,
+				5C544267295B29EF0044201F /* PaywallCraftResources */,
+				5C544269295B29EF0044201F /* PaywallCraftUI */,
 			);
 			productName = SubsTemplate;
 			productReference = 5C8DBEB128511C210054B427 /* SubsTemplate.app */;
@@ -197,7 +200,7 @@
 			mainGroup = 5C8DBEA828511C210054B427;
 			packageReferences = (
 				5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */,
-				5C085F8B29192F84009185DA /* XCRemoteSwiftPackageReference "PaywallCraft" */,
+				5C544264295B29EF0044201F /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */,
 			);
 			productRefGroup = 5C8DBEB228511C210054B427 /* Products */;
 			projectDirPath = "";
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C544263295B1FEC0044201F /* ComplexScreen~VC.swift in Sources */,
 				5C8DBEB928511C210054B427 /* MainScreen~VC.swift in Sources */,
 				5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */,
 				5C8DBF48285A182A0054B427 /* UIService.swift in Sources */,
@@ -591,14 +595,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5C085F8B29192F84009185DA /* XCRemoteSwiftPackageReference "PaywallCraft" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:appstea/PaywallCraft.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/layoutBox/PinLayout";
@@ -607,28 +603,36 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		5C544264295B29EF0044201F /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appstea/PaywallCraftExternal.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C085F8C29192F84009185DA /* PaywallCraftCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5C085F8B29192F84009185DA /* XCRemoteSwiftPackageReference "PaywallCraft" */;
-			productName = PaywallCraftCore;
-		};
-		5C085F8E29192F84009185DA /* PaywallCraftResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5C085F8B29192F84009185DA /* XCRemoteSwiftPackageReference "PaywallCraft" */;
-			productName = PaywallCraftResources;
-		};
-		5C085F9029192F84009185DA /* PaywallCraftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5C085F8B29192F84009185DA /* XCRemoteSwiftPackageReference "PaywallCraft" */;
-			productName = PaywallCraftUI;
-		};
 		5C22C4E82864F4770092D1FA /* PinLayout */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
+		};
+		5C544265295B29EF0044201F /* PaywallCraftCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C544264295B29EF0044201F /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */;
+			productName = PaywallCraftCore;
+		};
+		5C544267295B29EF0044201F /* PaywallCraftResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C544264295B29EF0044201F /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */;
+			productName = PaywallCraftResources;
+		};
+		5C544269295B29EF0044201F /* PaywallCraftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C544264295B29EF0044201F /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */;
+			productName = PaywallCraftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

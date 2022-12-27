@@ -14,7 +14,7 @@ final class AppDelegate: Cascade.AppDelegate {
 
   @objc
   override func targets() -> [UIApplicationDelegate] {[
-    Paywall.core,
+    PaywallCore,
     UIService.shared,
   ].compactMap { $0 }}
 

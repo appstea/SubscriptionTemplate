@@ -13,79 +13,67 @@ import UIBase
 import PaywallCraftCore
 import AnalyticsCraft
 
-public enum MainScreen { }
-
-extension MainScreen {
+final class MainViewController: UIBase.ViewController {
   
-  struct CustomSource: IPaywallSource {
-    var analytics: IAnalyticsValue { "Main Screen".analytics() }
+  private lazy var bannerView = PaywallCore.upsell(from: self)
+  
+  private let ctaButton = UIBase.Button {
+    $0.setTitle("Show Paywall", for: .normal)
+    $0.setTitleColor(Color.Main.text.color, for: .normal)
   }
-}
-
-public extension MainScreen {
-
-  final class ViewController: UIBase.ViewController {
-
-    private lazy var bannerView = Paywall.core.upsell(
-      source: PaywallCraftCore.Paywall.Source.bottomUpsell,
-      screen: PaywallCraftCore.Paywall.Screen.initial,
-      from: self,
-      onEvents: { [weak self] in print($0) }
-    )
+  
+  // MARK: - Lifecycle
+  
+  public override func loadView() {
+    super.loadView()
+    view.backgroundColor = Color.Main.back.color
+    view.addSubviews(bannerView, ctaButton)
+  }
+  
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+    PaywallCore.onEvents.add { [weak self] e in
+      if case .status = e {
+        self?.didChangePawywallStatus()
+      }
+    }.bindLifetime(to: self)
     
-    private let ctaButton = UIBase.Button {
-      $0.setTitle("Show Paywall", for: .normal)
-      $0.setTitleColor(Color.Main.text.color, for: .normal)
+    ctaButton.addAction { _ in
+      PaywallCore.showPaywall()
     }
-
-    // MARK: - Lifecycle
-
-    public override func loadView() {
-      super.loadView()
-      view.backgroundColor = Color.Main.back.color
-      view.addSubviews(bannerView, ctaButton)
-    }
+  }
+  
+  public override func viewWillTransition(to size: CGSize,
+                                          with coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransition(to: size, with: coordinator)
+    coordinator.animate(alongsideTransition: { _ in
+      self.view.setNeedsLayout()
+      self.view.layoutIfNeeded()
+    }, completion: nil)
+  }
+  
+  public override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
     
-    public override func viewDidLoad() {
-      super.viewDidLoad()
-      Paywall.core.eventsObserver.add { [weak self] e in
-        guard case .status = e else { return }
-        
-        let isPremium = Paywall.core.isPremium
-        self?.bannerView.isHidden = isPremium
-        self?.ctaButton.isHidden = isPremium
-        self?.view.setNeedsLayout()
-      }.bindLifetime(to: self)
+    let safeArea = view.pin.safeArea
+    if !PaywallCore.isPremium {
+      bannerView.pin.start().end()
+        .bottom(safeArea.bottom)
+        .sizeToFit(.width)
       
-      ctaButton.addAction { _ in
-        Paywall.core.showPaywall(source: CustomSource(),
-                                 screen: PaywallCraftCore.Paywall.Screen.initial)
-      }
+      ctaButton.pin.sizeToFit()
+        .vCenter(safeArea.top - safeArea.bottom)
+        .hCenter(safeArea.left - safeArea.right)
     }
-
-    public override func viewWillTransition(to size: CGSize,
-                                            with coordinator: UIViewControllerTransitionCoordinator) {
-      super.viewWillTransition(to: size, with: coordinator)
-      coordinator.animate(alongsideTransition: { _ in
-        self.view.setNeedsLayout()
-        self.view.layoutIfNeeded()
-      }, completion: nil)
-    }
-
-    public override func viewDidLayoutSubviews() {
-      super.viewDidLayoutSubviews()
-
-      let safeArea = view.pin.safeArea
-      if !Paywall.core.isPremium {
-        bannerView.pin.start().end()
-          .bottom(safeArea.bottom)
-          .sizeToFit(.width)
-        
-        ctaButton.pin.sizeToFit()
-          .vCenter(safeArea.top - safeArea.bottom)
-          .hCenter(safeArea.left - safeArea.right)
-      }
-    }
-
   }
+  
+  // MARK: - Private
+  
+  private func didChangePawywallStatus() {
+    let isPremium = PaywallCore.isPremium
+    bannerView.isHidden = isPremium
+    ctaButton.isHidden = isPremium
+    view.setNeedsLayout()
+  }
+  
 }

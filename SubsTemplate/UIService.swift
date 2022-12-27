@@ -35,16 +35,16 @@ final class UIService: AppService {
 
   func start(from window: UIWindow) {
     Task { @MainActor in
-      Paywall.core.assignKeyWindow(window)
+      PaywallCore.assignKeyWindow(window)
       self.window = window
 
-      if !Paywall.core.didPassPermissions {
-        await Paywall.core.showPermissions()
-        await Paywall.core.showOnboardingPaywall()
-        await Paywall.core.checkATT()
+      if !PaywallCore.didPassPermissions {
+        await PaywallCore.showPermissions()
+        await PaywallCore.showOnboardingPaywall()
+        await PaywallCore.checkATT()
       }
 
-      window.rootViewController = MainScreen.ViewController()
+      window.rootViewController = MainViewController()
       window.makeKeyAndVisible()
     }
   }
