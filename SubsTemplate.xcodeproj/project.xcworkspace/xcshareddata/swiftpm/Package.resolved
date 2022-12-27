@@ -138,10 +138,10 @@
     {
       "identity" : "paywallcraftexternal",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/appstea/PaywallCraftExternal.git",
+      "location" : "git@github.com:appstea/PaywallCraftExternal.git",
       "state" : {
         "branch" : "master",
-        "revision" : "0b65ff38d54c83cfb8b4169e842e5864e19ab998"
+        "revision" : "5fbb9becadeb288efcbbd87c7ec44b0f3d76564b"
       }
     },
     {
