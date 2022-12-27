@@ -26,7 +26,7 @@ platform :ios do
     $project_name = "SubsTemplate.xcodeproj"
     # $workspace_name = "SubsTemplate.xcworkspace"
     $scheme = "SubsTemplate"
-    $release_notes = "" # ()
+    $release_notes = fetch_release_notes()
   end
 
   error do |lane, exception|
