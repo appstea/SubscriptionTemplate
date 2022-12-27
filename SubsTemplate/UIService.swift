@@ -44,7 +44,7 @@ final class UIService: AppService {
         await PaywallCore.checkATT()
       }
 
-      window.rootViewController = MainViewController()
+      window.rootViewController = SimpleViewController()
       window.makeKeyAndVisible()
     }
   }

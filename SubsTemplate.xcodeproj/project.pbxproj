@@ -12,12 +12,14 @@
 		5C544266295B29EF0044201F /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C544265295B29EF0044201F /* PaywallCraftCore */; };
 		5C544268295B29EF0044201F /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 5C544267295B29EF0044201F /* PaywallCraftResources */; };
 		5C54426A295B29EF0044201F /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C544269295B29EF0044201F /* PaywallCraftUI */; };
+		5C54426C295B41540044201F /* FreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C54426B295B41540044201F /* FreeViewController.swift */; };
+		5C54426E295B415F0044201F /* PaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C54426D295B415F0044201F /* PaidViewController.swift */; };
 		5C55FACD2864A96400F0B41C /* Integration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FACC2864A96400F0B41C /* Integration.swift */; };
 		5C7DD82A28622D2C0091AACF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81A28622D2C0091AACF /* Localizable.strings */; };
 		5C7DD82B28622D2C0091AACF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DD81C28622D2C0091AACF /* InfoPlist.strings */; };
 		5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEB428511C210054B427 /* AppDelegate.swift */; };
 		5C8DBEB728511C210054B427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEB628511C210054B427 /* SceneDelegate.swift */; };
-		5C8DBEB928511C210054B427 /* MainScreen~VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEB828511C210054B427 /* MainScreen~VC.swift */; };
+		5C8DBEB928511C210054B427 /* SimpleScreen~VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEB828511C210054B427 /* SimpleScreen~VC.swift */; };
 		5C8DBEBE28511C240054B427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBEBD28511C240054B427 /* Assets.xcassets */; };
 		5C8DBEC128511C240054B427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBEBF28511C240054B427 /* LaunchScreen.storyboard */; };
 		5C8DBF002858F6910054B427 /* UIViewController~Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBEFF2858F6910054B427 /* UIViewController~Extensions.swift */; };
@@ -31,13 +33,15 @@
 
 /* Begin PBXFileReference section */
 		5C544262295B1FEC0044201F /* ComplexScreen~VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComplexScreen~VC.swift"; sourceTree = "<group>"; };
+		5C54426B295B41540044201F /* FreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeViewController.swift; sourceTree = "<group>"; };
+		5C54426D295B415F0044201F /* PaidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidViewController.swift; sourceTree = "<group>"; };
 		5C55FACC2864A96400F0B41C /* Integration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integration.swift; sourceTree = "<group>"; };
 		5C7DD81B28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5C7DD81D28622D2C0091AACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C8DBEB128511C210054B427 /* SubsTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubsTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8DBEB428511C210054B427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C8DBEB628511C210054B427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C8DBEB828511C210054B427 /* MainScreen~VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreen~VC.swift"; sourceTree = "<group>"; };
+		5C8DBEB828511C210054B427 /* SimpleScreen~VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleScreen~VC.swift"; sourceTree = "<group>"; };
 		5C8DBEBD28511C240054B427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C8DBEC028511C240054B427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C8DBEC228511C240054B427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,7 +107,9 @@
 				5C8DBEB428511C210054B427 /* AppDelegate.swift */,
 				5C55FACC2864A96400F0B41C /* Integration.swift */,
 				5C8DBEB628511C210054B427 /* SceneDelegate.swift */,
-				5C8DBEB828511C210054B427 /* MainScreen~VC.swift */,
+				5C8DBEB828511C210054B427 /* SimpleScreen~VC.swift */,
+				5C54426B295B41540044201F /* FreeViewController.swift */,
+				5C54426D295B415F0044201F /* PaidViewController.swift */,
 				5C544262295B1FEC0044201F /* ComplexScreen~VC.swift */,
 			);
 			path = SubsTemplate;
@@ -254,12 +260,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C544263295B1FEC0044201F /* ComplexScreen~VC.swift in Sources */,
-				5C8DBEB928511C210054B427 /* MainScreen~VC.swift in Sources */,
+				5C8DBEB928511C210054B427 /* SimpleScreen~VC.swift in Sources */,
 				5C8DBEB528511C210054B427 /* AppDelegate.swift in Sources */,
 				5C8DBF48285A182A0054B427 /* UIService.swift in Sources */,
 				5C8DBF5B285B8BC50054B427 /* Assets.generated.swift in Sources */,
+				5C54426C295B41540044201F /* FreeViewController.swift in Sources */,
 				5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */,
 				5C8DBF002858F6910054B427 /* UIViewController~Extensions.swift in Sources */,
+				5C54426E295B415F0044201F /* PaidViewController.swift in Sources */,
 				5C55FACD2864A96400F0B41C /* Integration.swift in Sources */,
 				5C8DBF242858FF460054B427 /* Globals.swift in Sources */,
 				5C8DBEB728511C210054B427 /* SceneDelegate.swift in Sources */,
