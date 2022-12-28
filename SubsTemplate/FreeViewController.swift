@@ -22,26 +22,13 @@ final class FreeViewController: UIBase.ViewController {
   
   private lazy var bannerView = PaywallCore.upsell(from: self)
   
-  private let ctaButton = UIBase.Button {
-    $0.setTitle("Show Paywall", for: .normal)
-    $0.setTitleColor(Color.Main.text.color, for: .normal)
-  }
-  
   // MARK: - Lifecycle
   
   override func loadView() {
     super.loadView()
     view.backgroundColor = Color.Main.back.color
     view.addSubview(label)
-    view.addSubview(ctaButton)
     view.addSubview(bannerView)
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    ctaButton.addAction { _ in
-      PaywallCore.showPaywall()
-    }
   }
   
   override func viewDidLayoutSubviews() {
@@ -51,11 +38,7 @@ final class FreeViewController: UIBase.ViewController {
     label.pin.hCenter().top(20%).maxWidth(75%).sizeToFit(.width)
     bannerView.pin.start().end()
       .bottom(safeArea.bottom)
-      .sizeToFit(.width)
-    
-    ctaButton.pin.sizeToFit()
-      .vCenter(safeArea.top - safeArea.bottom)
-      .hCenter(safeArea.left - safeArea.right)
+      .sizeToFit(.width) 
   }
   
 }

@@ -133,7 +133,7 @@ def notify(message, success)
     success: success,
     channel: "#subs_template",
     default_payloads: [:git_branch, :git_author],
-    slack_url: "https://hooks.slack.com/services/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",
+    slack_url: "https://hooks.slack.com/services/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",
   )
   # notify_tg(message, $tg_chat_id, $tg_bot_token)        
 end
