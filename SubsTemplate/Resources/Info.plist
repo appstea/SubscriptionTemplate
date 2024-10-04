@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>aps-environment</key>
+	<string>production</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Приложение использует ваше местоположение только во время его использования для улучшения функциональности.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Приложение использует ваше местоположение для предоставления более точных данных и услуг.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Это необходимо для отслеживания движений устройства и улучшения пользовательского опыта.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>We use your data to display personalized advertising.</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
 	<key>UIApplicationSceneManifest</key>
