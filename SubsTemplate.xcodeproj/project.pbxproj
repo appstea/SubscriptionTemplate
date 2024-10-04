@@ -622,7 +622,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:appstea/PaywallCraftExternal.git";
 			requirement = {
-				branch = master;
+				branch = develop;
 				kind = branch;
 			};
 		};
