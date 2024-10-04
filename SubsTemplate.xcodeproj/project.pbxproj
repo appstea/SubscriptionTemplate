@@ -450,7 +450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = $VERSION_NUMBER;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appstea.proto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wm.subs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.appstea.proto";
@@ -483,7 +483,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = $VERSION_NUMBER;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appstea.proto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wm.subs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.appstea.proto";
@@ -574,7 +574,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = $VERSION_NUMBER;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appstea.proto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wm.subs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.appstea.proto";
