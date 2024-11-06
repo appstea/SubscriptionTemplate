@@ -18,8 +18,8 @@ private enum _Paywall {
   
   static let config = PaywallCraftCore.Config(
     paywall: .init(
-      apiKey: "appl_PrQxhLfrujRwauAlGngBUArKhIK",
-      offering: "com.appstea.proto.first",
+      apiKey: "appl_×ZmrbLEUVGKtGaFaNMQyahGWXrL",
+      offering: "com.wm.subs.one",
       isDebug: isDebug,
       urls: .init(
         policy: "https://appstea.com/legal/privacy-policy/",
@@ -30,7 +30,7 @@ private enum _Paywall {
     analytics: .init(
       isOSLogEnabled: isDebug || isAdHoc,
       isFirebaseEnabled: true,
-      isBranchEnabled: true
+      isBranchEnabled: false
     ),
     ui: .init(
       permissions: .custom(),
