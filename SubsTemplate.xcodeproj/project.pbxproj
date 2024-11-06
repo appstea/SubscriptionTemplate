@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5C22C4E82864F4770092D1FA /* PinLayout */; };
 		5C544263295B1FEC0044201F /* ComplexScreen~VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C544262295B1FEC0044201F /* ComplexScreen~VC.swift */; };
 		5C54426C295B41540044201F /* FreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C54426B295B41540044201F /* FreeViewController.swift */; };
 		5C54426E295B415F0044201F /* PaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C54426D295B415F0044201F /* PaidViewController.swift */; };
@@ -26,6 +25,7 @@
 		5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */; };
 		5C8DBF8C285B91320054B427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */; };
 		5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFDEC38286498FB00F894BF /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		84BDA1482CDB6C3000C85344 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84BDA1472CDB6C3000C85344 /* SnapKit */; };
 		ED6125FC295B568C0035DD60 /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = ED6125FB295B568C0035DD60 /* PaywallCraftCore */; };
 		ED6125FE295B568C0035DD60 /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = ED6125FD295B568C0035DD60 /* PaywallCraftResources */; };
 		ED612600295B568C0035DD60 /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ED6125FF295B568C0035DD60 /* PaywallCraftUI */; };
@@ -59,11 +59,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C22C4E92864F4770092D1FA /* PinLayout in Frameworks */,
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
 				ED612600295B568C0035DD60 /* PaywallCraftUI in Frameworks */,
 				ED6125FE295B568C0035DD60 /* PaywallCraftResources in Frameworks */,
 				ED6125FC295B568C0035DD60 /* PaywallCraftCore in Frameworks */,
+				84BDA1482CDB6C3000C85344 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,10 +170,10 @@
 			);
 			name = SubsTemplate;
 			packageProductDependencies = (
-				5C22C4E82864F4770092D1FA /* PinLayout */,
 				ED6125FB295B568C0035DD60 /* PaywallCraftCore */,
 				ED6125FD295B568C0035DD60 /* PaywallCraftResources */,
 				ED6125FF295B568C0035DD60 /* PaywallCraftUI */,
+				84BDA1472CDB6C3000C85344 /* SnapKit */,
 			);
 			productName = SubsTemplate;
 			productReference = 5C8DBEB128511C210054B427 /* SubsTemplate.app */;
@@ -205,8 +205,8 @@
 			);
 			mainGroup = 5C8DBEA828511C210054B427;
 			packageReferences = (
-				5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */,
 				ED6125FA295B568C0035DD60 /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */,
+				84BDA1462CDB6C3000C85344 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 5C8DBEB228511C210054B427 /* Products */;
 			projectDirPath = "";
@@ -613,12 +613,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+		84BDA1462CDB6C3000C85344 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 5.7.1;
 			};
 		};
 		ED6125FA295B568C0035DD60 /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */ = {
@@ -632,10 +632,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C22C4E82864F4770092D1FA /* PinLayout */ = {
+		84BDA1472CDB6C3000C85344 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5C22C4E72864F4770092D1FA /* XCRemoteSwiftPackageReference "PinLayout" */;
-			productName = PinLayout;
+			package = 84BDA1462CDB6C3000C85344 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 		ED6125FB295B568C0035DD60 /* PaywallCraftCore */ = {
 			isa = XCSwiftPackageProductDependency;

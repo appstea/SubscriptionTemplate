@@ -6,8 +6,7 @@
 //
 
 import UIKit
-
-import PinLayout
+import SnapKit
 
 import UIBase
 
@@ -27,7 +26,13 @@ final class PaidViewController: UIBase.ViewController {
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    label.pin.hCenter().top(20%).maxWidth(75%).sizeToFit(.width)
+    
+    self.label.snp.makeConstraints { make in
+      make.centerX.equalToSuperview()
+      make.top.equalToSuperview().multipliedBy(0.2)
+      make.width.lessThanOrEqualToSuperview().multipliedBy(0.75)
+    }
+    
+    self.label.sizeToFit()
   }
-  
 }
