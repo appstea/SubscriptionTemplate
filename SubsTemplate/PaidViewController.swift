@@ -1,33 +1,37 @@
-//
-//  PaidViewController.swift
-//  SubsTemplate
-//
-//  Created by dDomovoj on 12/27/22.
-//
-
 import UIKit
-
-import PinLayout
+import SnapKit
 
 import UIBase
 
 final class PaidViewController: UIBase.ViewController {
   
-  private let label = UILabel {
-    $0.text = "Premium app experience, add your interface here."
-    $0.numberOfLines = 0
-    $0.textAlignment = .center
-  }
+  private lazy var label: UILabel = {
+    let label = UILabel()
+    label.text = "Premium app experience, add your interface here."
+    label.numberOfLines = 0
+    label.textAlignment = .center
+    label.sizeToFit()
+    return label
+  }()
   
-  override func loadView() {
-    super.loadView()
-    view.backgroundColor = Color.Main.back.color
-    view.addSubview(label)
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    self.cinfugureUI()
   }
-  
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    label.pin.hCenter().top(20%).maxWidth(75%).sizeToFit(.width)
+}
+
+// MARK: - UI configuration
+
+private extension PaidViewController {
+  func cinfugureUI() {
+    self.view.backgroundColor = Color.Main.back.color
+    
+    self.view.addSubview(self.label)
+    self.label.snp.makeConstraints { make in
+      make.centerX.equalToSuperview()
+      make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+      make.width.lessThanOrEqualToSuperview().multipliedBy(0.75)
+    }
   }
-  
 }

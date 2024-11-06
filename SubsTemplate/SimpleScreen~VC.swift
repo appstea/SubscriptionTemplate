@@ -7,8 +7,6 @@
 
 import UIKit
 
-import PinLayout
-
 import UIBase
 import PaywallCraftCore
 import AnalyticsCraft
