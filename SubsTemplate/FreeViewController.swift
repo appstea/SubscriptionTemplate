@@ -6,19 +6,21 @@
 //
 
 import UIKit
-
-import PinLayout
+import SnapKit
 
 import UIBase
 import PaywallCraftCore
 
 final class FreeViewController: UIBase.ViewController {
   
-  private let label = UILabel {
-    $0.text = "Free app experience, add your interface here."
-    $0.numberOfLines = 0
-    $0.textAlignment = .center
-  }
+  private lazy var label: UILabel = {
+    let label = UILabel()
+    label.text = "Free app experience, add your interface here."
+    label.numberOfLines = 0
+    label.textAlignment = .center
+    label.sizeToFit()
+    return label
+  }()
   
   private lazy var bannerView = PaywallCore.upsell(from: self)
   
@@ -26,19 +28,41 @@ final class FreeViewController: UIBase.ViewController {
   
   override func loadView() {
     super.loadView()
-    view.backgroundColor = Color.Main.back.color
-    view.addSubview(label)
-    view.addSubview(bannerView)
+    
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    self.configureUI()
   }
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    let safeArea = view.pin.safeArea
     
-    label.pin.hCenter().top(20%).maxWidth(75%).sizeToFit(.width)
-    bannerView.pin.start().end()
-      .bottom(safeArea.bottom)
-      .sizeToFit(.width) 
   }
-  
+}
+
+
+// MARK: - UI configure
+
+
+private extension FreeViewController {
+  func configureUI() {
+    self.view.backgroundColor = Color.Main.back.color
+    
+    self.view.addSubview(self.label)
+    self.label.snp.makeConstraints { make in
+      make.centerX.equalToSuperview()
+      make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+      make.width.lessThanOrEqualToSuperview().multipliedBy(0.75)
+    }
+    
+    self.view.addSubview(self.bannerView)
+    self.bannerView.snp.makeConstraints { make in
+      make.left.right.equalToSuperview()
+      make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+      make.width.equalToSuperview()
+    }
+  }
 }
