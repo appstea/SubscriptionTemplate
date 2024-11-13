@@ -8,12 +8,11 @@
 import UIKit
 
 extension UIViewController {
-
+  
   var topMostController: UIViewController {
     if let presented = presentedViewController?.topMostController, !presented.isBeingDismissed {
       return presented
     }
     return self
   }
-
 }
