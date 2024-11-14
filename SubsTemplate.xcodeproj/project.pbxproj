@@ -25,6 +25,7 @@
 		5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */; };
 		5C8DBF8C285B91320054B427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */; };
 		5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFDEC38286498FB00F894BF /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		844FF3822CE4E4300023EAC7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844FF3812CE4E4300023EAC7 /* StoreKit.framework */; };
 		8488ABF02CDBB13B00516B5B /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488ABEF2CDBB13000516B5B /* String+Ex.swift */; };
 		84BDA1482CDB6C3000C85344 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84BDA1472CDB6C3000C85344 /* SnapKit */; };
 		ED6125FC295B568C0035DD60 /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = ED6125FB295B568C0035DD60 /* PaywallCraftCore */; };
@@ -53,6 +54,7 @@
 		5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.generated.swift; sourceTree = "<group>"; };
 		5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5CFDEC38286498FB00F894BF /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
+		844FF3812CE4E4300023EAC7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8488ABEF2CDBB13000516B5B /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
 				ED612600295B568C0035DD60 /* PaywallCraftUI in Frameworks */,
 				ED6125FE295B568C0035DD60 /* PaywallCraftResources in Frameworks */,
+				844FF3822CE4E4300023EAC7 /* StoreKit.framework in Frameworks */,
 				ED6125FC295B568C0035DD60 /* PaywallCraftCore in Frameworks */,
 				84BDA1482CDB6C3000C85344 /* SnapKit in Frameworks */,
 			);
@@ -150,6 +153,7 @@
 		5CBA18112861DB7900E59348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844FF3812CE4E4300023EAC7 /* StoreKit.framework */,
 				5CFDEC38286498FB00F894BF /* OSLog.framework */,
 			);
 			name = Frameworks;

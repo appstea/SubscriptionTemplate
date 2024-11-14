@@ -18,7 +18,7 @@ private enum _Paywall {
   
   static let config = PaywallCraftCore.Config(
     paywall: .init(
-      apiKey: "appl_×ZmrbLEUVGKtGaFaNMQyahGWXrL",
+      apiKey: "appl_xZmrbLEUvGKtGaFaNMQyahGWXrL",
       offering: "com.wm.subs.one",
       isDebug: isDebug,
       urls: .init(
