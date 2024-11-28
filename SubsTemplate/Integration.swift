@@ -27,6 +27,7 @@ private enum _Paywall {
 //          store: "https://apps.apple.com/us/app/id1533228338"
       )
     ),
+    att: .init(fullScreen: false),
     analytics: .init(
       isOSLogEnabled: isDebug || isAdHoc,
       isFirebaseEnabled: true,

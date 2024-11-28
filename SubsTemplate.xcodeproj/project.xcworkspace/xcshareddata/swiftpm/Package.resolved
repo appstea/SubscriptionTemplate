@@ -1,5 +1,5 @@
 {
-  "originHash" : "2fb98a7aba03a0c50f9ab911df96bcd59fdf4180242167ccae0425f0683c897e",
+  "originHash" : "7014482ee7b7a304b8543c18a7f43a72a5a28c5c27ea2a95eba9ce2ee27f3696",
   "pins" : [
     {
       "identity" : "analyticscraft",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "6c4f7abc3bb584f7bf9e38129c3bce50c94eedde"
+      }
+    },
+    {
+      "identity" : "appsflyerframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework",
+      "state" : {
+        "branch" : "master",
+        "revision" : "048633aeec183ddd41b5342c5e0ff57f102dd509"
       }
     },
     {
@@ -24,7 +33,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dDomovoj/Cascade.git",
       "state" : {
-        "branch" : "master",
+        "branch" : "main",
         "revision" : "7bedececdea8da5b87be587aefb0a2b051b00f75"
       }
     },
@@ -38,12 +47,12 @@
       }
     },
     {
-      "identity" : "paywallcraftexternal",
+      "identity" : "paywallcraft",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:appstea/PaywallCraftExternal.git",
+      "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "develop",
-        "revision" : "8b1797430b51228d1afa287252cea24210e3bf40"
+        "revision" : "5067aeb8ad810318c3d2f4732c1093e5d0c19672"
       }
     },
     {
@@ -60,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/layoutBox/PinLayout",
       "state" : {
-        "revision" : "75c88c5c374c7bc78a154ffdf963cd362f38258a",
-        "version" : "1.10.3"
+        "revision" : "8eaa3a15e4dcabaca4c95aea4c0ff0c9b4a67213",
+        "version" : "1.10.5"
       }
     },
     {
@@ -79,7 +88,7 @@
       "location" : "https://github.com/ashleymills/Reachability.swift",
       "state" : {
         "branch" : "master",
-        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
+        "revision" : "21d1dc412cfecbe6e34f1f4c4eb88d3f912654a6"
       }
     },
     {
@@ -110,12 +119,21 @@
       }
     },
     {
+      "identity" : "svprogresshud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sereivoanyong/SVProgressHUD.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9a9acebb8599742a3154addd41a60cecf8a7ab2d"
+      }
+    },
+    {
       "identity" : "swiftyattributes",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/eddiekaiger/SwiftyAttributes",
       "state" : {
         "branch" : "master",
-        "revision" : "295b17ef68811f423ed4b281d902df12d4d33963"
+        "revision" : "e35ef6a610dc084d6a737d976b4168456ef3417a"
       }
     },
     {

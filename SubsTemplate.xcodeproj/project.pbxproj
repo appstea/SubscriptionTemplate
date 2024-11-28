@@ -25,12 +25,12 @@
 		5C8DBF5C285B8BC50054B427 /* L10n.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DBF5A285B8BC50054B427 /* L10n.generated.swift */; };
 		5C8DBF8C285B91320054B427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DBF8B285B91320054B427 /* GoogleService-Info.plist */; };
 		5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFDEC38286498FB00F894BF /* OSLog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		842E494C2CF8BAB400875B11 /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 842E494B2CF8BAB400875B11 /* PaywallCraftCore */; };
+		842E494E2CF8BAB400875B11 /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = 842E494D2CF8BAB400875B11 /* PaywallCraftResources */; };
+		842E49502CF8BAB400875B11 /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 842E494F2CF8BAB400875B11 /* PaywallCraftUI */; };
 		844FF3822CE4E4300023EAC7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844FF3812CE4E4300023EAC7 /* StoreKit.framework */; };
 		8488ABF02CDBB13B00516B5B /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488ABEF2CDBB13000516B5B /* String+Ex.swift */; };
 		84BDA1482CDB6C3000C85344 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84BDA1472CDB6C3000C85344 /* SnapKit */; };
-		ED6125FC295B568C0035DD60 /* PaywallCraftCore in Frameworks */ = {isa = PBXBuildFile; productRef = ED6125FB295B568C0035DD60 /* PaywallCraftCore */; };
-		ED6125FE295B568C0035DD60 /* PaywallCraftResources in Frameworks */ = {isa = PBXBuildFile; productRef = ED6125FD295B568C0035DD60 /* PaywallCraftResources */; };
-		ED612600295B568C0035DD60 /* PaywallCraftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ED6125FF295B568C0035DD60 /* PaywallCraftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,12 +63,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842E49502CF8BAB400875B11 /* PaywallCraftUI in Frameworks */,
+				842E494E2CF8BAB400875B11 /* PaywallCraftResources in Frameworks */,
 				5CFDEC3A2864999100F894BF /* OSLog.framework in Frameworks */,
-				ED612600295B568C0035DD60 /* PaywallCraftUI in Frameworks */,
-				ED6125FE295B568C0035DD60 /* PaywallCraftResources in Frameworks */,
 				844FF3822CE4E4300023EAC7 /* StoreKit.framework in Frameworks */,
-				ED6125FC295B568C0035DD60 /* PaywallCraftCore in Frameworks */,
 				84BDA1482CDB6C3000C85344 /* SnapKit in Frameworks */,
+				842E494C2CF8BAB400875B11 /* PaywallCraftCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +177,10 @@
 			);
 			name = SubsTemplate;
 			packageProductDependencies = (
-				ED6125FB295B568C0035DD60 /* PaywallCraftCore */,
-				ED6125FD295B568C0035DD60 /* PaywallCraftResources */,
-				ED6125FF295B568C0035DD60 /* PaywallCraftUI */,
 				84BDA1472CDB6C3000C85344 /* SnapKit */,
+				842E494B2CF8BAB400875B11 /* PaywallCraftCore */,
+				842E494D2CF8BAB400875B11 /* PaywallCraftResources */,
+				842E494F2CF8BAB400875B11 /* PaywallCraftUI */,
 			);
 			productName = SubsTemplate;
 			productReference = 5C8DBEB128511C210054B427 /* SubsTemplate.app */;
@@ -194,7 +194,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					5C8DBEB028511C210054B427 = {
 						CreatedOnToolsVersion = 13.3;
@@ -212,8 +212,8 @@
 			);
 			mainGroup = 5C8DBEA828511C210054B427;
 			packageReferences = (
-				ED6125FA295B568C0035DD60 /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */,
 				84BDA1462CDB6C3000C85344 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				842E494A2CF8BAB400875B11 /* XCRemoteSwiftPackageReference "PaywallCraft" */,
 			);
 			productRefGroup = 5C8DBEB228511C210054B427 /* Products */;
 			projectDirPath = "";
@@ -365,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-D RELEASE";
@@ -443,12 +443,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
-				DEVELOPMENT_TEAM = VZDA4522ZH;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VZDA4522ZH;
+				DEVELOPMENT_TEAM = D2846FA44M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,7 +462,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wm.subs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.appstea.proto";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -478,11 +475,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
-				DEVELOPMENT_TEAM = VZDA4522ZH;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VZDA4522ZH;
+				DEVELOPMENT_TEAM = D2846FA44M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -498,7 +494,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wm.subs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.appstea.proto";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEBUG -D ADHOC";
@@ -571,11 +566,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
-				DEVELOPMENT_TEAM = VZDA4522ZH;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VZDA4522ZH;
+				DEVELOPMENT_TEAM = D2846FA44M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SubsTemplate/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -591,7 +585,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wm.subs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.appstea.proto";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -624,6 +617,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		842E494A2CF8BAB400875B11 /* XCRemoteSwiftPackageReference "PaywallCraft" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:appstea/PaywallCraft.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 		84BDA1462CDB6C3000C85344 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -632,36 +633,28 @@
 				minimumVersion = 5.7.1;
 			};
 		};
-		ED6125FA295B568C0035DD60 /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:appstea/PaywallCraftExternal.git";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		842E494B2CF8BAB400875B11 /* PaywallCraftCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 842E494A2CF8BAB400875B11 /* XCRemoteSwiftPackageReference "PaywallCraft" */;
+			productName = PaywallCraftCore;
+		};
+		842E494D2CF8BAB400875B11 /* PaywallCraftResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 842E494A2CF8BAB400875B11 /* XCRemoteSwiftPackageReference "PaywallCraft" */;
+			productName = PaywallCraftResources;
+		};
+		842E494F2CF8BAB400875B11 /* PaywallCraftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 842E494A2CF8BAB400875B11 /* XCRemoteSwiftPackageReference "PaywallCraft" */;
+			productName = PaywallCraftUI;
+		};
 		84BDA1472CDB6C3000C85344 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 84BDA1462CDB6C3000C85344 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		ED6125FB295B568C0035DD60 /* PaywallCraftCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED6125FA295B568C0035DD60 /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */;
-			productName = PaywallCraftCore;
-		};
-		ED6125FD295B568C0035DD60 /* PaywallCraftResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED6125FA295B568C0035DD60 /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */;
-			productName = PaywallCraftResources;
-		};
-		ED6125FF295B568C0035DD60 /* PaywallCraftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ED6125FA295B568C0035DD60 /* XCRemoteSwiftPackageReference "PaywallCraftExternal" */;
-			productName = PaywallCraftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

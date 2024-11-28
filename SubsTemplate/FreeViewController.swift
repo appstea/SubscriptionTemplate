@@ -15,7 +15,7 @@ final class FreeViewController: UIBase.ViewController {
     return label
   }()
   
-  private lazy var bannerView = PaywallCore.upsell(from: self)
+  private lazy var bannerView = PaywallCore.upsell(isNeedShowOurPaywall: false, from: self)
   
   // MARK: - Lifecycle
   
