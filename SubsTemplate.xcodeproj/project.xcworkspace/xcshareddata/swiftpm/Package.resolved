@@ -1,5 +1,5 @@
 {
-  "originHash" : "7014482ee7b7a304b8543c18a7f43a72a5a28c5c27ea2a95eba9ce2ee27f3696",
+  "originHash" : "9b000147a1980f41b509c6cb65ac60722e23c9e234baa8eb06c14f549da3f902",
   "pins" : [
     {
       "identity" : "analyticscraft",
@@ -52,7 +52,7 @@
       "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "develop",
-        "revision" : "5067aeb8ad810318c3d2f4732c1093e5d0c19672"
+        "revision" : "543ecacfc42316330e69557279d2161cf969a2a5"
       }
     },
     {

@@ -56,7 +56,8 @@
 "paywall.two_buttons.info_just"                 = "That's just %@";
 
 /* Try For Free */
-"paywall.two_buttons.subtitle"                  = "Try For Free";
+"paywall.two_buttons.subtitle"                  = "Try for Free";
+"subs.noPaymentLabel.text"                      = "No payment due now!";
 
 /* Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime. */
 "paywall.two_buttons.text"                      = "Enjoy all features of the app ad free and make sure that all new features are unlocked for you to use. Try for free. No commitment. Cancel anytime.";
