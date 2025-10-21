@@ -18,7 +18,7 @@ private enum _Paywall {
   
   static let config = PaywallCraftCore.Config(
     paywall: .init(
-      apiKey: "appl_×ZmrbLEUVGKtGaFaNMQyahGWXrL",
+      apiKey: "appl_xZmrbLEUvGKtGaFaNMQyahGWXrL",
       offering: "com.wm.subs.one",
       isDebug: isDebug,
       urls: .init(
@@ -27,6 +27,7 @@ private enum _Paywall {
 //          store: "https://apps.apple.com/us/app/id1533228338"
       )
     ),
+    att: .init(fullScreen: false),
     analytics: .init(
       isOSLogEnabled: isDebug || isAdHoc,
       isFirebaseEnabled: true,

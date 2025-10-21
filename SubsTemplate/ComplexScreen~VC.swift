@@ -57,7 +57,9 @@ public extension ComplexScreen {
       
       ctaButton.addAction { _ in
         PaywallCore.showPaywall(source: CustomSource(),
-                                screen: Paywall.Screen.initial)
+                                screen: Paywall.Screen.initial,
+                                showData: .init(canShowRCPaywall: true, 
+                                                shouldWaitOfferingsToLoad: true))
       }
     }
 

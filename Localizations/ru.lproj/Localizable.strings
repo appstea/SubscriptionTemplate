@@ -91,3 +91,4 @@
 "settings.restore.title"                        = "Восстановить покупки";
 "settings.share_app.title"                      = "Поделиться";
 "settings.share.subtitle"                       = "Вашим любимым способом ";
+"subs.noPaymentLabel.text"                      = "";

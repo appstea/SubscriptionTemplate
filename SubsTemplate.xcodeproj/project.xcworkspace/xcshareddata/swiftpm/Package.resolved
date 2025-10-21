@@ -1,5 +1,5 @@
 {
-  "originHash" : "2fb98a7aba03a0c50f9ab911df96bcd59fdf4180242167ccae0425f0683c897e",
+  "originHash" : "9b000147a1980f41b509c6cb65ac60722e23c9e234baa8eb06c14f549da3f902",
   "pins" : [
     {
       "identity" : "analyticscraft",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "6c4f7abc3bb584f7bf9e38129c3bce50c94eedde"
+      }
+    },
+    {
+      "identity" : "appsflyerframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework",
+      "state" : {
+        "revision" : "43147aff398c1d9973f2f5dbe1193ad5d2e82d74",
+        "version" : "6.17.7"
       }
     },
     {
@@ -24,7 +33,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dDomovoj/Cascade.git",
       "state" : {
-        "branch" : "master",
+        "branch" : "main",
         "revision" : "7bedececdea8da5b87be587aefb0a2b051b00f75"
       }
     },
@@ -38,21 +47,21 @@
       }
     },
     {
-      "identity" : "paywallcraftexternal",
+      "identity" : "paywallcraft",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:appstea/PaywallCraftExternal.git",
+      "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "develop",
-        "revision" : "5b23e45dfa1fb0604561440cb059ff983522c04b"
+        "revision" : "21d3634a7309961666036aa9b6616952dc96ef1d"
       }
     },
     {
       "identity" : "permissionskit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/dDomovoj/PermissionsKit",
+      "location" : "https://github.com/sparrowcode/PermissionsKit",
       "state" : {
-        "revision" : "409deeb9be1b599a3fc6f67641e0c0b3f0baf849",
-        "version" : "9.0.2"
+        "revision" : "5e5935998cf9c44033e429c3b7d1dd176a1f55ad",
+        "version" : "11.1.0"
       }
     },
     {
@@ -60,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/layoutBox/PinLayout",
       "state" : {
-        "revision" : "75c88c5c374c7bc78a154ffdf963cd362f38258a",
-        "version" : "1.10.3"
+        "revision" : "72f5300042618340df21500f6c4ce71bb78b93e1",
+        "version" : "1.10.6"
       }
     },
     {
@@ -69,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "1357d57a38d09e60f967d0e78a912254fe46137c",
-        "version" : "4.43.3"
+        "revision" : "1821dc954cbd3fdc27a28f3356eb1a3d77642f04",
+        "version" : "5.44.1"
       }
     },
     {
@@ -78,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ashleymills/Reachability.swift",
       "state" : {
-        "branch" : "master",
-        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
+        "revision" : "21d1dc412cfecbe6e34f1f4c4eb88d3f912654a6",
+        "version" : "5.2.4"
       }
     },
     {
@@ -110,12 +119,21 @@
       }
     },
     {
+      "identity" : "svprogresshud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sereivoanyong/SVProgressHUD.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a8160a193787467e55ae8ea0effac8ad2b479d85"
+      }
+    },
+    {
       "identity" : "swiftyattributes",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/eddiekaiger/SwiftyAttributes",
       "state" : {
         "branch" : "master",
-        "revision" : "295b17ef68811f423ed4b281d902df12d4d33963"
+        "revision" : "e35ef6a610dc084d6a737d976b4168456ef3417a"
       }
     },
     {
