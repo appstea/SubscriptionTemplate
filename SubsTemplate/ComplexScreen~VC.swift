@@ -25,7 +25,6 @@ public extension ComplexScreen {
   final class ViewController: UIBase.ViewController {
 
     private lazy var bannerView = PaywallCore.upsell(
-      isNeedShowOurPaywall: false,
       source: Paywall.Source.bottomUpsell,
       screen: Paywall.Screen.initial,
       from: self,
@@ -57,11 +56,10 @@ public extension ComplexScreen {
       }.bindLifetime(to: self)
       
       ctaButton.addAction { _ in
-        PaywallCore.showPaywall(
-          isNeedShowOurPaywall: false,
-          source: CustomSource(),
-          screen: Paywall.Screen.initial,
-          showData: .init(canShowRCPaywall: true, shouldWaitOfferingsToLoad: false))
+        PaywallCore.showPaywall(source: CustomSource(),
+                                screen: Paywall.Screen.initial,
+                                showData: .init(canShowRCPaywall: true, 
+                                                shouldWaitOfferingsToLoad: true))
       }
     }
 

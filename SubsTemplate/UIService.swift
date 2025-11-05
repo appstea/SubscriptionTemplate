@@ -41,7 +41,6 @@ final class UIService: AppService {
       if !PaywallCore.didPassPermissions {
         await PaywallCore.showPermissions()
         await PaywallCore.showOnboardingPaywall()
-        await PaywallCore.showATTIfPossible()
       }
 
       window.rootViewController = SimpleViewController()

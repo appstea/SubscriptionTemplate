@@ -88,7 +88,8 @@
 "settings.privacy.title"                        = "Privacy Policy";
 "settings.rateapp.title"                        = "Rate the App";
 "settings.restore_fail.subtitle"                = "Sorry, it looks like you don't have any purchases ";
-"settings.restore.subtitle"                     = "We’ll find stuff you have already bought";
+"settings.restore.subtitle"                     = "We'll find stuff you have already bought";
 "settings.restore.title"                        = "Restore Purchases";
 "settings.share_app.title"                      = "Share App";
 "settings.share.subtitle"                       = "Share via your favorite messenger";
+"subs.noPaymentLabel.text"                      = "No payment due now!";

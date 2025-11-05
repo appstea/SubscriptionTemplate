@@ -1,3 +1,10 @@
+//
+//  FreeViewController.swift
+//  SubsTemplate
+//
+//  Created by dDomovoj on 12/27/22.
+//
+
 import UIKit
 import SnapKit
 
@@ -15,18 +22,30 @@ final class FreeViewController: UIBase.ViewController {
     return label
   }()
   
-  private lazy var bannerView = PaywallCore.upsell(isNeedShowOurPaywall: false, from: self)
+  private lazy var bannerView = PaywallCore.upsell(from: self)
   
   // MARK: - Lifecycle
+  
+  override func loadView() {
+    super.loadView()
+    
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.configureUI()
   }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+  }
 }
 
+
 // MARK: - UI configure
+
 
 private extension FreeViewController {
   func configureUI() {

@@ -52,7 +52,7 @@
       "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "develop",
-        "revision" : "202e16d3fd987cfd4f6e0ba35104840e8dd492e0"
+        "revision" : "21d3634a7309961666036aa9b6616952dc96ef1d"
       }
     },
     {
@@ -78,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "617e18330db26337d39edd1c775cf782bdf40795",
-        "version" : "5.46.0"
+        "revision" : "1821dc954cbd3fdc27a28f3356eb1a3d77642f04",
+        "version" : "5.44.1"
       }
     },
     {

@@ -91,3 +91,4 @@
 "settings.restore.title"                        = "Restaurer les achats";
 "settings.share_app.title"                      = "Partager l'application";
 "settings.share.subtitle"                       = "Partagez via votre messagerie préférée";
+"subs.noPaymentLabel.text"                      = "Aucun paiement n'est dû maintenant !";
