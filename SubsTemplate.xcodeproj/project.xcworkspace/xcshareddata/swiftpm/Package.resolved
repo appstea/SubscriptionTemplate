@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework",
       "state" : {
-        "branch" : "master",
-        "revision" : "048633aeec183ddd41b5342c5e0ff57f102dd509"
+        "revision" : "43147aff398c1d9973f2f5dbe1193ad5d2e82d74",
+        "version" : "6.17.7"
       }
     },
     {
@@ -52,16 +52,16 @@
       "location" : "git@github.com:appstea/PaywallCraft.git",
       "state" : {
         "branch" : "develop",
-        "revision" : "543ecacfc42316330e69557279d2161cf969a2a5"
+        "revision" : "202e16d3fd987cfd4f6e0ba35104840e8dd492e0"
       }
     },
     {
       "identity" : "permissionskit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/dDomovoj/PermissionsKit",
+      "location" : "https://github.com/sparrowcode/PermissionsKit",
       "state" : {
-        "revision" : "409deeb9be1b599a3fc6f67641e0c0b3f0baf849",
-        "version" : "9.0.2"
+        "revision" : "5e5935998cf9c44033e429c3b7d1dd176a1f55ad",
+        "version" : "11.1.0"
       }
     },
     {
@@ -69,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/layoutBox/PinLayout",
       "state" : {
-        "revision" : "8eaa3a15e4dcabaca4c95aea4c0ff0c9b4a67213",
-        "version" : "1.10.5"
+        "revision" : "72f5300042618340df21500f6c4ce71bb78b93e1",
+        "version" : "1.10.6"
       }
     },
     {
@@ -78,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "1357d57a38d09e60f967d0e78a912254fe46137c",
-        "version" : "4.43.3"
+        "revision" : "617e18330db26337d39edd1c775cf782bdf40795",
+        "version" : "5.46.0"
       }
     },
     {
@@ -87,8 +87,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ashleymills/Reachability.swift",
       "state" : {
-        "branch" : "master",
-        "revision" : "21d1dc412cfecbe6e34f1f4c4eb88d3f912654a6"
+        "revision" : "21d1dc412cfecbe6e34f1f4c4eb88d3f912654a6",
+        "version" : "5.2.4"
       }
     },
     {
@@ -123,8 +123,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sereivoanyong/SVProgressHUD.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "9a9acebb8599742a3154addd41a60cecf8a7ab2d"
+        "branch" : "main",
+        "revision" : "a8160a193787467e55ae8ea0effac8ad2b479d85"
       }
     },
     {
